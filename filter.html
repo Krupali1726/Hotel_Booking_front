@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters And Newletter</title>
+
+    <link rel="stylesheet" href="./CSS/filter.css">
+    <link rel="stylesheet" href="./CSS/Header.css">
+
+    <script src="./JS/filter.js"></script>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="mb-header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between k-head">
+
+                <div class="col-6 col-md-2 k-logo">
+                    <h1>LOGO</h1>
+                </div>
+
+                <div class="col-6 d-lg-none text-end">
+                    <button class="navbar-toggler" type="button" id="navbarToggle">
+                        <span class="navbar-toggler-icon">☰</span>
+                    </button>
+                </div>
+
+                <div class="col-12 col-md-7 d-none d-lg-block" id="navbarNav">
+                    <div class="k-diming w-100">
+                        <ul class="navbar-nav d-flex flex-md-row justify-content-md-end align-items-center gap-3">
+                            <li class="nav-item"><a class="nav-link" href="#">Overview</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">Rooms</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Dinning</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 d-none justify-content-end d-lg-flex">
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <div class="k-sing">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#signinModal">Sign in</a>
+                        </div>
+                        <div class="k-book">
+                            <a href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Collapsible Mobile Nav -->
+
+            <div class="d-lg-none k-collap k-diming" id="mobileNav" style="display: none;">
+                <ul class="navbar-nav flex-column align-items-start mt-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dinning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center justify-content-start gap-3" style="padding: 15px 0 !important;">
+                    <div class="k-sing">
+                        <a href="#">Sign in</a>
+                    </div>
+                    <div class="k-book">
+                        <a href="#">Book Now</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Offcanva & Modal Button -->
+
+    <div class="mb-button">
+
+        <!-- Button to open the offcanvas sidebar -->
+        <button class="btn btn-primary mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#Filters">
+            Open Offcanvas Sidebar
+        </button>
+
+        <!-- Newsletter Modal -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+            Newsletter
+        </button>
+
+        <!-- Sign in Modal -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#signinModal">
+            Sign in
+        </button>
+
+        <!-- Create Account Modal -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#createAccountModal">
+            Create Account
+        </button>
+
+        <!-- Forgot Password Modal -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#forgotpasswordModal">
+            Forgot Password
+        </button>
+
+        <!-- Verify OTP Mobile Modal -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#verifyotpModal">
+            Verify OTP Mobile
+        </button>
+
+        <!-- Verify OTP Email Modal -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#verifyotpemailModal">
+            Verify OTP Email
+        </button>
+
+        <!-- Reset Password Modal -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#resetpasswordModal">
+            Reset Password
+        </button>
+
+        <!-- Time Out -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#timeoutModal">
+            Time Out
+        </button>
+
+        <!-- Running Time -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#runningtimeModal">
+            Running Time
+        </button>
+
+        <!-- Cancellation Policy -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#cancelpolicyModal">
+            Cancellation Policy
+        </button>
+
+        <!-- View Details Modal -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#viewdetailsModal">
+            Room Details
+        </button>
+
+        <!-- Apply Coupon Modal -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#applycouponModal">
+            Apply Coupon
+        </button>
+
+        <!-- 2 twin beds selected Modal -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#editroombed1Modal">
+            Edit Room 1
+        </button>
+
+        <!-- 2 twin beds selected Modal -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#editroombed2Modal">
+            Edit Room 2
+        </button>
+
+        <!-- Additional Information Modal -->
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
+            data-bs-target="#additionalinformationModal">
+            Additional Information
+        </button>
+
+    </div>
+
+    <!-- 1 Offcanvas Sidebar -->
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="Filters" aria-labelledby="offcanvasExampleLabel">
+
+        <div class="offcanvas-header mb-header-sidebar">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h5>
+            <button type="button" class="btn-close mb-close-sidebar text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+
+        <div class="mb-border-line-filter"></div>
+
+        <div class="offcanvas-body mb-offcanvas-body">
+            <div class="accordion mb-accordion" id="accordionExample">
+
+                <!-- 1 -->
+                <div class="accordion-item mb-border-line">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button mb-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Room Types
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse mb-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body mb-accordion-body">
+                            <div class="mb-filter-options">
+                                <label><input type="checkbox" name="room1" value="single"> Single Room</label>
+                                <label><input type="checkbox" name="room1" value="double"> Double Room</label>
+                                <label><input type="checkbox" name="room1" value="twin"> Twin Room</label>
+                                <label><input type="checkbox" name="room1" value="triple"> Triple Room</label>
+                                <label><input type="checkbox" name="room1" value="deluxe"> Deluxe Room</label>
+                                <label><input type="checkbox" name="room1" value="executive"> Executive Room</label>
+                                <label><input type="checkbox" name="room1" value="family"> Family Room</label>
+                                <label><input type="checkbox" name="room1" value="connecting"> Connecting
+                                    Rooms</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="accordion-item mb-border-line">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button mb-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Guests
+                        </button>
+                    </h2>
+                    <div id="collapseOne2" class="accordion-collapse mb-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body mb-accordion-body">
+                            <div class="mb-filter-options">
+                                <label><input type="checkbox" name="room2" value="1"> 1 Guest</label>
+                                <label><input type="checkbox" name="room2" value="2"> 2 Guests</label>
+                                <label><input type="checkbox" name="room2" value="3"> 3 Guests</label>
+                                <label><input type="checkbox" name="room2" value="4"> 4 Guests</label>
+                                <label><input type="checkbox" name="room2" value="5"> 5+ Guests</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="accordion-item mb-border-line">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button mb-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Room Amenities
+                        </button>
+                    </h2>
+                    <div id="collapseOne3" class="accordion-collapse mb-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body mb-accordion-body">
+                            <div class="mb-filter-options my-2">
+                                <label><input type="checkbox" name="room3" value="1"> Wi-Fi</label>
+                                <label><input type="checkbox" name="room3" value="2"> AC</label>
+                                <label><input type="checkbox" name="room3" value="3"> Non-AC</label>
+                                <label><input type="checkbox" name="room3" value="4"> Flat-screen TV</label>
+                                <label><input type="checkbox" name="room3" value="5"> Private Bathroom</label>
+                                <label><input type="checkbox" name="room3" value="6"> Wardrobe / Closet</label>
+                                <label><input type="checkbox" name="room3" value="7"> Safe (Locker)</label>
+                                <label><input type="checkbox" name="room3" value="8"> Tea Maker</label>
+                                <a>Show More(20)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="accordion-item mb-border-line">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button mb-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne4" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Room View
+                        </button>
+                    </h2>
+                    <div id="collapseOne4" class="accordion-collapse mb-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body mb-accordion-body">
+                            <div class="mb-filter-options my-2">
+                                <label><input type="checkbox" name="room4" value="1"> City View</label>
+                                <label><input type="checkbox" name="room4" value="2"> Sea View / Ocean View</label>
+                                <label><input type="checkbox" name="room4" value="3"> Pool View</label>
+                                <label><input type="checkbox" name="room4" value="4"> Garden View</label>
+                                <label><input type="checkbox" name="room4" value="5"> Mountain View</label>
+                                <label><input type="checkbox" name="room4" value="6"> Lake View / River View</label>
+                                <label><input type="checkbox" name="room4" value="7"> Beachfront / Beach View</label>
+                                <label><input type="checkbox" name="room4" value="8"> Park View</label>
+                                <a>Show More(20)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button mb-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne5" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Price Range
+                        </button>
+                    </h2>
+                    <div id="collapseOne5" class="accordion-collapse mb-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body mb-accordion-body">
+                            <div id="roomOptions5">
+                                <div class="mb-range-values">
+                                    <span id="minPrice">$50</span>
+                                    <span id="maxPrice">₹5,000</span>
+                                </div>
+                                <div class="mb-slider">
+                                    <div class="mb-slider-track" id="track"></div>
+                                    <input type="range" id="minSlider" min="0" max="10000" value="50">
+                                    <input type="range" id="maxSlider" min="0" max="10000" value="5000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="mb-tbtn">
+            <button class="mb-cleall">Clear all</button>
+            <button class="mb-apply">Apply</button>
+        </div>
+
+    </div>
+
+    <!-- 2 Newsletter Modal -->
+
+    <!-- Newsletter Modal -->
+    <div class="modal" id="newsletterModal">
+        <div class="modal-dialog mb-dialog modal-dialog-centered">
+            <div class="modal-content mb-content">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-sub-body">
+                    <div class="row">
+
+                        <!-- Left Image -->
+                        <div class="col-md-5 mb-2">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn-close mb-close position-absolute top-0 end-0"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="mb-image position-relative">
+                                <img src="./IMAGE/newsletter.png" alt="Resort" class="mb-img">
+                            </div>
+                        </div>
+
+                        <!-- Right Content -->
+                        <div class="col-md-7 mt-3 mb-3 mb-right">
+
+                            <div class="mb-text text-center mt-1">
+                                <h5 class="mt-2">Sign up & be the first to access<br>exclusive promotions.</h5>
+                                <p class="mb-para">Don't miss out! Join for weekly updates and<br>exclusive email perks.
+                                </p>
+                            </div>
+
+                            <form id="" class="">
+                                <div class="mb-form mb-3">
+                                    <label for="emailInput" class="mb-label form-label mb-2">Email</label>
+                                    <input type="email" class="form-control border-0" id="emailInput"
+                                        placeholder="Enter Email" required>
+                                </div>
+                                <button type="submit" class="btn mb-subscribe-btn"
+                                    onclick="NewsLetter()">SUBSCRIBE</button>
+                            </form>
+
+                            <div class="mb-no-thanks" data-bs-dismiss="modal">No, Thanks</div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // Show modal only if user hasn't subscribed
+        document.addEventListener('DOMContentLoaded', () => {
+            const Subscribed = localStorage.getItem("newsletterSubscriber");
+
+            if (Subscribed) {
+
+                const modalElement = document.getElementById('newsletterModal');
+                const modalInstance = bootstrap.Modal.getInstance(modalElement);
+                modalInstance.hide();
+            }
+        });
+
+        // Newsletter Modal 
+        async function NewsLetter() {
+            try {
+                let email = document.getElementById('emailInput').value.trim();
+                let id = Math.floor(Math.random() * 1000);
+
+                const response = await fetch('http://localhost:3000/subscribers', {
+                    method: "POST",
+                    body: JSON.stringify({ Id: id, Email: email })
+                });
+
+                const newsletterData = await response.json();
+                console.log("Response from server:", newsletterData);
+
+                localStorage.setItem("newsletterSubscriber", JSON.stringify({ Id: id, Email: email }));
+
+                alert("Thanks for subscribing!");
+
+            } catch (error) {
+                console.error("Subscription Error:", error);
+                alert("Subscription failed. Please try again later.");
+            }
+        }
+
+    </script>
+
+    <!-- 3 Sign in -->
+
+    <!-- Sign in Modal -->
+    <div class="modal" id="signinModal">
+        <div class="modal-dialog mb-dialog-sign modal-dialog-centered">
+            <div class="modal-content mb-content-sign">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-sign">
+                    <div class="row">
+
+                        <!-- Left Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn-close mb-close-sign position-absolute top-0 end-0"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="mb-image-sign mb-change-sign">
+                                <img src="./IMAGE/signin.png" alt="Resort" class="mb-img-sign">
+                            </div>
+                        </div>
+
+                        <!-- Right Content -->
+                        <div class="col-md-6 mt-3 mb-right-sign">
+
+                            <div class="mb-text-sign text-center mt-1">
+                                <h5 class="mt-2">Sign in</h5>
+                                <p>Welcome back! Please sign in.</p>
+                            </div>
+
+                            <form id="" class="">
+                                <div class="mb-form-sign">
+
+                                    <div class="mb-email-sign mb-2">
+                                        <label for="emailInput" class="form-label mb-2">Email</label>
+                                        <input type="email" id="emailInput" class="form-control border-0"
+                                            placeholder="Email" required>
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    </div>
+
+                                    <div class="mb-pass-sign mb-1 position-relative">
+                                        <label for="passwordInput" class="form-label mb-2">Password</label>
+                                        <div class="input-group mb-input-group">
+                                            <input type="password" id="passwordInput"
+                                                class="form-control mb-pass-input border-0" placeholder="Password"
+                                                required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{8,}$">
+                                            <span class="toggle-password input-group-text mb-input-group-text"
+                                                onclick="togglePassword(this)">
+                                                <i class="fa-solid fa-eye-slash mb-eye-icon"></i>
+                                            </span>
+                                            <div class="invalid-feedback">Please enter your password.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-remember d-flex justify-content-between">
+                                        <div class="mb-remember-sign d-flex align-items-center gap-2">
+                                            <input type="checkbox" id="check" name="check">
+                                            <label for="check">Remember me</label>
+                                        </div>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#forgotpasswordModal">Forgot
+                                            Password?</a>
+                                    </div>
+
+                                    <button type="submit" class="btn mb-subscribe-btn-sign">Sign in</button>
+
+                                    <div class="mb-or-sign text-center p-2">
+                                        <div class="divider">OR</div>
+                                    </div>
+
+                                    <div class="mb-btn-sign gap-3 mb-3">
+                                        <button type="button" class="btn mb-btn-social-sign w-100">
+                                            <img src="./IMAGE/mb-sign-google.svg" />
+                                            <span class="ms-1">Google</span>
+                                        </button>
+                                        <button type="button" class="btn mb-btn-social-sign w-100">
+                                            <img src="./IMAGE/mb-sign-facebook.svg" />
+                                            <span class="ms-1">Facebook</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="mb-text-account-sign text-center">
+                                        <small>Didn't have an account? <a class="mb-create-sign" href="#"
+                                                data-bs-toggle="modal" data-bs-target="#createAccountModal">Create
+                                                Account</a></small>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 4 Create Account -->
+
+    <!-- Create Account Modal -->
+    <div class="modal" id="createAccountModal">
+        <div class="modal-dialog mb-dialog-creaco modal-dialog-centered">
+            <div class="modal-content mb-content-creaco">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-creaco">
+                    <div class="row">
+
+                        <!-- Left Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn-close mb-close-creaco position-absolute top-0 end-0"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="mb-image-creaco mb-change-creaco">
+                                <img src="./IMAGE/signin.png" alt="Resort" class="mb-img-creaco">
+                            </div>
+                        </div>
+
+                        <!-- Right Content -->
+                        <div class="col-md-6 mt-3 mb-right-creaco">
+
+                            <div class="mb-text-creaco text-center mt-1">
+                                <h5 class="mt-2">Create Account</h5>
+                                <p>Register your account easily enter your email below</p>
+                            </div>
+
+                            <form action="">
+                                <div class="mb-form-creaco">
+
+                                    <div class="mb-fname-creaco mb-2">
+                                        <label for="name" class="form-label mb-2">Full Name</label>
+                                        <input type="name" class="form-control border-0" placeholder="Full Name"
+                                            required>
+                                    </div>
+
+                                    <div class="mb-mno-creaco mb-2">
+                                        <label for="mobileNumber" class="form-label mb-2">Mobile No.</label>
+                                        <div class="input-group">
+                                            <select class="form-select" style="max-width: 70px;">
+                                                <option value="+91" selected>+91</option>
+                                                <option value="+1">+1</option>
+                                                <option value="+44">+44</option>
+                                            </select>
+                                            <input type="text" class="form-control" id="mobileNumber"
+                                                placeholder="Mobile No." pattern="\d{10}" maxlength="10"
+                                                inputmode="numeric" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-email-creaco mb-2">
+                                        <label for="emailInput" class="form-label mb-2">Email</label>
+                                        <input type="email" id="emailInput" class="form-control border-0"
+                                            placeholder="Email" required>
+                                    </div>
+
+                                    <div class="mb-pass-creaco mb-3 position-relative">
+                                        <label for="passwordInput" class="form-label mb-2">Password</label>
+                                        <div class="input-group">
+                                            <input type="password" id="passwordInput"
+                                                class="form-control mb-pass-input border-0" placeholder="Password"
+                                                required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{8,}$">
+                                            <span class="toggle-password input-group-text"
+                                                onclick="togglePassword(this)"><i
+                                                    class="fa-solid fa-eye-slash mb-eye-icon"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn mb-subscribe-btn-creaco mb-3" onclick="">Create
+                                        Account</button>
+
+                                    <div class="mb-text-account-creaco text-center">
+                                        <p>Already have an account?<a class="mb-cr-creaco" href="#"
+                                                data-bs-toggle="modal" data-bs-target="#signinModal">Sign
+                                                in</a></p>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 5 Forgot Password -->
+
+    <!-- Forgot Password Modal -->
+    <div class="modal" id="forgotpasswordModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content mb-content-forpas">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-forpas">
+
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-forpas position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="mb-right-forpas mt-3 p-2">
+
+                        <div class="mb-text-forpas text-center">
+                            <h5 class="mt-2">Forgot Password?</h5>
+                            <p>To recover your account, please enter your email or phone below.</p>
+                        </div>
+
+                        <form action="" id="forget-password" class="p-4">
+                            <div class="mb-form-forpas">
+
+                                <div class="mb-email-forpas mb-2">
+                                    <label for="emailInput" class="form-label mb-2">Email</label>
+                                    <input type="email" id="forpasemailInput" class="form-control border-0 p-2"
+                                        placeholder="Email" required>
+                                </div>
+
+                                <div class="mb-or-forpas text-center p-1">
+                                    <div class="divider-forpas">OR</div>
+                                </div>
+
+                                <div class="mb-mno-forpas mb-4">
+                                    <label for="mobileNumber" class="form-label mb-2">Mobile No.</label>
+                                    <div class="input-group">
+                                        <select class="form-select" style="max-width: 70px;">
+                                            <option value="+91" selected>+91</option>
+                                            <option value="+1">+1</option>
+                                            <option value="+44">+44</option>
+                                        </select>
+                                        <input type="number" class="form-control p-2" id="mobileNumber"
+                                            placeholder="Mobile No.">
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn mb-subscribe-btn-forpas">
+                                    Send code
+                                </button>
+
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // Forgot Password Modal
+        async function forgotPassword(forgotPasswordModal, verifyOtpModal) {
+            const email = document.getElementById("forpasemailInput").value;
+
+            try {
+                const otp = Math.floor(1000 + Math.random() * 9000);
+                console.log("Generated OTP:", otp);
+
+                const response = await fetch("http://localhost:3000/otps", {
+                    method: "POST",
+                    body: JSON.stringify({ email, otp })
+                });
+
+                const mail = true;
+
+                if (mail) {
+                    // Save state to reopen after refresh
+                    localStorage.setItem("showVerifyOtpModal", "true");
+                    localStorage.setItem("otpEmail", email);
+
+                    // Update the email in the modal
+                    document.querySelector(".mb-otp-email-number").textContent = email;
+
+                    forgotPasswordModal.hide();
+                    verifyOtpModal.show();
+                }
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        }
+
+        // Forget OTP Modal Show -> Verify OTP Email
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('forget-password');
+            const verifyOtpModalEl = document.getElementById('verifyotpemailModal');
+            const forgotPasswordModalEl = document.getElementById('forgotpasswordModal');
+
+            const verifyOtpModal = new bootstrap.Modal(verifyOtpModalEl);
+            const forgotPasswordModal = new bootstrap.Modal(forgotPasswordModalEl);
+
+            form.onsubmit = async function (event) {
+                event.preventDefault();
+                await forgotPassword(forgotPasswordModal, verifyOtpModal);
+            };
+
+            // Check localStorage to reopen OTP modal
+            const showModal = localStorage.getItem('showVerifyOtpModal');
+            const otpEmail = localStorage.getItem('otpEmail');
+
+            if (showModal === 'true' && otpEmail) {
+                document.querySelector('.mb-otp-email-number').textContent = otpEmail;
+                verifyOtpModal.show();
+
+                // Clear after showing
+                localStorage.removeItem('showVerifyOtpModal');
+                localStorage.removeItem('otpEmail');
+            }
+        });
+
+    </script>
+
+    <!-- 7 Verify OTP Email -->
+
+    <!-- Verify OTP Modal -->
+    <div class="modal" id="verifyotpemailModal" tabindex="-1" aria-labelledby="otpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content mb-content-otp-email">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-otp-email">
+
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-otp-email position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="mb-right-otp-email mt-3">
+
+                        <div class="mb-text-otp-email text-center">
+                            <h5 class="mt-2" id="otpModalLabel">Verify OTP</h5>
+                            <p class="m-0">We've sent a code to <a href="#"
+                                    class="mb-otp-email-number">jennywilson23@gmail.com</a></p>
+                            <p>Please enter it to verify your Email.</p>
+                        </div>
+
+                        <!-- OTP -->
+                        <div class="mb-otp-email-inputs-wrapper d-flex justify-content-center">
+                            <div class="mb-otp-email-inputs d-flex justify-content-center gap-3">
+                                <input type="text" maxlength="1" class="mb-otp-email-box" pattern="^(?=.*\d)$"
+                                    required />
+                                <input type="text" maxlength="1" class="mb-otp-email-box" pattern="^(?=.*\d)$"
+                                    required />
+                                <input type="text" maxlength="1" class="mb-otp-email-box" pattern="^(?=.*\d)$"
+                                    required />
+                                <input type="text" maxlength="1" class="mb-otp-email-box" pattern="^(?=.*\d)$"
+                                    required />
+                            </div>
+                        </div>
+
+                        <form action="" id="verifyOtpForm">
+                            <div class="mb-form-otp-email">
+
+                                <button type="submit" class="btn mb-subscribe-btn-otp-email"
+                                    onclick="handleOtpVerification(event)">Verify OTP</button>
+
+                                <div class="mb-text-account-otp-email text-center mt-3">
+                                    <p>Didn't received code?<a class="mb-cr-otp-email" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#">Resend</a></p>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // 3. Verify OTP Modal 
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const allOtpSelectors = [".mb-otp-mobile-box", ".mb-otp-email-box"];
+
+            allOtpSelectors.forEach(selector => {
+                const inputs = document.querySelectorAll(selector);
+
+                inputs.forEach((input, index) => {
+                    input.addEventListener("input", () => {
+                        if (input.value.length === 1 && index < inputs.length - 1) {
+                            inputs[index + 1].focus();
+                        }
+                    });
+
+                    input.addEventListener("keydown", (e) => {
+                        if (e.key === "Backspace" && input.value === "" && index > 0) {
+                            inputs[index - 1].focus();
+                        }
+                    });
+                });
+            });
+
+        });
+
+        // 1. Verify OTP Email ( Handle OTP Verification )
+        function handleOtpVerification(e) {
+            e.preventDefault();
+
+            const verifyOtpModalEl = document.getElementById('verifyotpemailModal');
+            const otpInputs = document.querySelectorAll(".mb-otp-email-box");
+            let otp = "";
+            otpInputs.forEach(input => otp += input.value.trim());
+
+            if (otp.length === 4) {
+                const verifyOtpModal = bootstrap.Modal.getInstance(verifyOtpModalEl) || new bootstrap.Modal(verifyOtpModalEl);
+                verifyOtpModalEl.addEventListener('hidden.bs.modal', () => {
+                    alert("Verify OTP success");
+                    showResetPasswordModal();
+                }, { once: true });
+
+                verifyOtpModal.hide();
+            } else {
+                alert("Please enter a 4-digit OTP.");
+            }
+        }
+
+    </script>
+
+    <!-- 8 Reset Password -->
+
+    <!-- Reset Password Modal -->
+    <div class="modal" id="resetpasswordModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content mb-content-resetpas">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-resetpas">
+
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-resetpas position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="mb-right-resetpas mt-3 p-2">
+
+                        <div class="mb-text-resetpas text-center">
+                            <h5 class="mt-2">Reset Password</h5>
+                            <p>Create a unique password different from your<br>previous ones.</p>
+                        </div>
+
+                        <form id="resetPasswordForm" class="mb-form-resetpas">
+                            <div class="">
+
+                                <div class="mb-pass-resetpas mb-4 position-relative">
+                                    <label for="passwordInput" class="form-label mb-2">New password</label>
+                                    <div class="input-group">
+                                        <input type="password" id="newPassword"
+                                            class="form-control mb-pass-input border-0" placeholder="New password"
+                                            required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{8,}$">
+                                        <span class="toggle-password input-group-text" onclick="togglePassword(this)"><i
+                                                class="fa-solid fa-eye-slash mb-eye-icon"></i></span>
+                                    </div>
+                                </div>
+
+                                <div class="mb-pass-resetpas mb-4 position-relative">
+                                    <label for="passwordInput" class="form-label mb-2">Confirm password</label>
+                                    <div class="input-group">
+                                        <input type="password" id="confirmPassword"
+                                            class="form-control mb-pass-input border-0" placeholder="Confirm password"
+                                            required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{8,}$">
+                                        <span class="toggle-password input-group-text" onclick="togglePassword(this)"><i
+                                                class="fa-solid fa-eye-slash mb-eye-icon"></i></span>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn mb-subscribe-btn-resetpas">Reset Password</button>
+
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // 2. Show Reset Password Modal
+        function showResetPasswordModal() {
+            const resetPasswordModalEl = document.getElementById('resetpasswordModal');
+            const resetPasswordModal = new bootstrap.Modal(resetPasswordModalEl);
+            resetPasswordModal.show();
+        }
+
+        // 3. Reset Password Modal ( Handle Reset Password Submission )
+        function handleResetPassword(e) {
+            e.preventDefault();
+
+            const newPasswordInput = document.getElementById("newPassword");
+            const confirmPasswordInput = document.getElementById("confirmPassword");
+            const resetPasswordModalEl = document.getElementById('resetpasswordModal');
+
+            const newPassword = newPasswordInput.value.trim();
+            const confirmPassword = confirmPasswordInput.value.trim();
+
+            if (newPassword !== confirmPassword) {
+                alert("Passwords do not match.");
+                return;
+            }
+
+            alert("Password has been reset successfully.");
+
+            const modalInstance = bootstrap.Modal.getInstance(resetPasswordModalEl);
+            if (modalInstance) {
+                resetPasswordModalEl.addEventListener('hidden.bs.modal', () => {
+                    resetPasswordModalEl.remove();
+                }, { once: true });
+
+                modalInstance.hide();
+            }
+        }
+
+        // 4. DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const verifyOtpForm = document.getElementById("verifyOtpForm");
+            const resetPasswordForm = document.getElementById("resetPasswordForm");
+
+            if (verifyOtpForm) {
+                verifyOtpForm.addEventListener("submit", handleOtpVerification);
+            }
+
+            if (resetPasswordForm) {
+                resetPasswordForm.addEventListener("submit", handleResetPassword);
+            }
+        });
+
+    </script>
+
+    <!-- 6 Verify OTP Mobile -->
+
+    <!-- Verify OTP Modal -->
+    <div class="modal" id="verifyotpModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content mb-content-otp-mobile">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-otp-mobile">
+
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-otp-mobile position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="mb-right-otp-mobile mt-3 p-2">
+
+                        <div class="mb-text-otp-mobile text-center">
+                            <h5 class="mt-2">Verify OTP</h5>
+                            <p class="m-0">We've sent a code to <a href="#" class="mb-otp-mobile-number">+1 56565
+                                    65656</a></p>
+                            <p>Please enter it to verify your Mobile no.</p>
+                        </div>
+
+                        <!-- OTP -->
+                        <div class="mb-otp-mobile-inputs-wrapper d-flex justify-content-center">
+                            <div class="mb-otp-mobile-inputs d-flex justify-content-center gap-3">
+                                <input type="text" maxlength="1" class="mb-otp-mobile-box" />
+                                <input type="text" maxlength="1" class="mb-otp-mobile-box" />
+                                <input type="text" maxlength="1" class="mb-otp-mobile-box" />
+                                <input type="text" maxlength="1" class="mb-otp-mobile-box" />
+                            </div>
+                        </div>
+
+                        <form action="" class="">
+                            <div class="mb-form-otp-mobile">
+
+                                <button type="submit" class="btn mb-subscribe-btn-otp-mobile" data-bs-toggle="modal"
+                                    data-bs-target="#resetpasswordModal">Verify OTP</button>
+
+                                <div class="mb-text-account-otp-mobile text-center mt-3">
+                                    <p>Didn't received code?<a class="mb-cr-otp-mobile" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#">Resend</a></p>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 9 Time Out -->
+
+    <!-- Time Out Modal -->
+    <div class="modal" id="timeoutModal">
+        <div class="modal-dialog mb-dialog-timeout modal-dialog-centered">
+            <div class="modal-content mb-content-timeout">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-timeout">
+
+                    <!-- Left Image -->
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-timeout position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="mb-right-timeout text-center mt-2 p-2">
+                        <div class="mb-text-timeout">
+                            <img src="./IMAGE/time_out.svg" alt="" class="mb-3">
+                            <h5 class="mt-2">Your Session has expired.</h5>
+                            <p class="mt-3">For security reasons after 15 minutes of inactivity your session expires.
+                            </p>
+                        </div>
+
+                        <button type="button" class="btn mb-subscribe-btn-timeout" data-bs-toggle="modal"
+                            data-bs-target="#">Continue booking</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 10 Running Time -->
+
+    <!-- Running Time Modal -->
+    <div class="modal" id="runningtimeModal">
+        <div class="modal-dialog mb-dialog-runningtime modal-dialog-centered">
+            <div class="modal-content mb-content-runningtime">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-runningtime">
+
+                    <!-- Left Image -->
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-runningtime position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="mb-right-runningtime text-center mt-2 p-2">
+                        <div class="mb-text-runningtime">
+                            <img src="./IMAGE/running_time.svg" alt="" class="mb-3">
+                            <h5 class="mt-2">Click or tap 'Continue booking' to extend your session.</h5>
+                            <p class="mt-3">Time remaining to complete your booking: 01 min 32 sec
+                            </p>
+                        </div>
+
+                        <button type="button" class="btn mb-subscribe-btn-runningtime" data-bs-toggle="modal"
+                            data-bs-target="#">Continue booking</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 11 Cancellation Policy -->
+
+    <!-- Cancellation Policy Modal -->
+    <div class="modal mb-modal fade" id="cancelpolicyModal" tabindex="-1" aria-labelledby="cancelpolicyModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg mb-dialog-cancelpolicy modal-dialog-centered">
+            <div class="modal-content mb-content-cancelpolicy">
+
+                <div class="modal-header mb-header-cancelpolicy">
+                    <h5 class="modal-title mb-title-cancelpolicy" id="cancelpolicyModalLabel">Rate Details</h5>
+                    <button type="button" class="btn-close mb-close-cancelpolicy" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body mb-body-cancelpolicy">
+
+                    <h6>What's included?</h6>
+                    <ul>
+                        <li>Non-refundable credit card pre-payment for the entire stay required at the time of booking
+                        </li>
+                        <li>Must be booked at least 7 days in advance</li>
+                        <li>For individual bookings only</li>
+                        <li>No changes, cancellations, or adjustments to the reservation are permitted</li>
+                        <li>No refunds for cancellations or no-shows</li>
+                    </ul>
+
+                    <h6>Check-in and Check-out</h6>
+
+                    <p>Check-in: 14:00 PM | Check-out: 12:00 PM<br>
+                        You can ask for an early check-in or a late check-out at the hotel</p>
+
+                    <h6>Prices per day</h6>
+                    <ul>
+                        <li>16 May 2025 <strong>$123</strong> per night</li>
+                        <li>17 May 2025 <strong>$123</strong> per night</li>
+                    </ul>
+
+                    <p>Excluded: <strong>$10</strong> in fees & taxes</p>
+
+                    <h6>Cancellation policy</h6>
+
+                    <p>Non-refundable reservation. Your card will be charged at the time of booking. A penalty of
+                        <span class="mb-text">$666</span> will be charged if cancelled or no show. This booking can
+                        be modified once, at least 48 hrs before check-in. Same rate or higher will be applied.
+                    </p>
+
+                    <h6>Guarantee policy</h6>
+                    <p>Credit card hold accepted.</p>
+
+                    <h6>Privacy Policy</h6>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 12 View Details -->
+
+    <!-- View Details Modal -->
+    <div class="modal" id="viewdetailsModal">
+        <div class="modal-dialog mb-dialog-viewdetails modal-dialog-centered">
+            <div class="modal-content mb-content-viewdetails">
+
+                <!-- Modal body -->
+                <div class="modal-body p-0 mb-body-viewdetails">
+
+                    <div class="mb-room-image">
+
+                        <!-- carousel -->
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false"
+                            data-bs-interval="false">
+
+                            <div class="carousel-indicators" style="display: none;">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./IMAGE/roomviewddetails.png" class="d-block w-100 mb-img-fluid"
+                                        alt="Deluxe King Room">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./IMAGE/roomviewddetails.png" class="d-block w-100 mb-img-fluid"
+                                        alt="Second Room">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./IMAGE/roomviewddetails.png" class="d-block w-100 mb-img-fluid"
+                                        alt="Third Room">
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev mb-carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next mb-carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
+                        </div>
+
+                        <div class="mb-main-viewdetails p-4">
+
+                            <div class="mb-viewdetails mb-border-line-viewdetails">
+                                <h5>Room Details</h5>
+                                <button type="button" class="btn-close me-1 btn-close-white me-1 mb-close-viewdetails"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-sub-viewdetails">
+
+                            <h5 class="modal-title">Deluxe King Room</h5>
+
+                            <div class="mb-room-details">
+                                <div><img class="mb-room-img" src="./IMAGE/house_door.svg" alt="">80m2</div>
+                                <div><img class="mb-room-img" src="./IMAGE/person.svg" alt="">2 Guests</div>
+                                <div><img class="mb-room-img" src="./IMAGE/bed.svg" alt="">Double Bed</div>
+                                <div><img class="mb-room-img" src="./IMAGE/Bathroom.svg" alt="">1 Bathroom</div>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus.</p>
+                            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                                massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                                enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                                mollis pretium. Integer tincidunt.</p>
+
+                            <h6 class="mt-4">Room Amenities</h6>
+
+                            <div class="row mb-room-amenities">
+
+                                <div class="col-6 col-md-4 mb-amenities-img mb-4"><img src="./IMAGE/ac.svg" alt=""> Air
+                                    Conditioning</div>
+                                <div class="col-6 col-md-4 mb-amenities-img mb-4"><img src="./IMAGE/cable_tv.svg"
+                                        alt="">
+                                    Cable TV</div>
+                                <div class="col-6 col-md-4 mb-amenities-img mb-4"><img src="./IMAGE/wifi.svg" alt="">
+                                    Wi-Fi
+                                    Internet</div>
+                                <div class="col-6 col-md-4 mb-amenities-img mb-4"><img src="./IMAGE/slipper.svg" alt="">
+                                    Slippers</div>
+                                <div class="col-6 col-md-4 mb-amenities-img mb-4"><img src="./IMAGE/towels.svg" alt="">
+                                    Towels</div>
+                                <div class="col-6 col-md-4 mb-amenities-img mb-4"><img src="./IMAGE/hair_dryer.svg"
+                                        alt="">
+                                    Hair Dryer</div>
+                                <div class="col-6 col-md-4 mb-amenities-img mb-4"><img src="./IMAGE/shampoo.svg" alt="">
+                                    Shampoo</div>
+                                <div class="col-6 col-md-4 mb-amenities-img mb-4"><img src="./IMAGE/safe_box.svg"
+                                        alt="">
+                                    Safe Box</div>
+                                <div class="col-6 col-md-4 mb-amenities-img mb-4"><img src="./IMAGE/welcome_drinks.svg"
+                                        alt=""> Welcome Drinks
+                                </div>
+                                <div class="col-6 col-md-4 mb-amenities-img mb-4"><img src="./IMAGE/pet_friendly.svg"
+                                        alt="">
+                                    Pet Friendly
+                                </div>
+                                <div class="col-6 col-md-4 mb-amenities-img mb-4"><img
+                                        src="./IMAGE/espresso_machine.svg" alt=""> Espresso
+                                    Machine</div>
+                                <div class="col-6 col-md-4 mb-amenities-img mb-4"><img
+                                        src="./IMAGE/inroom_refrigerator.svg" alt=""> In-room
+                                    Refrigerator</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 13 Apply Coupon -->
+
+    <!-- Apply Coupon Modal -->
+    <div class="modal" id="applycouponModal">
+        <div class="modal-dialog mb-dialog-applycoupon modal-dialog-centered">
+            <div class="modal-content mb-content-applycoupon">
+
+                <!-- Modal header -->
+                <div class="modal-header mb-header-applycoupon">
+                    <h5 class="modal-title mb-title-applycoupon" id="applycouponModalLabel">Apply Coupon</h5>
+                    <button type="button" class="btn-close mb-close-applycoupon" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-applycoupon">
+
+                    <div class="mb-coupon-input mb-3 mt-2">
+                        <img src="./IMAGE/coupon.svg" alt="Coupon" class="mb-coupon-icon">
+                        <input type="text" class="mb-coupon-field" placeholder="Enter Coupon Code">
+                        <button class="btn mb-apply-btn" type="button">Apply</button>
+                    </div>
+
+                    <p class="">Special offers</p>
+
+                    <div class="mb-form-check mb-2">
+                        <input class="mb-form-check-input" type="radio" name="couponRadio" id="coupon1" checked>
+                        <label class="mb-form-check-label form-check-label" for="coupon1">
+                            <span class="mb-new">NEW100</span><br>
+                            <span class="mb-get">Get Flat $100 Off on cart value of 500 & Above</span><br>
+                            <span class="mb-save">Save ₹100</span>
+                        </label>
+                    </div>
+
+                    <div class="mb-form-check mb-2">
+                        <input class="mb-form-check-input" type="radio" name="couponRadio" id="coupon1" checked>
+                        <label class="mb-form-check-label form-check-label" for="coupon1">
+                            <span class="mb-new">NEW100</span><br>
+                            <span class="mb-get">Lorem ipsum dolor sit amet consectetur. Massa facilisis scelerisque
+                                iaculis habitant congue est blandit amet. </span><br>
+                            <span class="mb-save">Save ₹100</span>
+                        </label>
+                    </div>
+
+                    <div class="mb-form-check mb-2">
+                        <input class="mb-form-check-input" type="radio" name="couponRadio" id="coupon1" checked>
+                        <label class="mb-form-check-label form-check-label" for="coupon1">
+                            <span class="mb-new">NEW100</span><br>
+                            <span class="mb-get">Get Flat $100 Off on cart value of 500 & Above</span><br>
+                            <span class="mb-save">Save ₹100</span>
+                        </label>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 14 2-twin beds selected ( [ editroombed 1 ] Bed preference ) -->
+
+    <!-- Edit Room Modal ( Bed preference ) -->
+
+    <div class="modal" id="editroombed1Modal">
+        <div class="modal-dialog mb-dialog-editroombed1 modal-dialog-centered">
+            <div class="modal-content mb-content-editroombed1">
+
+                <!-- Modal header -->
+                <div class="modal-header mb-header-editroombed1">
+                    <h5 class="modal-title mb-title-editroombed1" id="editroombed1ModalLabel">Edit Room</h5>
+                    <button type="button" class="btn-close mb-close-editroombed1" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-editroombed1">
+
+                    <div class="mb-editroombed1 mt-2">
+                        <p>Standard Room : <span>2 adults, 2 twin beds</span></p>
+                    </div>
+
+                    <div class="d-flex gap-4 mb-bed-special-editroombed1 mt-2">
+                        <button class="mb-bed-editroombed1">Bed preference</button>
+                        <button class="mb-special-editroombed1" data-bs-toggle="modal"
+                            data-bs-target="#editroomspecialModal">Special requests</button>
+                    </div>
+
+                    <!-- twin-room -->
+                    <div class="mb-2twin-editroombed1 mt-1">
+                        <img src="./IMAGE/2twin_beds.svg" alt="">
+                        <p class="mb-twin-beds1">2 twin beds</p>
+                        <p class="mb-non-smoke1">Non-smoking</p>
+                    </div>
+
+                    <!-- guest1 -->
+                    <div class="mb-guest1-editro mt-4">
+                        <p class="mb-guest_1-editro">Guest 1</p>
+                        <a href="#" class="mb-add1-editro">+Add Guest</a>
+                    </div>
+
+                    <div class="mb-name1-editro d-flex">
+                        <div class="mb-name-para1-editro">
+                            <label class="mb-fname" for="Name">First Name:</label>
+                            <p>Johan</p>
+                        </div>
+                        <div class="mb-name-para1-editro">
+                            <label class="mb-lname" for="Name">Last Name:</label>
+                            <p>Patel</p>
+                        </div>
+                    </div>
+
+                    <!-- guest2 -->
+                    <!-- <div class="mb-guest2-editro">
+                        <p class="mb-guest_2-editro">Guest 2</p>
+                        <a href="#" class="mb-add2-editro">REMOVE</a>
+                    </div>
+
+                    <div class="mb-name2-editro">
+                        <div class="mb-name-para2-editro">
+                            <label class="mb-fname mb-2" for="Name">First Name</label>
+                            <input type="text" name="Name" id="" placeholder="First Name">
+                        </div>
+                        <div class="mb-name-para2-editro">
+                            <label class="mb-lname mb-2" for="Name">Last Name </label>
+                            <input type="text" class="para2" name="Name" id="" placeholder="Last Name">
+                        </div>
+                    </div> -->
+
+                    <!-- Done Btn -->
+                    <div class="mb-bottom-center-container-editro">
+                        <button type="submit" class="btn mb-editroombed1-done-btn">Done</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 14(1) -->
+
+    <!-- Edit Room Modal ( Special requests ) -->
+
+    <div class="modal" id="editroomspecialModal">
+        <div class="modal-dialog mb-dialog-editroomspecial modal-dialog-centered">
+            <div class="modal-content mb-content-editroomspecial">
+
+                <!-- Modal header -->
+                <div class="modal-header mb-header-editroomspecial">
+                    <h5 class="modal-title mb-title-editroomspecial" id="editroomspecialModalLabel">Edit Room</h5>
+                    <button type="button" class="btn-close mb-close-editroomspecial" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-editroomspecial">
+
+                    <div class="mb-editroomspecial mt-2">
+                        <p>Standard Room : <span>2 adults, 2 twin beds</span></p>
+                    </div>
+
+                    <div class="d-flex gap-4 mb-bed-special-editroomspecial mt-2">
+                        <button class="mb-bed-editroomspecial" data-bs-toggle="modal"
+                            data-bs-target="#editroombed1Modal">Bed preference</button>
+                        <!-- <button class="mb-bed-editroomspecial" data-bs-toggle="modal"
+                            data-bs-target="#editroombed2Modal">2</button> -->
+                        <button class="mb-special-editroomspecial">Special requests</button>
+                    </div>
+
+                    <div class="mb-2twin-editroomspecial mt-1">
+                        <p class="">Any comments or special requests</p>
+                        <textarea rows="6" cols="30" name="address" id="address"
+                            placeholder="Write here...."></textarea>
+                    </div>
+
+                    <div class="mb-bottom-center-editroomspecial">
+                        <button type="submit" class="btn mb-editroomspecial-done-btn">Done</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 14 2-twin beds selected ( [ editroombed 2 ] Bed preference ) -->
+
+    <!-- Edit Room Modal ( Bed preference ) -->
+
+    <div class="modal" id="editroombed2Modal">
+        <div class="modal-dialog mb-dialog-editroombed2 modal-dialog-centered">
+            <div class="modal-content mb-content-editroombed2">
+
+                <!-- Modal header -->
+                <div class="modal-header mb-header-editroombed2">
+                    <h5 class="modal-title mb-title-editroombed2" id="editroombed2ModalLabel">Edit Room</h5>
+                    <button type="button" class="btn-close mb-close-editroombed2" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-editroombed2">
+
+                    <div class="mb-editroombed2 mt-2">
+                        <p>Standard Room : <span>2 adults, 2 twin beds</span></p>
+                    </div>
+
+                    <div class="d-flex gap-4 mb-bed-special-editroombed2 mt-2">
+                        <button class="mb-bed-editroombed2">Bed preference</button>
+                        <button class="mb-special-editroombed2" data-bs-toggle="modal"
+                            data-bs-target="#editroomspecialModal">Special requests</button>
+                    </div>
+
+                    <!-- twin-room -->
+                    <div class="mb-twin-room-row-editro2">
+                        <div class="mb-2twin-editroombed2 mt-1">
+                            <img src="./IMAGE/2twin_beds.svg" alt="">
+                            <p class="mb-twin-beds-editro2">1 king bed</p>
+                            <p class="mb-non-smoke-editro2">Non-smoking</p>
+                        </div>
+                        <div class="mb-twin-editroombed2 mt-1">
+                            <img src="./IMAGE/2twin_beds.svg" alt="">
+                            <p class="mb-twin-beds-editro2">1 queen bed</p>
+                            <p class="mb-non-smoke-editro2">Non-smoking</p>
+                        </div>
+                        <div class="mb-twin-editroombed2 mt-1">
+                            <img src="./IMAGE/2twin_beds.svg" alt="">
+                            <p class="mb-twin-beds-editro2">2 queen beds</p>
+                            <p class="mb-non-smoke-editro2">Non-smoking</p>
+                        </div>
+                        <div class="mb-twin-editroombed2 mt-1">
+                            <img src="./IMAGE/2twin_beds.svg" alt="">
+                            <p class="mb-twin-beds-editro2">1 queen bed Accessible</p>
+                            <p class="mb-non-smoke-editro2">Non-smoking</p>
+                        </div>
+                    </div>
+
+                    <!-- guest1 -->
+                    <div class="mb-guest1-editro2 mt-4">
+                        <p class="mb-guest_1-editro2">Guest 1</p>
+                        <a href="#" class="mb-add1-editro2">+Add Guest</a>
+                    </div>
+
+                    <div class="mb-name1-editro2 d-flex">
+                        <div class="mb-name-para1-editro2">
+                            <label class="mb-fname" for="Name">First Name:</label>
+                            <p>Johan</p>
+                        </div>
+                        <div class="mb-name-para1-editro2">
+                            <label class="mb-lname" for="Name">Last Name:</label>
+                            <p>Patel</p>
+                        </div>
+                    </div>
+
+                    <!-- guest2 -->
+                    <div class="mb-guest2-editro2">
+                        <p class="mb-guest_2-editro2">Guest 2</p>
+                        <a href="#" class="mb-add2-editro2">REMOVE</a>
+                    </div>
+
+                    <div class="mb-name2-editro2">
+                        <div class="mb-name-para2-editro2">
+                            <label class="mb-fname mb-2" for="Name">First Name</label>
+                            <input type="text" name="Name" id="" placeholder="First Name">
+                        </div>
+                        <div class="mb-name-para2-editro2">
+                            <label class="mb-lname mb-2" for="Name">Last Name </label>
+                            <input type="text" class="para2" name="Name" id="" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="mb-bottom-center-container-editro2">
+                        <button type="submit" class="btn mb-editroombed2-done-btn">Done</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 15 Additional Information -->
+
+    <!-- Additional Information Modal -->
+
+    <div class="modal" id="additionalinformationModal">
+        <div class="modal-dialog mb-dialog-addinfo modal-dialog-centered">
+            <div class="modal-content mb-content-addinfo">
+
+                <!-- Modal header -->
+                <div class="modal-header mb-header-addinfo">
+                    <h5 class="modal-title mb-title-addinfo" id="additionalinformationModalLabel">
+                        Additional
+                        Information</h5>
+                    <button type="button" class="btn-close mb-close-addinfo" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-addinfo">
+
+                    <div class="mb-name2-addinfo1">
+                        <div class="mb-name-para2-addinfo1">
+                            <label class="mb-fname mb-2" for="Name">First Name</label>
+                            <input type="text" class="para2-addinfo1" name="Name" id="" placeholder="First Name">
+                        </div>
+                        <div class="mb-name-para2-addinfo1">
+                            <label class="mb-lname mb-2" for="Name">Last Name </label>
+                            <input type="text" class="para2-addinfo1" name="Name" id="" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="mb-name2-addinfo2 mt-3">
+
+                        <div class="mb-name-para2-addinfo2">
+                            <label class="mb-fname mb-2" for="Name">Email</label>
+                            <input type="text" class="para2-addinfo2" name="Name" id="" placeholder="Email">
+                        </div>
+
+                        <div class="mb-mno-addinfo2 mb-2">
+                            <label for="mobileNumber" class="form-label mb-2">Mobile No.</label>
+                            <div class="input-group">
+                                <select class="form-select" style="max-width: 70px;">
+                                    <option value="+91" selected>+91</option>
+                                    <option value="+1">+1</option>
+                                    <option value="+44">+44</option>
+                                </select>
+                                <input type="tel" class="form-control" id="mobileNumber" placeholder="Mobile No.">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mb-trip">
+                        <p class="m-0 mt-2 mb-2">Trip Purpose</p>
+
+                        <div class="d-flex gap-4 mb-trip-label">
+                            <div>
+                                <input type="radio" name="gender" id="l" checked>
+                                <label class="mb-label-name" for="m">Leisure</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="b1">
+                                <label class="mb-label-name" for="f">Business</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="b2">
+                                <label class="mb-label-name" for="f">Bleisure</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-checkbox">
+                            <input type="checkbox" id="ck" name="ck">
+                            <label class="" for="ck"><span>Yes,</span> I would like to receive news via email
+                                and commercial offers from the Hotel Group. I can opt out any time. See our full
+                                <span>privacy policy.</span></label>
+                        </div>
+                    </div>
+
+                    <div class="mb-bottom-center-addinfo">
+                        <button type="submit" class="btn mb-addinfo-done-btn">Save</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

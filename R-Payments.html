@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My reservation</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/R-Payments.css">
+    <link rel="stylesheet" href="/CSS/Header.css">
+    <link rel="stylesheet" href="/CSS/filter.css">
+
+</head>
+
+<body class="mb-4 px-0">
+
+
+    <!-- Header -->
+    <header class="rp-header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between k-head">
+                <div class="col-6 col-md-2 k-logo ps-4" onclick="redirectToRooms()"
+                    style="cursor: pointer;">
+                    <h1>LOGO</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nav and tabs -->
+    <div class="container">
+        <div class="Nav-tabs">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="" role="presentation">
+                    <button class="" id="Your-booking-tab" data-bs-toggle="pill" data-bs-target="#Your-booking"
+                        type="button" role="tab" aria-controls="Your-booking" aria-selected="true"> 1. Your Booking
+                    </button>
+                </li>
+                <li class="" role="presentation">
+                    <button class="" id="Your-Details-tab" data-bs-toggle="pill" data-bs-target="#Your-Details"
+                        type="button" role="tab" aria-controls="Your-Details" aria-selected="false"> 2.Your Details
+                    </button>
+                </li>
+                <li class="" role="presentation">
+                    <button class="" id="Pay-Confirm-tab" data-bs-toggle="pill" data-bs-target="#Pay-Confirm"
+                        type="button" role="tab" aria-controls="Pay-Confirm" aria-selected="false"> 3. Pay and
+                        Confirm</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="tab-content" id="pills-tabContent">
+
+        <!-- 1. Your Booking Content -->
+        <div class="tab-pane fade show active" id="Your-booking" role="tabpanel" aria-labelledby="Your-booking-tab">
+        </div>
+
+        <!-- 2.Your Details -->
+        <div class="tab-pane fade" id="Your-Details" role="tabpanel" aria-labelledby="Your-Details-tab">
+
+            <!-- My Reservation -->
+            <div class="container rp-headng-reservation"> My Reservation </div>
+
+
+            <div class="container">
+
+                <div class="row mx-0 gx-5 gy-3">
+
+                    <!-- left Part -->
+                    <div class="col-lg-8 ">
+
+                        <!-- Stay information -->
+                        <div class="row">
+                            <div class="col-lg-12 rp-stay-info">
+
+                                <h6 class="rp-stay-info-heading">Stay information</h6>
+
+                                <div class="rp-stay-sub-heading">
+                                    <img src="./IMAGE/Payment_calendar.svg" alt="Calendar">
+                                    <p id="BookingDate" class="m-0"></p>
+                                    <span id="TotalNight"></span>
+                                </div>
+
+                                <div class="rp-stay-sub-heading">
+                                    <img src="./IMAGE/Payment_people.svg" alt="Person">
+                                    <p id="roomsAndAdults" class="m-0"></p>
+                                </div>
+
+                                <div class="rp-stay-sub-heading">
+                                    <img src="./IMAGE/Payment_bed.svg" alt="Room Only">
+                                    <p id="roomChoise" class="m-0"></p>
+                                </div>
+
+                                <div class="rp-stay-sub-heading">
+                                    <img src="./IMAGE/Payment_location.svg" alt="Location">
+                                    <p id="bookedHotelCity" class="m-0"></p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Add Your Details -->
+                        <div class="row">
+                            <div class="col-lg-12 rp-stay-info gy-3">
+
+                                <!-- Heading -->
+                                <div class="rp-add-details-head">
+                                    <h5 class="rp-stay-info-heading mb-0">Add your details</h5>
+                                    <button data-bs-toggle="modal"
+                                        data-bs-target="#additionalinformationModal">Additional
+                                        Information</button>
+                                </div>
+
+                                <!-- Radio -->
+                                <div class="rp-add-detais-radio">
+                                    <p>
+                                        <input type="radio" id="mr" name="selectGender" value="Mr"> <label for="mr">
+                                            Mr.</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="mrs" name="selectGender" value="Mrs"> <label
+                                            for="mrs">Mrs.</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="ms" name="selectGender" value="Ms"> <label
+                                            for="ms">Ms.</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="other" name="selectGender" value="Other"> <label
+                                            for="other">
+                                            Other </label>
+                                    </p>
+                                </div>
+
+                                <!-- Form -->
+                                <div class="rp-add-details-from-main">
+
+
+                                    <form action="" onchange="formData()">
+                                        <div class="col-lg-12">
+                                            <div class="row">
+                                                <div class="col-md-6 rp-add-details-form ">
+                                                    <div>
+                                                        <p>First Name</p>
+                                                        <input type="text" placeholder="First Name" id="addFirstName"
+                                                            required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 rp-add-details-form">
+                                                    <div>
+                                                        <p>Last Name</p>
+                                                        <input type="text" placeholder="Last Name" id="addlastName"
+                                                            required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <div class="row">
+                                                <div class="col-md-6 rp-add-details-form">
+                                                    <div>
+                                                        <p>Email</p>
+                                                        <input type="email" placeholder="Email" id="addEmail" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 rp-add-details-form">
+                                                    <div>
+                                                        <p>Country</p>
+                                                        <input type="text" placeholder="India" id="addCounty" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- checkbox accept -->
+                                <div class="rp-add-details-accept">
+                                    <input type="checkbox">
+                                    <span>Yes</span>, I would like to receive news via email and commercial offers
+                                    from the
+                                    Hotel Group. I can opt out any time. See our full <a href="./PrivacyPolicy.html "
+                                        target="_blank">privacy policy</a>.
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Payment options -->
+                        <div class="row">
+                            <div class="col-lg-12 rp-stay-info gy-3">
+
+                                <h6 class="rp-stay-info-heading">Payment options</h6>
+
+                                <div class="rp-payment-opt-radio">
+                                    <p>
+                                        <input type="radio" id="GuaranteeBook" name="paymentOption" value="guarantee"
+                                            checked>
+                                        <label for="GuaranteeBook"> Guarantee your booking</label>
+                                    </p>
+                                </div>
+
+                                <p class="rp-payment-coupen-info">A card number guarantees your room for the arrival
+                                    date.</p>
+
+                                <div class="rp-payment-opt-radio">
+                                    <p>
+                                        <input type="radio" id="onArrival" name="paymentOption" value="arrival">
+                                        <label for="onArrival"> Pay on arrival</label>
+                                    </p>
+                                </div>
+                                <p class="rp-payment-coupen-info">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed
+                                    do eiusmod tempor incididunt </p>
+
+                                <div class="rp-apply-coupen" data-bs-toggle="modal" data-bs-target="#applycouponModal">
+                                    <div>
+                                        <img src="./IMAGE/Payments_applyCoupen.svg" alt="Coupen">
+                                        Apply Coupon
+                                    </div>
+                                    <div>
+                                        <img src="./IMAGE/Payment_right-Arrow.svg" alt="Arrow-Right">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Standard Room -->
+                        <div class="row">
+                            <div class="col-lg-12  rp-stay-info gy-3">
+                                <div class="row">
+                                    <div class="col-lg-6 ">
+
+                                        <div class="mb-2 rp-room-selection" id="room-buttons">
+                                            <!-- <button class="rp-active"> Room 1 </button
+                                                <button class=""> Room 2 </button>
+                                                <button class=""> Room 3 </button>   -->
+                                        </div>
+
+
+                                        <h6 class="rp-stay-info-heading">Standard Room</h6>
+                                        <p class="rp-std-person-bed" id="personAndAdults">2 adults, 2 twin beds</p>
+
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex justify-content-between align-items-center rp-std-facilities"
+                                            data-bs-toggle="modal" data-bs-target="#editroombed1Modal">
+                                            <div class="abc">
+                                                <!-- <img src="./IMAGE/Payment_2twinBed.svg" alt="Bed" class="me-2"> -->
+                                                <span id="selected-beds-summary" class="mb-0"></span>
+                                                <!-- 2 twin beds selected -->
+                                            </div>
+                                            <div>
+                                                <img src="./IMAGE/Payment_right-Arrow.svg" alt="Right-Arrow">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center rp-std-facilities border-0"
+                                            data-bs-toggle="modal" data-bs-target="#editroomspecialModal">
+                                            <div>
+                                                <img src="./IMAGE/Payment_Comment.svg" alt="Comment" class="me-2">
+                                                Any comments or special requests
+                                            </div>
+                                            <div>
+                                                <img src="./IMAGE/Payment_right-Arrow.svg" alt="Right-Arrow">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Right Part -->
+                    <div class="col-lg-4 ">
+
+                        <!-- Timmer -->
+                        <div class="row">
+                            <div class="col-lg-12 px-0">
+                                <div class="rp-time-count">
+                                    <img src="./IMAGE/Payment_timer.svg" alt="Clock">
+                                    <span id="countdown">Room(s) held for 15 min 00 sec</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payement - Price -->
+                        <div class="row">
+                            <div class="col-lg-12 gy-3 px-0">
+                                <div class="rp-payment-price">
+
+                                    <div class="rp-online-rates">
+                                        <img src="./IMAGE/Payments_BestOnline.svg" alt="Discount-Tag">
+                                        <span>Best Online rates Guaranteed on Hotels website.</span>
+                                    </div>
+
+                                    <!-- Price Structuure -->
+                                    <div id="room-info">
+                                        <!-- <div class="rp-room-no-price">
+                                    <h6>Room 1</h6>
+                                    <h6>$123</h6>
+                                </div> -->
+                                    </div>
+
+                                    <div id="coupenApplied" style="display:none;">
+                                        <div class="rp-room-no-price">
+                                            <h6>Coupen Discount</h6>
+                                            <h6 id="discountAmt"></h6>
+                                        </div>
+                                    </div>
+
+                                    <!-- accodian : Total Taxes -->
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                                <button
+                                                    class="accordion-button rp-accodin-tax rp-total-taxe-price d-flex justify-content-between p-0 collapsed"
+                                                    type="button" data-bs-toggle="collapse" data-bs-target="#total-tax"
+                                                    aria-expanded="true" aria-controls="total-tax">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h6>Total taxes</h6>
+                                                        <h6 id="totalTax"></h6>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="total-tax" class="accordion-collapse collapse "
+                                                aria-labelledby="panelsStayOpen-headingOne">
+                                                <div class="accordion-body rp-total-tax-body px-3 py-2">
+
+                                                    <div class="rp-total-tax-info">
+                                                        <h6>Estimated taxes</h6>
+                                                        <h6 id="EstimatedTaxes">$5</h6>
+                                                    </div>
+                                                    <div class="rp-total-tax-info">
+                                                        <h6>Estimated additional fees</h6>
+                                                        <h6 id="EstimatedFees">$0</h6>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Total Price -->
+                                    <div class="rp-room-total-price">
+                                        <h6>Total </h6>
+                                        <h6 id="finalTotal"></h6>
+                                    </div>
+
+                                    <!-- Conditions -->
+                                    <div class="rp-condition-accept">
+
+                                        <div class="rp-conditions">
+                                            <input type="checkbox" id="termsCheckbox">
+                                            <span>
+                                                I have read and agree to the Hotel <a href="./Temsandcondition.html"
+                                                    target="_blank">Terms & Conditions</a>.
+                                            </span>
+                                        </div>
+
+                                        <div class="rp-conditions">
+                                            <input type="checkbox" id="privacyCheckbox">
+                                            <span>
+                                                I have read and agree that my personal data will be processed by the
+                                                Hotel Group
+                                                in accordance with the
+                                                <a href="./PrivacyPolicy.html" target="_blank">privacy policy</a>.
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Make Payment Button -->
+                                    <button class="rp-make-payment-btn" id="paymentButton"
+                                        onclick="runAndNavigate()">Make Payment</button>
+
+
+                                    <!-- Cancelation and rare details -->
+                                    <divn class="rp-canecellation" data-bs-toggle="modal"
+                                        data-bs-target="#cancelpolicyModal">
+                                        Cancellation and rate details
+                                    </divn>
+
+                                    <!-- Info Adiitional tex... -->
+                                    <div class="rp-additional-info-tax">
+                                        <img src="./IMAGE/Payments_additonalTax.svg" alt="Info">
+                                        <span>
+                                            Additional taxes and surcharges may apply. The total estimated cost is
+                                            only
+                                            available in the currency applicable to the hotel.
+                                        </span>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- 3.Pay and Confirm -->
+        <div class="tab-pane fade  " id="Pay-Confirm" role="tabpanel" aria-labelledby="Pay-Confirm-tab">
+
+            <div class=" container rp-headng-booking">
+                Booking Details
+            </div>
+
+            <div class="container">
+
+                <div class="row gy-4 mb-4">
+
+                    <!-- left Part -->
+                    <div class="col-lg-4">
+
+                        <div class="rp-booking-details">
+
+                            <!-- Booking Personal Info  -->
+                            <div class="rp-booking-personal-details">
+                                <h5 id="bookedName">Ravi</h5>
+                                <p id="bookedMoNo">+91 12246464</p>
+                                <p id="bookedEmail">ravi@gmail.com</p>
+                            </div>
+
+                            <div class="my-2">
+                                <!-- Booking Room Info  -->
+                                <div id="room-info2">
+                                    <!-- <h5>Room 1</h5>
+                                     <h5>$123</h5> -->
+                                </div>
+
+                                <div class="rp-room-d1 border-0" id="discountForPay">
+                                    <h5>Coupen Discount</h5>
+                                    <h5 id="fillDiscountforPay"></h5>
+                                </div>
+
+                                <!-- Taxes -->
+                                <div class="rp-room-d1 border-0">
+                                    <h5>Total taxes</h5>
+                                    <h5 id="totalTaxforPay"></h5>
+                                </div>
+                                
+                                <div class="rp-room-d2 ">
+                                    <h5>Estimated taxes</h5>
+                                    <h5 id="estTax">$5</h5>
+                                </div>
+
+                                <div class="rp-room-d2">
+                                    <h5>Estimated additional fees</h5>
+                                    <h5 id="estFees">$0</h5>
+                                </div>
+
+                              
+
+                            </div>
+
+                              <div class="rp-room-d1">
+                                    <h5>Total Payable</h5>
+                                    <h5 id="PayAmount"></h5>
+                                </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Right Part -->
+                    <div class="col-lg-8 ">
+
+                        <div class="rp-right-your-booking">
+
+                            <h5 class="rp-your-booking-heading">Guarantee your booking</h5>
+
+                            <div class="rp-cards-image">
+                                <img src="./IMAGE/Paymets_visa.png" alt="Visa Card">
+                                <img src="./IMAGE/Payments_MasterCard.png" alt="Master Card">
+                                <img src="./IMAGE/Payments_Amex.png" alt="Amex Card">
+                                <img src="./IMAGE/Paymenrts_Discover.png" alt="Discover Card">
+                            </div>
+
+                            <div class="rp-card-form">
+
+                                <p class="rp-c-form-title">Card Number</p>
+                                <input id="cardNumber" type="text" oninput="formatCardNumber(this)" placeholder="Card Number">
+                                <div id="cardNumberError" class="error-msg"></div>
+
+                                <div class="rp-cvv gap-2">
+
+                                    <div>
+                                        <p class="rp-c-form-title">Expiry Date</p>
+                                        <input id="expiryDate" type="text" oninput="formatExpiryDate(this)" maxlength="5" placeholder="MM/YY">
+                                        <div id="expiryDateError" class="error-msg"></div>
+                                    </div>
+
+                                    <div>
+                                        <p class="rp-c-form-title">CVV</p>
+                                        <input id="cvv" type="text" onblur="validateCVV(this)" maxlength="4" placeholder="CVV">
+                                        <div id="cvvError" class="error-msg"></div>
+                                    </div>
+
+                                </div>
+
+                                <p class="rp-c-form-title">Card Holder Name</p>
+                                <input id="cardHolder" type="text" onblur="validateCardHolderName(this)" placeholder="Card Holder Name">
+                                <div id="cardHolderNameError" class="error-msg"></div>
+
+
+                            </div>
+
+                            <div class="rp-save-card-details">
+                                <input type="checkbox">
+                                <span>Save your card for future transections.</span>
+                            </div>
+
+
+                            <button class="rp-card-pay-btn" onclick="payNow()" id="payNow"> </button>
+
+                        </div>  
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- *************  Modal ******************* -->
+
+    <!-- Time Out Button -->
+    <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#timeoutModal">
+            Time Out modal
+        </button> -->
+
+    <!-- Running Time Button -->
+    <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#runningtimeModal">
+            Running Time modal
+        </button> -->
+
+    <!-- Time Out Modal -->
+    <div class="modal" id="timeoutModal">
+        <div class="modal-dialog mb-dialog-timeout modal-dialog-centered">
+            <div class="modal-content mb-content-timeout">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-timeout">
+
+                    <!-- Left Image -->
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-timeout position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="mb-right-timeout text-center mt-2 p-2">
+                        <div class="mb-text-timeout">
+                            <img src="./IMAGE/time_out.svg" alt="" class="mb-3">
+                            <h5 class="mt-2">Your Session has expired.</h5>
+                            <p class="mt-3">For security reasons after 15 minutes of inactivity your session expires.
+                            </p>
+                        </div>
+
+                        <button type="button" class="btn mb-subscribe-btn-timeout"
+                            onclick="window.location.href='Rooms.html'">Continue booking</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Running Time Modal -->
+    <div class="modal" id="runningtimeModal">
+        <div class="modal-dialog mb-dialog-runningtime modal-dialog-centered">
+            <div class="modal-content mb-content-runningtime">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-runningtime">
+
+                    <!-- Left Image -->
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-runningtime position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="mb-right-runningtime text-center mt-2 p-2">
+                        <div class="mb-text-runningtime">
+                            <img src="./IMAGE/running_time.svg" alt="" class="mb-3">
+                            <h5 class="mt-2">Click or tap 'Continue booking' to extend your session.</h5>
+                            <p class="mt-3" id="extendedTimerText">Time remaining to complete your booking: 01 min 32
+                                sec</p>
+                        </div>
+
+                        <button type="button" class="btn mb-subscribe-btn-runningtime"
+                            onclick="continueBooking()">Continue booking</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Cancellation Policy Modal -->
+    <div class="modal mb-modal fade" id="cancelpolicyModal" tabindex="-1" aria-labelledby="cancelpolicyModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg mb-dialog-cancelpolicy modal-dialog-centered">
+            <div class="modal-content mb-content-cancelpolicy">
+
+                <div class="modal-header mb-header-cancelpolicy">
+                    <h5 class="modal-title mb-title-cancelpolicy" id="cancelpolicyModalLabel">Rate Details</h5>
+                    <button type="button" class="btn-close mb-close-cancelpolicy" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body mb-body-cancelpolicy">
+                    <h6>What's included?</h6>
+                    <ul>
+                        <li>Non-refundable credit card pre-payment for the entire stay required at the time of booking
+                        </li>
+                        <li>Must be booked at least 7 days in advance</li>
+                        <li>For individual bookings only</li>
+                        <li>No changes, cancellations, or adjustments to the reservation are permitted</li>
+                        <li>No refunds for cancellations or no-shows</li>
+                    </ul>
+
+                    <h6>Check-in and Check-out</h6>
+                    <p>Check-in: 14:00 PM | Check-out: 12:00 PM<br>
+                        You can ask for an early check-in or a late check-out at the hotel</p>
+
+                    <h6>Prices per day</h6>
+                    <ul>
+                        <li>16 May 2025 <strong>$123</strong> per night</li>
+                        <li>17 May 2025 <strong>$123</strong> per night</li>
+                    </ul>
+                    <p>Excluded: <strong>$10</strong> in fees & taxes</p>
+
+                    <h6>Cancellation policy</h6>
+                    <p>Non-refundable reservation. Your card will be charged at the time of booking. A penalty of
+                        <span class="mb-text">$666</span> will be charged if cancelled or no show. This booking can
+                        be modified once, at least 48 hrs before check-in. Same rate or higher will be applied.
+                    </p>
+
+                    <h6>Guarantee policy</h6>
+                    <p>Credit card hold accepted.</p>
+
+                    <h6>Privacy Policy</h6>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Apply Coupon Modal -->
+    <div class="modal" id="applycouponModal">
+        <div class="modal-dialog mb-dialog-applycoupon modal-dialog-centered">
+            <div class="modal-content mb-content-applycoupon">
+
+                <!-- Modal header -->
+                <div class="modal-header mb-header-applycoupon">
+                    <h5 class="modal-title mb-title-applycoupon" id="applycouponModalLabel">Apply Coupon</h5>
+                    <button type="button" class="btn-close mb-close-applycoupon" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-applycoupon">
+
+                    <div class="mb-coupon-input mb-3 mt-2">
+                        <img src="./IMAGE/coupon.svg" alt="Coupon" class="mb-coupon-icon">
+                        <input type="text" class="mb-coupon-field" placeholder="Coupon Code" id="coupenInput" readonly>
+                        <button class="btn mb-apply-btn" type="submit" data-bs-dismiss="modal"
+                            id="applyCoupen">Apply</button>
+                    </div>
+
+                    <p class="">Special offers</p>
+
+                    <div id="coupenData"> </div>
+
+                    <!-- <div class="mb-form-check mb-2">
+                        <input class="mb-form-check-input" type="radio" name="couponRadio" id="coupon1" checked>
+                        <label class="mb-form-check-label form-check-label" for="coupon1">
+                            <span class="mb-new">NEW100</span><br>
+                            <span class="mb-get">Get Flat $100 Off on cart value of 500 & Above</span><br>
+                            <span class="mb-save">Save ₹100</span>
+                        </label>
+                    </div>
+
+                    <div class="mb-form-check mb-2">
+                        <input class="mb-form-check-input" type="radio" name="couponRadio" id="coupon2" checked>
+                        <label class="mb-form-check-label form-check-label" for="coupon2">
+                            <span class="mb-new">NEW100</span><br>
+                            <span class="mb-get">Lorem ipsum dolor sit amet consectetur. Massa facilisis scelerisque
+                                iaculis habitant congue est blandit amet. </span><br>
+                            <span class="mb-save">Save ₹100</span>
+                        </label>
+                    </div>
+
+                    <div class="mb-form-check mb-2">
+                        <input class="mb-form-check-input" type="radio" name="couponRadio" id="coupon3" checked>
+                        <label class="mb-form-check-label form-check-label" for="coupon3">
+                            <span class="mb-new">NEW100</span><br>
+                            <span class="mb-get">Get Flat $100 Off on cart value of 500 & Above</span><br>
+                            <span class="mb-save">Save ₹100</span>
+                        </label>
+                    </div> -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Additional Information Modal -->
+    <div class="modal" id="additionalinformationModal">
+        <div class="modal-dialog mb-dialog-addinfo modal-dialog-centered" size="lg">
+            <div class="modal-content mb-content-addinfo">
+
+                <!-- Modal header -->
+                <div class="modal-header mb-header-addinfo">
+                    <h5 class="modal-title mb-title-addinfo" id="additionalinformationModalLabel"> Additional
+                        Information</h5>
+                    <button type="button" class="btn-close mb-close-addinfo" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-addinfo">
+
+                    <div class="mb-name2-addinfo1">
+                        <div class="mb-name-para2-addinfo1">
+                            <label class="mb-fname mb-2" for="Name">First Name</label>
+                            <input type="text" class="para2-addinfo1" name="Name" id="mFirstName"
+                                placeholder="First Name">
+                        </div>
+                        <div class="mb-name-para2-addinfo1">
+                            <label class="mb-lname mb-2" for="Name">Last Name </label>
+                            <input type="text" class="para2-addinfo1" name="Name" id="mLastName"
+                                placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="mb-name2-addinfo2 mt-3">
+
+                        <div class="mb-name-para2-addinfo2">
+                            <label class="mb-fname mb-2" for="Name">Email</label>
+                            <input type="email" class="para2-addinfo2" name="Name" id="mEmail" placeholder="Email">
+                        </div>
+
+                        <div class="mb-mno-addinfo2 mb-2">
+                            <label for="mMobileNo" class="form-label mb-2">Mobile No.</label>
+                            <div class="input-group">
+                                <select id="countryCode4" class="form-select" style="max-width: 70px; font-size: 14px;">
+                                    <option value="+91">+91</option>
+                                    <option value="+1">+1</option>
+                                    <option value="+44">+44</option>
+                                </select>
+                                <input type="text" class="form-control" id="mMobileNo" placeholder="Mobile No."
+                                    pattern="\d{10}" maxlength="10">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mb-trip">
+                        <p class="m-0 mt-2 mb-2">Trip Purpose</p>
+
+                        <div class="d-flex gap-4 mb-trip-label">
+                            <div>
+                                <input type="radio" name="tripPurpose" id="Leisure" value="Leisure">
+                                <label class="mb-label-name" for="Leisure">Leisure</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="tripPurpose" id="Business" value="Business">
+                                <label class="mb-label-name" for="Business">Business</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="tripPurpose" id="Bleisure" value="Bleisure">
+                                <label class="mb-label-name" for="Bleisure">Bleisure</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-checkbox">
+                            <input type="checkbox" id="ck" name="ck">
+                            <label class="" for="ck"><span>Yes,</span> I would like to receive news via email
+                                and commercial offers from the Hotel Group. I can opt out any time. See our full
+                                <span>privacy policy.</span></label>
+                        </div>
+                    </div>
+
+                    <div class="mb-bottom-center-addinfo">
+                        <button type="submit" class="btn mb-addinfo-done-btn" id="saveModalAddDetails"
+                            data-bs-dismiss="modal">Save</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Edit Room Modal :: Bed preference  -->
+    <div class="modal" id="editroombed1Modal">
+        <div class="modal-dialog mb-dialog-editroombed2 modal-dialog-centered">
+            <div class="modal-content mb-content-editroombed2">
+
+                <!-- Modal header -->
+                <div class="modal-header mb-header-editroombed1">
+                    <h5 class="modal-title mb-title-editroombed1" id="editroombed1ModalLabel">Edit Room</h5>
+                    <button type="button" class="btn-close mb-close-editroombed1" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-editroombed1">
+
+                    <!-- <div class="mb-editroombed1 mt-2">
+                        <p>Standard Room : <span class="tPersonAndBeds"></span></p>
+                    </div> -->
+
+                    <div class="d-flex gap-4 mb-bed-special-editroombed1 mt-2">
+                        <button class="mb-bed-editroombed1">Bed preference</button>
+                        <button class="mb-special-editroombed1" data-bs-toggle="modal"
+                            data-bs-target="#editroomspecialModal">Special requests</button>
+                    </div>
+
+                    <!-- Rooom Options -->
+
+                    <div class="mb-twin-room-row-editro2" id="roomOpt">
+
+                    </div>
+
+                    <!-- Default Guest -->
+                    <div class="mb-guest1-editro mt-4">
+                        <p class="mb-guest_1-editro">Guests</p>
+                        <a href="#" class="mb-add1-editro" id="addGuest" onclick="addNewGuest(); return false;">+ Add
+                            Guest</a>
+                    </div>
+
+                    <!-- Guest Inputs -->
+                    <div id="addguest" class="w-100"></div>
+
+                </div>
+
+
+                <!-- Add New Guest
+                    <div id="newGuest" class="w-100">
+                        <div class="mb-guest2-editro">
+                            <p class="mb-guest_2-editro">Guest 2</p>
+                            <a href="#" class="mb-add2-editro" id="removeGuest">REMOVE</a>
+                        </div>
+
+                        <div class="mb-name2-editro d-flex">
+                            <div class="mb-name-para2-editro w-100">
+                                <label class="mb-fname mb-2" for="Name">First Name</label>
+                                <input type="text" name="Name" id="" placeholder="First Name">
+                            </div>
+                            <div class="mb-name-para2-editro w-100">
+                                <label class="mb-lname mb-2" for="Name">Last Name </label>
+                                <input type="text" class="para2" name="Name" id="" placeholder="Last Name">
+                            </div>
+                        </div>
+                    </div> -->
+
+                <!-- Done Btn -->
+                <div class="mb-bottom-center-container-editro">
+                    <button type="submit" class="btn mb-editroombed1-done-btn" onclick="editRoomById()"
+                        data-bs-toggle="modal">Done</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Edit Room Modal :: Special requests  -->
+    <div class="modal" id="editroomspecialModal">
+        <div class="modal-dialog mb-dialog-editroomspecial modal-dialog-centered">
+            <div class="modal-content mb-content-editroomspecial">
+
+                <!-- Modal header -->
+                <div class="modal-header mb-header-editroomspecial">
+                    <h5 class="modal-title mb-title-editroomspecial" id="editroomspecialModalLabel">Edit Room</h5>
+                    <button type="button" class="btn-close mb-close-editroomspecial" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-editroomspecial">
+
+                    <!-- <div class="mb-editroomspecial mt-2">
+                        <p>Standard Room : <span>2 adults, 2 twin beds</span></p>
+                    </div> -->
+
+                    <div class="d-flex gap-4 mb-bed-special-editroomspecial mt-2">
+                        <button class="mb-bed-editroomspecial" data-bs-toggle="modal"
+                            data-bs-target="#editroombed1Modal">Bed preference</button>
+                        <!-- <button class="mb-bed-editroomspecial" data-bs-toggle="modal"
+                            data-bs-target="#editroombed2Modal">2</button> -->
+                        <button class="mb-special-editroomspecial">Special requests</button>
+                    </div>
+
+                    <div class="mb-2twin-editroomspecial mt-1">
+                        <p class="">Any comments or special requests</p>
+                        <textarea rows="6" cols="30" name="address" id="specialrequest"
+                            placeholder="Write here...."></textarea>
+                    </div>
+
+                    <div class="mb-bottom-center-editroomspecial">
+                        <button class="btn mb-editroomspecial-done-btn" onclick="editRoomById(123)"
+                            data-bs-toggle="modal">Done</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/Payments.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <!-- ******************** bootstrap ******************************* -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- *** Font Awesome *** -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- ******************** web fonts ******************************* -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!-- ******************** css file ******************************* -->
+    <link rel="stylesheet" href="./CSS/Profile.css">
+    <!-- ******************** header file ******************************* -->
+    <link rel="stylesheet" href="./CSS/Header.css">
+    <!-- ******************** footer file ******************************* -->
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <!-- Load jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+    <header class="rp-header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between k-head">
+
+                <div class="col-6 col-md-2 k-logo" onclick="window.location.href='Profile.html'">
+                    <h1>LOGO</h1>
+                </div>
+
+                <div class="col-6 d-lg-none text-end">
+                    <button class="navbar-toggler" type="button" id="navbarToggle">
+                        <span class="navbar-toggler-icon">☰</span>
+                    </button>
+                </div>
+
+                <div class="col-12 col-md-7 d-none d-lg-block" id="navbarNav">
+                    <div class="k-diming w-100">
+                        <ul class="navbar-nav d-flex flex-md-row justify-content-md-end align-items-center gap-3">
+                            <li class="nav-item"><a class="nav-link" href="./Home.html">Overview</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./Rooms.html">Rooms</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./D-Dining2.html">Dinning</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./D-Gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 d-none justify-content-end d-lg-flex">
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <div class="k-sing">
+                            <a data-bs-toggle="modal" data-bs-target="#signinModal" class="LoggedIn"
+                                style="cursor: pointer;">Sign in</a>
+                        </div>
+                        <div class="k-book">
+                            <a href="./BookNow.html">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Collapsible Mobile Nav -->
+
+            <div class="d-lg-none k-collap k-diming" id="mobileNav" style="display: none;">
+                <ul class="navbar-nav flex-column align-items-start mt-3">
+                    <li class="nav-item"><a class="nav-link" href="./Home.html">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Rooms.html">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./D-Dining2.html">Dinning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./D-Gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact us</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center justify-content-start gap-3" style="padding: 15px 0 !important;">
+                    <div class="k-sing">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#signinModal" class="LoggedIn">Sign in</a>
+                    </div>
+                    <div class="k-book">
+                        <a href="./BookNow.html">Book Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container py-4 ">
+        <div class="row A_header_margin_above">
+            <!-- Left Sidebar -->
+            <div class="col-xl-3 ">
+                <div class="nav flex-column nav-pills A_profile_menu" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <button class="nav-link active A_profile_menu_active mb-2" id="v-pills-home-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab">
+                        <div class="d-flex align-items-center">
+                            <div class="A_profile_menu_active_icon">
+                                <img src="./IMAGE/user.svg" alt="" class="A_profile_menu_active_icon_img">
+                            </div>
+                            <span class="A_profile_menu_active_span ms-3">My Profile</span>
+                        </div>
+                    </button>
+                    <button class="nav-link A_profile_menu_unactive mb-2" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab">
+                        <div class="d-flex align-items-center">
+                            <div class="A_profile_menu_active_icon">
+                                <img src="./IMAGE/booking.svg" alt="" class="A_profile_menu_active_icon_img">
+                            </div>
+                            <span class="A_profile_menu_active_span ms-3">My Bookings</span>
+                        </div>
+                    </button>
+                    <button class="nav-link A_profile_menu_unactive mb-2" id="v-pills-messages-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab">
+                        <div class="d-flex align-items-center">
+                            <div class="A_profile_menu_active_icon">
+                                <img src="./IMAGE/cards.svg" alt="" class="A_profile_menu_active_icon_img">
+                            </div>
+                            <span class="A_profile_menu_active_span ms-3">Saved Cards</span>
+                        </div>
+                    </button>
+                    <button class="nav-link A_profile_menu_unactive mb-2" id="v-pills-settings-tab"
+                        data-bs-toggle="modal" data-bs-target="#changePasswordModal" type="button" role="tab">
+                        <div class="d-flex align-items-center">
+                            <div class="A_profile_menu_active_icon">
+                                <img src="./IMAGE/lock.svg" alt="" class="A_profile_menu_active_icon_img">
+                            </div>
+                            <span class="A_profile_menu_active_span ms-3">Change Password</span>
+                        </div>
+                    </button>
+                    <button class="nav-link A_profile_menu_unactive mb-2" id="v-pills-bookings-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-bookings" type="button" role="tab">
+                        <div class="d-flex align-items-center">
+                            <div class="A_profile_menu_active_icon">
+                                <img src="./IMAGE/delete-ac.svg" alt="" class="A_profile_menu_active_icon_img">
+                            </div>
+                            <span class="A_profile_menu_active_span ms-3">Delete Account</span>
+                        </div>
+                    </button>
+                    <button class="nav-link A_profile_menu_unactive" id="logoutBtn" data-bs-toggle="modal"
+                        data-bs-target="#logoutModal" type="button">
+                        <div class="d-flex align-items-center">
+                            <div class="A_profile_menu_active_icon">
+                                <img src="./IMAGE/logout.svg" alt="" class="A_profile_menu_active_icon_img">
+                            </div>
+                            <span class="A_profile_menu_active_span ms-3">Logout</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="col-xl-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">My Account</a></li>
+                                <li class="breadcrumb-item active">My Profile</li>
+                            </ol>
+                        </nav>
+
+                        <div class="A_user_profile_details">
+                            <form action="" class="A_user_profile_details_form">
+                                <div class="row  mb-4">
+                                    <div class="col-auto">
+                                        <div class="profile-pic-wrapper">
+                                            <img src="./IMAGE/user.png" id="profilePic" class="profile-pic"
+                                                alt="Profile Picture">
+                                            <label for="fileUpload" class="upload-label">
+                                                <img src="./IMAGE/uploadpic.svg" class="camera-icon" alt="Upload">
+                                                <input type="file" id="fileUpload" accept="image/*"
+                                                    style="display: none;" onchange="previewImage(event)">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Firsr Name"
+                                            style="background: #f5f5f5;border: none;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name"
+                                            style="background: #f5f5f5;border: none;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="mobile" class="form-label">Mobile No.</label>
+                                        <div class="input-group custom-phone-input">
+                                            <select class="form-select border-0 bg-light" style="max-width: 75px;"
+                                                id="countryCode">
+                                                <option value="+91">+91</option>
+                                                <option value="+1">+1</option>
+                                                <option value="+44">+44</option>
+                                            </select>
+                                            <input type="text" class="form-control border-0 bg-light" id="mobileNo"
+                                                placeholder="Mobile No." pattern="\d{10}" maxlength="10"
+                                                inputmode="numeric">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Email"
+                                            style="background: #f5f5f5;border: none;" readonly>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="dobInput" class="form-label">Date Of Birth</label>
+                                        <div class="input-group">
+                                            <input type="date" class="form-control" id="dobInput"
+                                                placeholder="DD/MM/YYYY" style="background: #f5f5f5; border: none;">
+                                            <!-- <span class="input-group-text"><i class="fa fa-calendar"></i></span> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="form-label d-block">Gender</label>
+                                        <div class="custom-radio-group">
+                                            <label class="custom-radio">
+                                                <input type="radio" id="genderMale" name="gender" value="male">
+                                                <span class="custom-radio-indicator"></span>
+                                                Male
+                                            </label>
+                                            <label class="custom-radio">
+                                                <input type="radio" id="genderFemale" name="gender" value="female">
+                                                <span class="custom-radio-indicator"></span>
+                                                Female
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center mt-4">
+                                        <button onclick="updateProfile(event)"
+                                            class="A_user_detail_form_btn">Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#">My Account</a></li>
+                                    <li class="breadcrumb-item active">My Booking</li>
+                                </ol>
+                            </nav>
+                            <div>
+                                <label for="sortBookings"
+                                    style="font-weight: 400; color: #4a4a4a; font-size: 15px; margin-right: 4px;">
+                                    Sort By:
+                                </label>
+                                <select id="sortBookings" class="form-select d-inline-block"
+                                    style="width: auto; display: inline-block; font-weight: 500; color: #222; border: none; ">
+                                    <option value="default" selected>Default</option>
+                                    <option value="upcoming">Upcoming</option>
+                                    <option value="Success">Success</option>
+                                    <option value="cancelled">Cancelled</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- don't have any hotel bookings. -->
+                        <div class="A_user_profile_details_no_booking d-none" style="height: 587px;">
+                            <div class="text-center" style="margin-top: 130px;">
+                                <img src="./IMAGE/nobooking.png" alt="No Bookings" style="width: 120px; margin-bottom: 24px;">
+                                <div style="font-size: 18px; color: #222;">
+                                    You currently don't have any hotel bookings.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Booking Cancelled -->
+                        <div class="booking-cancelled-section d-none"
+                            style="background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); padding: 10px; margin-bottom: 24px;">
+                            <div class="text-center">
+                                <div style="font-size: 40px; color: #3aa409; margin-bottom: 16px;">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <h4>Booking Cancelled</h4>
+                            </div>
+                            <!-- <div class="A_user_profile_booking_room mb-3"
+                                style="background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); display: flex; align-items: stretch; padding: 0; overflow: hidden;">
+                                <div style="flex: 0 0 220px; position: relative;" class="room-image-container">
+                                    <img src="./IMAGE/room1.png" alt="" class="A_user_profile_booking_room_img"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div style="flex: 1 1 auto; padding: 20px 20px 20px 20px; display: flex; flex-direction: column; justify-content: space-between;"
+                                    class="room-details-container">
+                                    <div>
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <div class="A_user_profile_booking_room_title"
+                                                    style="font-size: 20px; font-weight: 600; color: #222;">Deluxe King
+                                                    Room</div>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <div style="font-size: 22px; font-weight: 700; color: #222; "
+                                                    class="A_user_profile_booking_room_price">
+                                                    $123<span
+                                                        style="font-size: 13px; color: #888; font-weight: 400;">/night</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="booking-details my-1">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                    class="A_user_profile_booking_room_booking_id"> Booking
+                                                    ID</div>
+                                                <div style="font-size: 15px; color: #888;text-align: end;"
+                                                    class="A_user_profile_booking_room_booking_id">
+                                                    #ABC123456
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="booking-details my-1">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                    class="A_user_profile_booking_room_booking_id"> Guests</div>
+                                                <div style="font-size: 15px; color: #888;text-align: end;"
+                                                    class="A_user_profile_booking_room_booking_id">
+                                                    2 Adults, 1 Child
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="booking-details my-1">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                    class="A_user_profile_booking_room_booking_id"> Date</div>
+                                                <div style="font-size: 15px; color: #222;text-align: end;"
+                                                    class="A_user_profile_booking_room_booking_id">
+                                                    Fri 16, May - Sun 18, May <span style="color: #888;">(2
+                                                        nights)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="booking-details my-1">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                    class="A_user_profile_booking_room_booking_id"> Payment method
+                                                </div>
+                                                <div style="font-size: 15px; color: #888;text-align: end;"
+                                                    class="A_user_profile_booking_room_booking_id">
+                                                    Pay on arrival
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-2">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#bookingDetailsModal"
+                                            style="color: rgba(3, 65, 119, 1); text-decoration: none; font-size: 14px; font-weight: 500;">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <!-- My Booking Card Data fetch  -->
+                        <div id="bookingContainer"></div>
+
+                        <!-- 1 -->
+                        <!-- <div class="A_user_profile_booking_room mb-3"
+                            style="background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); display: flex; align-items: stretch; padding: 0; overflow: hidden;">
+                            Room Image
+                            <div style="flex: 0 0 220px; position: relative;" class="room-image-container">
+                                <img src="./IMAGE/room1.png" alt="" class="A_user_profile_booking_room_img"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <span
+                                    style="position: absolute; top: 12px; left: 12px; background: rgba(219,230,214,1); color: rgba(58,164,9,1); font-size: 14px; padding: 2px 12px; border-radius: 6px;">Upcoming</span>
+                            </div>
+                            Room Details
+                            <div style="flex: 1 1 auto; padding: 20px 20px 20px 20px; display: flex; flex-direction: column; justify-content: space-between;"
+                                class="room-details-container">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <div class="A_user_profile_booking_room_title"
+                                                style="font-size: 20px; font-weight: 600; color: #222;">Deluxe King
+                                                Room</div>
+                                        </div>
+                                        <div style="text-align: right;">
+                                            <div style="font-size: 22px; font-weight: 700; color: #222; "
+                                                class="A_user_profile_booking_room_price">
+                                                $123<span
+                                                    style="font-size: 13px; color: #888; font-weight: 400;">/night</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-details my-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                class="A_user_profile_booking_room_booking_id"> Booking
+                                                ID</div>
+                                            <div style="font-size: 15px; color: #888;text-align: end;"
+                                                class="A_user_profile_booking_room_booking_id">
+                                                #ABC123456
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-details my-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                class="A_user_profile_booking_room_booking_id"> Guests</div>
+                                            <div style="font-size: 15px; color: #888;text-align: end;"
+                                                class="A_user_profile_booking_room_booking_id">
+                                                2 Adults, 1 Child
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-details my-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                class="A_user_profile_booking_room_booking_id"> Date</div>
+                                            <div style="font-size: 15px; color: #222;text-align: end;"
+                                                class="A_user_profile_booking_room_booking_id">
+                                                Fri 16, May - Sun 18, May <span style="color: #888;">(2 nights)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-details my-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                class="A_user_profile_booking_room_booking_id"> Payment method
+                                            </div>
+                                            <div style="font-size: 15px; color: #888;text-align: end;"
+                                                class="A_user_profile_booking_room_booking_id">
+                                                Pay on arrival
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#bookingDetailsModal"
+                                        style="color: rgba(3, 65, 119, 1); text-decoration: none; font-size: 14px; font-weight: 500;">View
+                                        Details</a>
+                                    <a href="javascript:void(0);" class="cancel-booking-btn"
+                                        style="color: rgba(255, 0, 0, 1); font-weight: 500; font-size: 15px; text-decoration: underline;">
+                                        Cancel Booking
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- Select reason for cancellation -->
+                        <div class="cancel-reason-section d-none"
+                            style="background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.10); padding: 24px; margin-bottom: 24px;">
+                            <form id="cancellationForm">
+                                <div style="padding: 24px;">
+                                    <label style="font-weight: 600; margin-bottom: 16px; display: block;">Select reason
+                                        for cancellation</label>
+                                    <div class="form-check modern-radio">
+                                        <input class="form-check-input" type="radio" name="cancelReason" id="reason1"
+                                            value="Change in travel plans" checked>
+                                        <label class="form-check-label" for="reason1">Change in travel plans</label>
+                                    </div>
+                                    <div class="form-check modern-radio">
+                                        <input class="form-check-input" type="radio" name="cancelReason" id="reason2"
+                                            value="Personal or family emergency">
+                                        <label class="form-check-label" for="reason2">Personal or family
+                                            emergency</label>
+                                    </div>
+                                    <div class="form-check modern-radio">
+                                        <input class="form-check-input" type="radio" name="cancelReason" id="reason3"
+                                            value="Travel restrictions or visa issues">
+                                        <label class="form-check-label" for="reason3">Travel restrictions or visa
+                                            issues</label>
+                                    </div>
+                                    <div class="form-check modern-radio">
+                                        <input class="form-check-input" type="radio" name="cancelReason" id="reason4"
+                                            value="Health or medical reasons">
+                                        <label class="form-check-label" for="reason4">Health or medical reasons</label>
+                                    </div>
+                                    <div class="form-check modern-radio">
+                                        <input class="form-check-input" type="radio" name="cancelReason" id="reason5"
+                                            value="Booking made under incorrect dates">
+                                        <label class="form-check-label" for="reason5">Booking made under incorrect
+                                            dates</label>
+                                    </div>
+                                    <div class="form-check modern-radio">
+                                        <input class="form-check-input" type="radio" name="cancelReason" id="reason6"
+                                            value="Flight or transportation canceled">
+                                        <label class="form-check-label" for="reason6">Flight or transportation
+                                            canceled</label>
+                                    </div>
+                                    <div class="form-check modern-radio">
+                                        <input class="form-check-input" type="radio" name="cancelReason" id="reason7"
+                                            value="Others" onchange="toggleOtherReasonInput(true)">
+                                        <label class="form-check-label" for="reason7">Others (Please Specify)</label>
+                                    </div>
+                                    <!-- Hidden input for custom reason -->
+                                    <div id="otherReasonInput" class="mt-2 d-none">
+                                        <span>Reason</span>
+                                        <textarea id="customReason" class="form-control" placeholder="Enter your reason"
+                                            rows="3" cols="40"></textarea>
+                                    </div>
+                                </div>
+                                <div id="otherReasonContainer"
+                                    style="display:none; margin-top:10px;margin-bottom: 24px;">
+                                    <textarea class="form-control" id="otherReason" rows="2"
+                                        placeholder="Please specify your reason"
+                                        style="background: #f5f5f5; border: none; height: 100px;"></textarea>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div style="font-size: 18px; font-weight: 500;">$123
+                                        <span style="font-size: 14px; color: #888;">Total Price</span>
+                                    </div>
+                                    <button type="button" class="btn A_cancel_booking_btn"
+                                        onclick="saveCancellation(event)"> Confirm Cancel </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- 2 -->
+                        <!-- <div class="A_user_profile_booking_room mb-3"
+                            style="background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); display: flex; align-items: stretch; padding: 0; overflow: hidden;">
+                            Room Image
+                            <div style="flex: 0 0 220px; position: relative;" class="room-image-container">
+                                <img src="./IMAGE/room2.png" alt="" class="A_user_profile_booking_room_img"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <span
+                                    style="position: absolute; top: 12px; left: 12px; background: rgba(255, 229, 229, 1); color: rgba(255, 0, 0, 1); font-size: 14px; padding: 2px 12px; border-radius: 6px;">Cancelled</span>
+                            </div>
+                            Room Details
+                            <div style="flex: 1 1 auto; padding: 20px 20px 20px 20px; display: flex; flex-direction: column; justify-content: space-between;"
+                                class="room-details-container">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <div style="font-size: 20px; font-weight: 600; color: #222;"
+                                                class="A_user_profile_booking_room_title">Deluxe King
+                                                Room</div>
+                                        </div>
+                                        <div style="text-align: right;">
+                                            <div style="font-size: 22px; font-weight: 700; color: #222;"
+                                                class="A_user_profile_booking_room_price">
+                                                $123<span
+                                                    style="font-size: 13px; color: #888; font-weight: 400;">/night</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-details my-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                class="A_user_profile_booking_room_booking_id"> Booking
+                                                ID</div>
+                                            <div style="font-size: 15px; color: #888;text-align: end;"
+                                                class="A_user_profile_booking_room_booking_id">
+                                                #ABC123456
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-details my-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                class="A_user_profile_booking_room_booking_id"> Guests</div>
+                                            <div style="font-size: 15px; color: #888;text-align: end;"
+                                                class="A_user_profile_booking_room_booking_id">
+                                                2 Adults, 1 Child
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-details my-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                class="A_user_profile_booking_room_booking_id"> Date</div>
+                                            <div style="font-size: 15px; color: #222;text-align: end;"
+                                                class="A_user_profile_booking_room_booking_id">
+                                                Fri 16, May - Sun 18, May <span style="color: #888;">(2 nights)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-details my-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                class="A_user_profile_booking_room_booking_id"> Payment method
+                                            </div>
+                                            <div style="font-size: 15px; color: #888;text-align: end;"
+                                                class="A_user_profile_booking_room_booking_id">
+                                                Pay on arrival
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#bookingDetailsModal2"
+                                        style="color: rgba(3, 65, 119, 1); text-decoration: none; font-size: 14px; font-weight: 500;">View
+                                        Details</a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#addReviewModal"
+                                        style="color: rgba(3, 65, 119, 1); font-weight: 500; font-size: 15px; text-decoration: underline;">+Add Review</a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- 3 -->
+                        <!-- <div class="A_user_profile_booking_room mb-3"
+                            style="background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); display: flex; align-items: stretch; padding: 0; overflow: hidden;">
+                            Room Image
+                            <div style="flex: 0 0 220px; position: relative;" class="room-image-container">
+                                <img src="./IMAGE/room3.png" alt="" class="A_user_profile_booking_room_img"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <span
+                                    style="position: absolute; top: 12px; left: 12px; background: rgba(219,230,214,1); color: rgba(58,164,9,1); font-size: 14px; padding: 2px 12px; border-radius: 6px;">Upcoming</span>
+                            </div>
+                            Room Details
+                            <div style="flex: 1 1 auto; padding: 20px 20px 20px 20px; display: flex; flex-direction: column; justify-content: space-between;"
+                                class="room-details-container">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <div style="font-size: 20px; font-weight: 600; color: #222;"
+                                                class="A_user_profile_booking_room_title">Deluxe King
+                                                Room</div>
+                                        </div>
+                                        <div style="text-align: right;">
+                                            <div style="font-size: 22px; font-weight: 700; color: #222;"
+                                                class="A_user_profile_booking_room_price">
+                                                $123<span
+                                                    style="font-size: 13px; color: #888; font-weight: 400;">/night</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-details my-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                class="A_user_profile_booking_room_booking_id"> Booking
+                                                ID</div>
+                                            <div style="font-size: 15px; color: #888;text-align: end;"
+                                                class="A_user_profile_booking_room_booking_id">
+                                                #ABC123456
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-details my-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                class="A_user_profile_booking_room_booking_id"> Guests</div>
+                                            <div style="font-size: 15px; color: #888;text-align: end;"
+                                                class="A_user_profile_booking_room_booking_id">
+                                                2 Adults, 1 Child
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-details my-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                class="A_user_profile_booking_room_booking_id"> Date</div>
+                                            <div style="font-size: 15px; color: #222;text-align: end;"
+                                                class="A_user_profile_booking_room_booking_id">
+                                                Fri 16, May - Sun 18, May <span style="color: #888;">(2 nights)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-details my-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div style="font-size: 15px; color: #222; margin-top: 2px;"
+                                                class="A_user_profile_booking_room_booking_id"> Payment method
+                                            </div>
+                                            <div style="font-size: 15px; color: #888;text-align: end;"
+                                                class="A_user_profile_booking_room_booking_id">
+                                                Pay on arrival
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#bookingDetailsModal3"
+                                        style="color: rgba(3, 65, 119, 1); text-decoration: none; font-size: 14px; font-weight: 500;">View
+                                        Details</a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#addReviewModal2"
+                                        style="color: rgba(3, 65, 119, 1); font-weight: 500; font-size: 15px; text-decoration: underline;">+Add
+                                        Review</a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#">My Account</a></li>
+                                    <li class="breadcrumb-item active">Saved cards</li>
+                                </ol>
+                            </nav>
+                            <div>
+                                <button type="button" class="btn A_review_Addcards_btn text-white"
+                                    data-bs-toggle="modal" data-bs-target="#addCardModal">+ Add Card</button>
+                            </div>
+
+                        </div>
+
+                        <div class="A_user_profile_details">
+                            <!-- Saved Cards Print -->
+                            <div id="printSavedCards"
+                                class="d-flex justify-content-between align-items-center flex-wrap ">
+
+                                <!-- Card : 1 -->
+                                <!-- <div class="A_cards_layout my-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div><img src="./IMAGE/Mastercard.svg" alt="" class="A_cards_layout_img"></div>
+                                        <div><img src="./IMAGE/dustbin.svg" alt="" class="A_cards_layout_img1"
+                                                style="cursor:pointer" data-bs-toggle="modal"
+                                                data-bs-target="#deleteCardModal"></div>
+                                    </div>
+                                    <div class="A_cards_layout_number">1520 0100 3356 6888</div>
+                                    <div class="d-flex  align-items-center mt-4">
+                                        <div class="me-3">
+                                            <div class="A_cards_layout_name">CARD HOLDER NAME</div>
+                                            <div class="A_cards_layout_name1">John Smith</div>
+                                        </div>
+                                        <div>
+                                            <div class="A_cards_layout_name">VALID THRU</div>
+                                            <div class="A_cards_layout_name1">01/24</div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- Card: 2 -->
+                                <!-- <div class="A_cards_layout my-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div><img src="./IMAGE/Mastercard.svg" alt="" class="A_cards_layout_img"></div>
+                                        <div><img src="./IMAGE/dustbin.svg" alt="" class="A_cards_layout_img1"
+                                                style="cursor:pointer" data-bs-toggle="modal"
+                                                data-bs-target="#deleteCardModal"></div>
+                                    </div>
+                                    <div class="A_cards_layout_number">1520 0100 3356 6888</div>
+                                    <div class="d-flex  align-items-center mt-4">
+                                        <div class="me-3">
+                                            <div class="A_cards_layout_name">CARD HOLDER NAME</div>
+                                            <div class="A_cards_layout_name1">John Smith</div>
+                                        </div>
+                                        <div>
+                                            <div class="A_cards_layout_name">VALID THRU</div>
+                                            <div class="A_cards_layout_name1">01/24</div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- Card : 3 -->
+                                <!-- <div class="A_cards_layout my-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div><img src="./IMAGE/Mastercard.svg" alt="" class="A_cards_layout_img"></div>
+                                        <div><img src="./IMAGE/dustbin.svg" alt="" class="A_cards_layout_img1"
+                                                style="cursor:pointer" data-bs-toggle="modal"
+                                                data-bs-target="#deleteCardModal"></div>
+                                    </div>
+                                    <div class="A_cards_layout_number">1520 0100 3356 6888</div>
+                                    <div class="d-flex  align-items-center mt-4">
+                                        <div class="me-3">
+                                            <div class="A_cards_layout_name">CARD HOLDER NAME</div>
+                                            <div class="A_cards_layout_name1">John Smith</div>
+                                        </div>
+                                        <div>
+                                            <div class="A_cards_layout_name">VALID THRU</div>
+                                            <div class="A_cards_layout_name1">01/24</div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel">
+                        <div class="A_user_profile_details">
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-bookings" role="tabpanel">
+                        <div class="A_user_profile_details">
+                            <div class="A_user_profile_details_delete_account">
+                                <p>When you deactivate your account</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>Your public profile is no longer visible on the platform.</p>
+                                    </li>
+                                    <li>
+                                        <p>Your hotel reviews and ratings remain visible, but your profile will appear
+                                            as "Unavailable".</p>
+                                    </li>
+                                    <li>
+                                        <p> Your reviews/ratings are still visible, while your profile information is
+                                            shown as 'unavailable' as a result of deactivation.</p>
+                                    </li>
+                                    <li>
+                                        <p> Your past bookings will show as "Unavailable" due to deactivation.</p>
+                                    </li>
+                                    <li>
+                                        <p>Your account data is retained and is restored in case you choose to
+                                            reactivate your account</p>
+                                    </li>
+                                    <li>
+                                        <p> You are now unsubscribed from all promotional emails from Hotel Booking.</p>
+                                    </li>
+                                    <li>
+                                        <p> Your account data is securely retained in case you decide to reactivate your
+                                            account in the future.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn A_delete_account_btn" data-bs-toggle="modal"
+                                data-bs-target="#deleteAccountModal">Delete Account</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-reviews" role="tabpanel">...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Details Modal -->
+    <!-- 1 -->
+    <div class="modal fade" id="bookingDetailsModal" tabindex="-1" aria-labelledby="bookingDetailsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingDetailsModalLabel">Booking Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Reservation Details -->
+                    <div>
+                        <h6>Reservation Details</h6>
+                        <div class="row mb-2">
+                            <div class="col-6">Booking ID</div>
+                            <div class="col-6 text-end text-muted" id="modal-booking-id"></div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Guests</div>
+                            <div class="col-6 text-end text-muted" id="modal-guests"></div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Check in</div>
+                            <div class="col-6 text-end" style="font-weight: 600 !important;" id="modal-checkin"></div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Check out</div>
+                            <div class="col-6 text-end" style="font-weight: 600 !important;" id="modal-checkout"></div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Room</div>
+                            <div class="col-6 text-end" style="font-weight: 600 !important;" id="modal-room"></div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Location</div>
+                            <div class="col-6 text-end" style="font-weight: 600 !important;" id="modal-location"></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Payment Details -->
+                    <div>
+                        <h6>Payment Details</h6>
+                        <div class="row mb-2">
+                            <div class="col-6">Payment method</div>
+                            <div class="col-6 text-end text-muted" id="modal-payment-method"></div>
+                        </div>
+                        <!-- <div class="row mb-2">
+                            <div class="col-6">Room Price</div>
+                            <div class="col-6 text-end" id="modal-room-price"></div>
+                        </div> -->
+                        <div class="row mb-2">
+                            <div class="col-6">Tax</div>
+                            <div class="col-6 text-end" id="modal-tax"></div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Total Amount (Inc Tax)</div>
+                            <div class="col-6 text-end" id="modal-total"
+                                style="font-weight: 600 !important; font-size: 1.2rem;"></div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="btn" id="downloadBtn" style=" background: #0a3c68; color: #fff; border: none; ">Download Invoice</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <!-- <div class="modal fade" id="bookingDetailsModal2" tabindex="-1" aria-labelledby="bookingDetailsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingDetailsModalLabel">Booking Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Reservation Details
+                    <div>
+                        <h6>Reservation Details</h6>
+                        <div class="row mb-2">
+                            <div class="col-6">Booking ID</div>
+                            <div class="col-6 text-end text-muted">#ABC1234567</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Guests</div>
+                            <div class="col-6 text-end text-muted">2 Adults, 1 Child</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Check in</div>
+                            <div class="col-6 text-end">Fri 16, May</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Check out</div>
+                            <div class="col-6 text-end fw-bold">Sun 18, May</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Room</div>
+                            <div class="col-6 text-end">Deluxe King Room-Room Only</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Location</div>
+                            <div class="col-6 text-end fw-bold">London, London</div>
+                        </div>
+                    </div>
+                    <hr>
+                    Payment Details
+                    <div>
+                        <h6>Payment Details</h6>
+                        <div class="row mb-2">
+                            <div class="col-6">Payment method</div>
+                            <div class="col-6 text-end text-muted">Visa ending in 1234</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Room Price</div>
+                            <div class="col-6 text-end">$123*2</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Tax</div>
+                            <div class="col-6 text-end">$10</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Total Amount</div>
+                            <div class="col-6 text-end fw-bold" style="font-size: 1.2rem;">$456</div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="btn " style=" background: #0a3c68; color: #fff; border: none; ">Download
+                            Invoice</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 3 -->
+    <!-- <div class="modal fade" id="bookingDetailsModal3" tabindex="-1" aria-labelledby="bookingDetailsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingDetailsModalLabel">Booking Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Reservation Details
+                    <div>
+                        <h6>Reservation Details</h6>
+                        <div class="row mb-2">
+                            <div class="col-6">Booking ID</div>
+                            <div class="col-6 text-end text-muted">#ABC1234568</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Guests</div>
+                            <div class="col-6 text-end text-muted">2 Adults, 1 Child</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Check in</div>
+                            <div class="col-6 text-end">Fri 16, May</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Check out</div>
+                            <div class="col-6 text-end fw-bold">Sun 18, May</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Room</div>
+                            <div class="col-6 text-end">Deluxe King Room-Room Only</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Location</div>
+                            <div class="col-6 text-end fw-bold">London, London</div>
+                        </div>
+                    </div>
+                    <hr>
+                    Payment Details
+                    <div>
+                        <h6>Payment Details</h6>
+                        <div class="row mb-2">
+                            <div class="col-6">Payment method</div>
+                            <div class="col-6 text-end text-muted">Visa ending in 1234</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Room Price</div>
+                            <div class="col-6 text-end">$123*2</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Tax</div>
+                            <div class="col-6 text-end">$10</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-6">Total Amount</div>
+                            <div class="col-6 text-end fw-bold" style="font-size: 1.2rem;">$456</div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="btn " style=" background: #0a3c68; color: #fff; border: none; ">Download
+                            Invoice</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Add Review Modal -->
+    <div class="modal fade" id="addReviewModal" tabindex="-1" aria-labelledby="addReviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addReviewModalLabel">Add review</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Step 1: Hotel Info and Rating -->
+                    <div id="reviewStep1">
+                        <div class="d-flex align-items-center mb-3">
+                            <img id="reviewHotelImage" src="" alt="Hotel"
+                                style="width:200px;height:110px;object-fit:cover;border-radius:6px;margin-right:16px;">
+                            <div>
+                                <div id="reviewHotelName" style="font-weight:600;"></div>
+                                <div id="reviewHotelAddress" style="font-size:14px;color:#888;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <label style="font-weight:500;">Overall Rating (Mandatory)</label>
+                            <div id="starRating" style="font-size:2rem; color:#ccc; cursor:pointer; margin-bottom: 10px;">
+                                <span data-value="1">&#9733;</span>
+                                <span data-value="2">&#9733;</span>
+                                <span data-value="3">&#9733;</span>
+                                <span data-value="4">&#9733;</span>
+                                <span data-value="5">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 2: Review Description and Image Upload -->
+                    <div id="reviewStep2" style="display:none;">
+                        <div class="mb-3">
+                            <label for="reviewDescription" class="form-label" style="font-weight:500;"> Write a Review
+                                (Optional)</label>
+                            <p>Description</p>
+                            <textarea class="form-control A_review_description" id="reviewDescription" rows="3"
+                                placeholder="Write Review Description Here"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" style="font-weight:500;">Add Photos (Optional)</label>
+                            <div id="imagePreview" class="d-flex flex-wrap gap-2 mt-3"></div>
+                            <div class="upload-area" id="uploadArea"
+                                style="border: 2px solid #ccc; border-radius: 8px; padding: 20px; text-align: center; cursor: pointer; margin-bottom: 10px;">
+                                <div class="upload-icon mb-2">
+                                    <!-- <i class="fa-solid fa-cloud-arrow-up" style="font-size: 2rem; color: #0a3c68;"></i> -->
+                                    <img src="./IMAGE/uploadimg.svg" alt="" style="width: 32px; height: 32px;">
+                                </div>
+                                <div class="upload-text">
+
+                                    <p class="mb-0" style="color: #888; font-size: 0.9rem;">PNG, JPG GIF up to 5 MB and
+                                        max. 5 images</p>
+                                </div>
+                                <input type="file" id="reviewImages" class="d-none"
+                                    accept="image/png, image/jpeg, image/gif" multiple>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="rp-save-btn-review-main">
+
+                        <button id="submitReviewBtn" type="button" class="btn A_review_submit_btn"
+                        style="display:none;">Submit</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Review Modal 2 -->
+    <!-- <div class="modal fade" id="addReviewModal2" tabindex="-1" aria-labelledby="addReviewModalLabel2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addReviewModalLabel2">Add review</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Step 1: Hotel Info and Rating
+                    <div id="reviewStep1_2">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="./IMAGE/room3.png" alt="Hotel"
+                                style="width:200px;height:110px;object-fit:cover;border-radius:6px;margin-right:16px;">
+                            <div>
+                                <div style="font-weight:600;">Hotel Name</div>
+                                <div style="font-size:14px;color:#888;">26178 W. Gray St. Utica, Pennsylvania 57867
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label style="font-weight:500;">Overall Rating (Mandatory)</label>
+                            <div id="starRating2" style="font-size:2rem; color:#ccc; cursor:pointer;">
+                                <span data-value="1">&#9733;</span>
+                                <span data-value="2">&#9733;</span>
+                                <span data-value="3">&#9733;</span>
+                                <span data-value="4">&#9733;</span>
+                                <span data-value="5">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                    Step 2: Review Description and Image Upload
+                    <div id="reviewStep2_2" style="display:none;">
+                        <div class="mb-3">
+                            <label for="reviewDescription2" class="form-label" style="font-weight:500;"> Write a Review
+                                (Optional)</label>
+                            <p>Description</p>
+                            <textarea class="form-control A_review_description" id="reviewDescription2" rows="3"
+                                placeholder="Write Review Description Here"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" style="font-weight:500;">Add Photos (Optional)</label>
+                            <div id="imagePreview2" class="d-flex flex-wrap gap-2 mt-3"></div>
+                            <div class="upload-area" id="uploadArea2"
+                                style="border: 2px solid #ccc; border-radius: 8px; padding: 20px; text-align: center; cursor: pointer; margin-bottom: 10px;">
+                                <div class="upload-icon mb-2">
+                                    <img src="./IMAGE/uploadimg.svg" alt="" style="width: 32px; height: 32px;">
+                                </div>
+                                <div class="upload-text">
+                                    <p class="mb-0" style="color: #888; font-size: 0.9rem;">PNG, JPG GIF up to 5 MB and
+                                        max. 5 images</p>
+                                </div>
+                                <input type="file" id="reviewImages2" class="d-none"
+                                    accept="image/png, image/jpeg, image/gif" multiple>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="submitReviewBtn2" type="button" class="btn A_review_submit_btn"
+                    style="display:none;">Submit</button>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Add Card Modal -->
+    <div class="modal fade" id="addCardModal" tabindex="-1" aria-labelledby="addCardModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addCardModalLabel">Add New card</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" onsubmit="cardDetilsSend(event)">
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label" style="font-size: 14px;">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Card Number"
+                                style="background: #f5f5f5;border: none;" maxlength="19"
+                                onkeyup="formatCardNumber(this)">
+                            <div class="invalid-feedback" id="cardNumberError"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-3 col-md-12">
+                                <label for="expiryDate" class="form-label" style="font-size: 14px;">Expiry Date</label>
+                                <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY"
+                                    style="background: #f5f5f5;border: none;" maxlength="5"
+                                    onkeyup="formatExpiryDate(this)">
+                                <div class="invalid-feedback" id="expiryDateError"></div>
+                            </div>
+                            <div class="col-12 mb-3 col-md-12">
+                                <label for="cvv" class="form-label" style="font-size: 14px;">CVV</label>
+                                <input type="text" class="form-control" id="cvv" placeholder="CVV"
+                                    style="background: #f5f5f5;border: none;" maxlength="4" onkeyup="validateCVV(this)">
+                                <div class="invalid-feedback" id="cvvError"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cardHolderName" class="form-label" style="font-size: 14px;">Card Holder
+                                Name</label>
+                            <input type="text" class="form-control" id="cardHolderName" placeholder="Card Holder Name"
+                                style="background: #f5f5f5;border: none;" onkeyup="validateCardHolderName(this)">
+                            <div class="invalid-feedback" id="cardHolderNameError"></div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn my-3" style="background: #0a3c68; color: #fff; width: 40%;"
+                                id="addCardBtn">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Card Modal -->
+    <div class="modal fade" id="deleteCardModal" tabindex="-1" aria-labelledby="deleteCardModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteCardModalLabel">Delete</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p style="color: rgba(20, 20, 20, 0.6);">Are you sure you want to<br>Delete Card?</p>
+                </div>
+                <div class="d-flex justify-content-center gap-3 mb-4">
+                    <button type="button" class="btn A_delete_card_btn_cancel" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn A_delete_card_btn_yes" id="confirmDeleteCardBtn">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Change Password Modal -->
+    <div class="modal fade" id="changePasswordModal" tabindex="-1" aria-labelledby="changePasswordModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 8px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="changePasswordModalLabel">Change Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" onsubmit="changePassword(event)">
+                        <div class="mb-3">
+                            <label for="oldPassword" class="form-label">Old Password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="oldPassword"
+                                    placeholder="Your Password">
+                                <span class="input-group-text" onclick="togglePassword('oldPassword', this)"
+                                    style="cursor:pointer;">
+                                    <i class="fa fa-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPassword" class="form-label">New Password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="newPassword"
+                                    placeholder="Your Password">
+                                <span class="input-group-text" onclick="togglePassword('newPassword', this)"
+                                    style="cursor:pointer;">
+                                    <i class="fa fa-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    placeholder="Your Password">
+                                <span class="input-group-text" onclick="togglePassword('confirmPassword', this)"
+                                    style="cursor:pointer;">
+                                    <i class="fa fa-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn"
+                                style="background: #0a3c68; color: #fff; width: 100%;">Change Password</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Account Modal -->
+    <div class="modal fade" id="deleteAccountModal" tabindex="-1" aria-labelledby="deleteAccountModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 8px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteAccountModalLabel">Delete Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p style="font-size: 16px;color: rgba(20, 20, 20, 0.6);">To permanently delete your account, please
+                        type the word "DELETE" below:</p>
+                    <div class="p-3">
+                        <label for="deleteConfirmInput" class="form-label">Type here <b>("DELETE")</b></label>
+                        <input type="text" id="deleteConfirmInput" class="form-control" placeholder="Type here"
+                            style="background: #f5f5f5;border: none;">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center gap-3 mb-4">
+                    <button type="button" class="btn A_delete_card_btn_cancel" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn A_delete_card_btn_yes" id="confirmDeleteAccountBtn"
+                        onclick="deleteAccount(event)">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 8px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logoutModalLabel">Logout</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p style="color: rgba(20, 20, 20, 0.6);">Are you sure you want to<br>logout?</p>
+                </div>
+                <div class="d-flex justify-content-center gap-3 mb-4">
+                    <button type="button" class="btn A_delete_card_btn_cancel" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn A_delete_card_btn_yes" id="confirmLogoutBtn">Yes, Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+
+            <div class="row kf-foot">
+
+                <div class="col-12 col-xl-4">
+                    <div class="k-printing">
+                        <div class="kf-logo">
+                            <h1>LOGO</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-xl-8">
+
+                    <div class="row k-Cancellation">
+
+                        <div class="col-5 col-md-4 col-lg-2 col-xl-2">
+                            <div class="k-Quick-data">
+                                <h2>Quick Links</h2>
+
+                                <div class="k-fdata k-fdata1">
+                                    <ul>
+                                        <li><a href="./Home.html">Overview</a></li>
+                                        <li><a href="./Rooms.html">Rooms</a></li>
+                                        <li><a href="./D-Dining2.html">Dinning</a></li>
+                                        <li><a href="./D-Gallery.html">Gallery</a></li>
+                                        <li><a href="./D-about.html">About</a></li>
+                                        <li><a href="./contact-us.html">Contact</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-7 col-md-4 col-lg-2 col-xl-3">
+                            <div class="k-Quick-data">
+                                <h2 class="k-change">More</h2>
+
+                                <div class="k-fdata k-fdata-change k-fdata-change1">
+                                    <ul>
+                                        <li><a href="./Freandquestion.html">FAQs</a></li>
+                                        <li><a href="./PrivacyPolicy.html">Privacy Policy</a></li>
+                                        <li><a href="./CancellationPolicy.html">Cancellation Policy</a></li>
+                                        <li><a href="./Temsandcondition.html">Terms & conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-3 col-xl-4">
+                            <div class="k-Quick-data">
+                                <h2>Get in Touch</h2>
+
+
+                                <div class="row k-Touch">
+
+                                    <div class="k-examp">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>+1 12345 67890</span>
+                                    </div>
+
+                                    <div class="k-examp">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span>example123@gmail.com</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-3 col-xl-3">
+                            <div class="k-Quick-data k-Mobile">
+                                <h2>Experience App On Mobile</h2>
+
+                                <div class="row k-gpay">
+
+                                    <div class="col-2" style="padding: 0 !important;">
+                                        <div class="k-glog">
+                                            <img src="./Image/gpay.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-10" style="padding: 0 !important;">
+                                        <div class="k-play">
+                                            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user&hl=en_IN"
+                                                target="_blank">
+                                                <p>GET IT ON</p>
+                                                <h3>Google Play</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="k-Follow">
+
+                                    <div>
+                                        <h2>Follow us for updates</h2>
+
+                                        <div class="k-midea">
+                                            <a href="https://www.facebook.com/" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-brands fa-x-twitter"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="k-reserved">
+            <p>©2025 All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <!-- ******************** bootstrap ******************************* -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- ******************** web fonts ******************************* -->
+    <script src="./JS/all.min.js"></script>
+    <!-- ******************** js file ******************************* -->
+    <script src="./JS/Header.js"></script>
+    <script src="./JS/Profile.js"></script>
+    
+
+    <!-- ********************  footer js file ******************************* -->
+
+
+
+</body>
+
+</html>

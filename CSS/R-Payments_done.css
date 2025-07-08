@@ -1,0 +1,839 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/open-sans-v40-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v40-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v40-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/open-sans-v40-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v23-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v23-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v23-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v23-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/poppins-v23-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v23-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/inter-v18-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/inter-v18-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/inter-v18-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/inter-v18-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/fonts/inter-v18-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/fonts/inter-v18-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* *************************** */
+
+
+
+body {
+    font-family: 'Open Sans';
+}
+
+
+:root {
+    --font-white-color: #FFFFFF;
+    --font-white-light-color: #FFFFFF99;
+    --font-grey-color: #14141499;
+    --font-blue-color: #034177;
+    --font-dark-color: #141414;
+    --bg-white-color: #FFFFFF;
+    --btn-blue: #034177;
+    --btn-card-bg: #0341770D;
+    --btn-border-light: #1414144D;
+    --btn-card-border-bottom: #1414141A;
+    --btn-card-border: #1414144D;
+    --box-shadow: #00000014;
+    --form-input-bg: #1414140F;
+    --font-color-red: #FF0000;
+}
+
+
+/* **************** */
+
+.rp-header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    background-color: var(--bg-white-color);
+    box-shadow: 5px 5px 10px #00000014;
+    /* backdrop-filter: blur(5px); */
+}
+
+
+.rp-hotel-res-info {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.rp-hotel-res-info img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.rp-hotel-res-info h6 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+    color: var(--font-dark-color);
+    margin-bottom: 5px;
+}
+
+.rp-hotel-res-info p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--font-dark-color);
+}
+
+/* Reservation Details */
+
+.rp-res-details {
+    box-shadow: 0px 0px 5px var(--box-shadow);
+    border-radius: 4px;
+    padding: 15px;
+}
+
+
+.rp-res-details div h4 {
+    color: var(--font-dark-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.rp-res-details div h6 {
+    color: var(--font-dark-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+
+.rp-res-details div button {
+    color: var(--font-blue-color);
+    font-weight: 600;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--font-blue-color);
+}
+
+.rp-res-details div p {
+    color: var(--font-grey-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+
+.rp-res-details div span {
+    color: var(--font-dark-color);
+}
+
+.rp-payment {
+    box-shadow: 0px 0px 5px var(--box-shadow);
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.rp-payment-summary {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--font-dark-color);
+    margin-bottom: 15px;
+}
+
+.rp-cancel-booking {
+    font-weight: 600;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--font-color-red);
+    color: var(--font-color-red);
+    margin-bottom: 15px;
+}
+
+.rp-details-sum1 {
+    color: var(--font-dark-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+
+.rp-details-sum2 {
+    color: var(--font-grey-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+
+.rp-taxes-fees {
+    color: var(--font-grey-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 0px;
+}
+
+.rp-mail {
+    margin: 10px 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--font-grey-color);
+}
+
+.rp-map-iframe {
+    width: 100%;
+    height: 465px;
+}
+
+@media (max-width:1024px) {
+
+    .rp-hotel-res-info img {
+        width: 90px;
+    }
+
+    .rp-hotel-res-info h6 {
+        font-size: 18px;
+    }
+
+    .rp-hotel-res-info p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:375px) {
+
+    .rp-hotel-res-info img {
+        width: 70px;
+    }
+
+    .rp-hotel-res-info h6 {
+        font-size: 16px;
+    }
+
+    .rp-hotel-res-info p {
+        font-size: 14px;
+    }
+
+    .rp-map-iframe {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1440px) {
+    .rp-res-details div h4 {
+        font-size: 16px;
+    }
+
+    .rp-res-details div h6 {
+        font-size: 14px;
+    }
+
+    .rp-res-details div button {
+        font-size: 16px;
+    }
+
+    .rp-res-details div p {
+        font-size: 14px;
+    }
+
+
+    .rp-payment-summary {
+        font-size: 16px;
+    }
+
+    .rp-cancel-booking {
+        font-size: 16px;
+    }
+
+    .rp-details-sum1 {
+        font-size: 14px;
+    }
+
+    .rp-details-sum2 {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width:425px) {
+    .rp-res-details div h4 {
+        font-size: 16px;
+    }
+
+    .rp-res-details div h6 {
+        font-size: 14px;
+    }
+
+    .rp-res-details div button {
+        font-size: 16px;
+    }
+
+    .rp-res-details div p {
+        font-size: 14px;
+    }
+
+    .rp-res-details div p span {
+        font-size: 14px;
+    }
+
+
+    .rp-payment-summary {
+        font-size: 16px;
+    }
+
+    .rp-cancel-booking {
+        font-size: 16px;
+    }
+
+    .rp-details-sum1 {
+        font-size: 14px;
+    }
+
+    .rp-details-sum2 {
+        font-size: 14px;
+    }
+
+    .rp-map-iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+
+@media (max-width:375px) {
+    .rp-res-details div h4 {
+        font-size: 13px;
+    }
+
+    .rp-res-details div h6 {
+        font-size: 12px;
+    }
+
+    .rp-res-details div button {
+        font-size: 12px;
+    }
+
+    .rp-res-details div p {
+        font-size: 12px;
+    }
+
+    .rp-res-details div p span {
+        font-size: 12px;
+    }
+
+
+    .rp-payment-summary {
+        font-size: 13px;
+    }
+
+    .rp-cancel-booking {
+        font-size: 12px;
+    }
+
+    .rp-details-sum1 {
+        font-size: 12px;
+    }
+
+    .rp-details-sum2 {
+        font-size: 12px;
+    }
+
+
+}
+
+
+/***** Banner Section *****/
+
+.rp-banner-b-main {
+    box-shadow: 0px 0px 5px var(--box-shadow);
+    margin-top: 25px;
+}
+
+.rp-banner-building {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.rp-banner-building img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rp-banner-building::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #929292d3 5%, rgba(20, 20, 20, 0) 30.04%);
+    pointer-events: none;
+}
+
+
+.rp-banner-content {
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+}
+
+.rp-banner-content h5 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    color: var(--font-dark-color);
+}
+
+.rp-banner-content p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--font-grey-color);
+}
+
+.rp-banner-playstore {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--font-dark-color);
+    width: fit-content;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--font-white-color);
+}
+
+.rp-banner-playstore img {
+    width: 25px;
+}
+
+.rp-banner-playstore p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.rp-banner-playstore p:first-child {
+    font-size: 12px;
+    color: var(--font-white-color);
+}
+
+.rp-banner-playstore p:last-child {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--font-white-color);
+}
+
+
+@media (min-width:992px) and (max-width:1440px) {
+    .rp-banner-content h5 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .rp-banner-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width:991px) {
+    .rp-banner-building::after {
+        background: none;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .rp-banner-content {
+        padding: 15px;
+    }
+
+    .rp-banner-content h5 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .rp-banner-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}
+
+
+/* **** Footer **** */
+
+.rp-rooms-footer {
+    background-color: var(--btn-blue);
+}
+
+.rp-footer-sub {
+    padding: 50px 0px;
+}
+
+.rp-ft-logo {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--font-white-color);
+}
+
+.rp-ft-info {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: var(--font-white-light-color);
+}
+
+.rp-ft-info br {
+    display: inline;
+}
+
+.rp-ft-heading,
+.rp-ft-heading2 {
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--font-white-color);
+}
+
+.rp-ft-heading+ul {
+    padding: 0px;
+}
+
+.rp-ft-heading+ul li {
+    list-style: none;
+    margin-top: 2px;
+}
+
+.rp-ft-heading+ul li a {
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: var(--font-white-light-color);
+}
+
+.rp-ft-heading+ul li a img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+/**** Playstore ****/
+
+.rp-ft-playstore-main {
+    width: fit-content;
+    white-space: nowrap;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+}
+
+.rp-ft-playstore {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--bg-white-color);
+    width: fit-content;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.rp-ft-playstore img {
+    width: 25px;
+}
+
+.rp-ft-playstore p {
+    margin: 0;
+    line-height: 1.2;
+    color: var(--font-dark-color) !important;
+}
+
+.rp-ft-playstore p:first-child {
+    font-size: 14px;
+    color: var(--font-white-color);
+}
+
+.rp-ft-playstore p:last-child {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--font-white-color);
+}
+
+/* ------- */
+
+.rp-ft-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.rp-ft-social-media div {
+    background-color: var(--bg-white-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.rp-cp-top-border {
+    width: 95%;
+    margin: auto;
+    color: var(--font-white-color);
+    opacity: 0.1;
+}
+
+.rp-rooms-copyrights {
+    color: var(--font-white-light-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+
+@media (max-width:1199px) {
+    .rp-ft-logo {
+        text-align: center;
+    }
+
+    .rp-ft-info {
+        text-align: center;
+    }
+
+    .rp-ft-heading2 {
+        margin: 10px 0px !important;
+        text-align: center;
+    }
+
+    .rp-ft-playstore-main {
+        margin: 20px auto !important;
+        justify-content: center;
+    }
+
+    .rp-ft-social-media {
+        justify-content: center;
+    }
+
+}
+
+
+
+@media (max-width:425px) {
+
+    .k-fdata1 {
+        padding-left: 40px !important;
+    }
+
+    .k-fdata-change1 {
+        padding-left: 70px !important;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .k-fdata {
+        padding-left: 30px !important;
+    }
+
+    .k-fdata-change {
+        padding-left: 55px !important;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .k-fdata {
+        padding-left: 16px !important;
+    }
+
+    .k-fdata-change {
+        padding-left: 40px !important;
+    }
+}

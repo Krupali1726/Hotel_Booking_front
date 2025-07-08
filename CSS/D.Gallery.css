@@ -1,0 +1,371 @@
+header {
+    background: rgba(255, 255, 255, 0.5) !important;
+    position: fixed;
+    z-index: 1100;
+    width: 100%;
+}
+
+
+.rp-header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 9999 !important;
+    box-shadow: 5px 5px 20px #00000014;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+
+.D-memories {
+    text-align: center;
+}
+
+.D-memories h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #034177;
+}
+
+.D-memories h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.D-explore-memories {
+    padding: 50px 0;
+}
+
+.D-memories-p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 auto;
+    color: #6f6f6f;
+}
+
+.D-memories p br {
+    display: block;
+}
+
+.D-memories-img {
+    width: 100%;
+    height: auto;
+}
+
+.D-memories-img img {
+    width: 100%;
+    height: auto;
+}
+
+.D-memories_data,
+.D-memories_data1 {
+    row-gap: 30px;
+    margin-top: 30px !important;
+}
+
+
+
+
+/* For 768px screens (iPad portrait, small tablets) */
+@media (max-width: 768px) {
+    .D-memories_data {
+        row-gap: 10px;
+    }
+
+    .D-memories h3 {
+        margin-bottom: 0px;
+    }
+
+    .D-memories h2 {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+
+    .D-memories p {
+        font-size: 16px;
+    }
+
+    .D-memories p br {
+        display: none;
+    }
+
+    .img-wrapper {
+        max-width: 70% !important;
+        max-height: 90% !important;
+    }
+
+    .image-modal img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+}
+
+/* For 425px screens (large mobile) */
+@media (max-width: 425px) {
+
+    .D-memories h3 {
+        font-size: 16px;
+    }
+
+    .D-memories h2 {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+
+    .D-memories p {
+        font-size: 14px;
+    }
+
+
+    .D-memories-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .D-memories-img {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .D-memories-img {
+        padding: 0px 5px !important;
+    }
+
+
+    .D-memories_data,
+    .D-memories_data1 {
+        margin-top: 50px !important;
+    }
+
+
+}
+
+/* For 375px screens (typical mobile) */
+@media (max-width: 375px) {
+    .D-memories-img {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+
+
+
+}
+
+/* For 320px screens (small mobile) */
+@media (max-width: 320px) {
+    .D-memories-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+
+}
+
+.D-memories_data1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.D-memories-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Overlay background and modal container */
+/* .image-modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .img-wrapper  .image-modal{
+       
+    overflow: hidden;
+    position: relative;
+    }
+
+    .image-modal img {
+   cursor: grab;
+    transition: transform 0.2s ease;
+}
+    .image-modal .close-btn,
+.image-modal .nav-btn {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10000;
+    user-select: none;
+}
+
+    .modal-open {
+        overflow: hidden;
+    }
+    .image-modal .close-btn {
+    top: 10px;
+    right: 20px;
+}
+.image-modal .left-btn {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+.image-modal .right-btn {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+} */
+
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-wrapper {
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.2s ease;
+    cursor: grab;
+    user-select: none;
+    touch-action: none;
+    will-change: transform;
+}
+
+.image-modal .close-btn,
+.image-modal .nav-btn {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+    user-select: none;
+    background-color: #545454;
+    font-size: 18px;
+    padding: 3px 10px;
+}
+
+@media (max-width: 425px) {
+
+    .image-modal .close-btn,
+    .image-modal .nav-btn {
+        font-size: 14px;
+        padding: 2px 10px;
+    }
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.image-modal .close-btn {
+    top: 10px;
+    right: 20px;
+    background-color: transparent !important;
+}
+
+.image-modal .left-btn {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.image-modal .right-btn {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+
+
+/* ---------------footer ------- */
+
+.k-examp {
+    padding: 0 !important;
+}
+
+.k-midea svg {
+    background-color: white !important;
+    color: #034177 !important;
+    padding: 10px !important;
+    border-radius: 5px;
+}
+
+.k-midea svg:hover {
+    background-color: #034177 !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+.k-midea svg {
+    transition: all 0.9s ease;
+}
+
+/* footer 27-06 */
+
+@media (max-width:425px) {
+
+    .k-fdata1 {
+        padding-left: 28px !important;
+    }
+
+    .k-fdata-change1 {
+        padding-left: 57px !important;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .k-fdata {
+        padding-left: 18px !important;
+    }
+
+    .k-fdata-change {
+        padding-left: 42px !important;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .k-fdata {
+        padding-left: 7px !important;
+    }
+
+    .k-fdata-change {
+        padding-left: 25px !important;
+    }
+}

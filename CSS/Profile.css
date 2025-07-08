@@ -1,0 +1,641 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+/* Header - rp  */
+.rp-header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px #00000014;
+}
+
+/* ******************** readymate navs and tabs ******************************* */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #343434;
+    background-color: transparent;
+}
+
+/* ******************** readymate navs and tabs ******************************* */
+.A_header_margin_above {
+    margin-top: 80px;
+}
+
+.A_profile_menu {
+    width: 290px !important;
+    height: auto !important;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.A_profile_menu_active_icon {
+    border-radius: 50%;
+    padding: 3px;
+    background: #0341770D;
+}
+
+.A_profile_menu_active_icon:hover {
+    border-radius: 50%;
+    padding: 3px;
+    background: #2506360d;
+}
+
+.A_profile_menu_active_icon_img {
+    width: 34px;
+    height: 34px;
+    padding: 3px;
+}
+
+.A_profile_menu_active_span {
+    font-weight: 500;
+    font-size: 14px;
+    color: #343434;
+}
+
+.A_profile_menu_active {
+    border-bottom: 1px solid #034177 !important;
+    padding: 12px;
+    background-color: #0341770D !important;
+    border-radius: 0px !important;
+}
+
+.A_profile_menu_unactive {
+    color: #0341770D;
+    padding: 12px;
+}
+
+.A_user_profile_details {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: -4px 4px 14px 0px #00000014;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.A_user_profile_details_form .form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da !important;
+}
+
+.A_user_profile_details_form .form-control {
+    padding: .375rem .375rem .375rem .75rem;
+}
+
+.profile-pic-wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.camera-icon {
+    width: 22px;
+    height: 18px;
+    margin-bottom: 4px;
+}
+
+.custom-phone-input {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 4px 8px;
+    border: none;
+}
+
+.custom-phone-input .form-select,
+.custom-phone-input .form-control {
+    background: #f5f5f5 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.custom-phone-input .form-select:focus,
+.custom-phone-input .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-phone-input .form-select {
+    max-width: 80px;
+}
+
+.custom-radio-group {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.custom-radio {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #333;
+    user-select: none;
+    opacity: 1;
+}
+
+.custom-radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-radio-indicator {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border: 2px solid #0a3c68;
+    border-radius: 50%;
+    transition: border-color 0.2s;
+}
+
+.custom-radio input[type="radio"]:checked~.custom-radio-indicator {
+    background: #fff;
+    border: 2px solid #0a3c68;
+}
+
+.custom-radio input[type="radio"]:checked~.custom-radio-indicator:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    width: 10px;
+    height: 11px;
+    border-radius: 50%;
+    background: #0a3c68;
+}
+
+.custom-radio input[type="radio"]:not(:checked)~.custom-radio-indicator {
+    border: 2px solid rgba(20, 20, 20, 0.6);
+}
+
+.custom-radio input[type="radio"]:not(:checked)~.custom-radio-indicator:after {
+    display: none;
+}
+
+.custom-radio input[type="radio"]:disabled~.custom-radio-indicator {
+    background: #eee;
+    border-color: #ddd;
+}
+
+.A_user_detail_form_btn {
+    width: 400px;
+    height: 44px;
+    border-radius: 4px;
+    gap: 10px;
+    padding-top: 4px;
+    padding-right: 51px;
+    padding-bottom: 4px;
+    padding-left: 51px;
+    background: #0a3c68;
+    color: #fff;
+    border: none;
+
+
+}
+
+/* ******************** user profile booking room ******************************* */
+.A_user_profile_booking_room {
+    width: 982px;
+    height: auto;
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: -4px 4px 14px 0px #00000014;
+    margin-top: 15px;
+}
+
+.A_user_profile_booking_room_img {
+    width: 307px;
+    height: 220px;
+    border-radius: 4px;
+    background: #F5F5F5;
+}
+
+.booking-details {
+    width: 500px;
+}
+
+/* ******************** cancel booking modal ******************************* */
+.modern-radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.modern-radio .form-check-input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 2px solid #bfc6d1;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 14px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.modern-radio .form-check-input[type="radio"]:checked {
+    border-color: #0a3c68;
+    background-color: #fff;
+}
+
+.modern-radio .form-check-input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #0a3c68;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.modern-radio .form-check-label {
+    font-size: 18px;
+    color: #444;
+    cursor: pointer;
+    font-weight: 400;
+    user-select: none;
+}
+
+.modern-radio .form-check-input[type="radio"]:focus {
+    box-shadow: 0 0 0 2px #e3e8f0;
+    border-color: #0a3c68;
+}
+
+.A_cancel_booking_btn {
+    width: 180px;
+    height: 44px;
+    top: 20px;
+    left: 772px;
+    border-radius: 4px;
+    border-width: 1px;
+    padding-left: 1px;
+    gap: 8px;
+    border: 1px solid rgba(20, 20, 20, 0.3);
+    color: rgba(255, 0, 0, 1) !important;
+
+}
+
+/* ******************** review modal ******************************* */
+.A_review_description {
+    height: 150px;
+    background: rgba(20, 20, 20, 0.06);
+
+}
+
+.rp-save-btn-review-main{
+    display: flex;
+    justify-content: center;
+}
+
+.A_review_submit_btn {
+    background: #0a3c68;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 25px;
+}
+
+/* ******************** add card modal ******************************* */
+.A_review_Addcards_btn {
+    background: #0a3c68;
+    color: #fff;
+    width: 150px;
+    height: 44px;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-right: 14px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+}
+
+.A_cards_layout {
+    width: 290px;
+    height: 175px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #02284F 0%, #034177 100%);
+    padding: 15px;
+    color: white;
+}
+
+.A_cards_layout_img {
+    width: 35px;
+    height: 20px;
+}
+
+.A_cards_layout_img1 {
+    width: 14px;
+    height: 16px;
+}
+
+.A_cards_layout_number {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 40px;
+    color: white;
+}
+
+.A_cards_layout_name {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.A_cards_layout_name1 {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.A_delete_card_btn_cancel {
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    gap: 10px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-width: 1px;
+    border: 1px solid rgba(20, 20, 20, 0.1)
+}
+
+.A_delete_card_btn_yes {
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    gap: 10px;
+    padding-top: 5px;
+    padding-right: 28px;
+    padding-bottom: 5px;
+    padding-left: 28px;
+    background: rgba(3, 65, 119, 1);
+    color: #fff !important;
+    border: none;
+}
+
+@media (max-width: 320px) {
+    .d-flex.justify-content-center.gap-3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .A_delete_card_btn_cancel,
+    .A_delete_card_btn_yes {
+        width: 100%;
+        max-width: 240px;
+        text-align: center;
+    }
+}
+
+
+/* ******************** delete account modal ******************************* */
+.A_user_profile_details_delete_account {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(20, 20, 20, 1);
+}
+
+.A_delete_account_btn {
+    background: rgba(3, 65, 119, 1);
+    color: #fff !important;
+    border: none;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-right: 28px;
+    padding-bottom: 12px;
+    padding-left: 28px;
+    gap: 10px;
+
+}
+
+/* ******************** all media query ******************************* */
+
+@media (max-width: 1024px) {
+    .A_profile_menu {
+        width: 100% !important;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        padding: 8px 0;
+        overflow-x: auto !important;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 20px;
+    }
+
+    .A_profile_menu .nav-link {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .A_profile_menu_active_icon_img {
+        width: 26px;
+        height: 27px;
+        padding: 3px;
+    }
+
+    .A_user_profile_booking_room {
+        width: 938px;
+    }
+
+    @media (max-width: 768px) {
+        .A_user_profile_booking_room {
+            width: 700px;
+        }
+
+        .booking-details {
+            width: 440px;
+        }
+    }
+
+}
+
+@media (max-width: 425px) {
+    .A_user_detail_form_btn {
+        width: 360px;
+    }
+
+    .A_user_profile_booking_room {
+        width: 400px;
+    }
+
+    .booking-details {
+        width: 370px;
+    }
+
+    .A_user_profile_booking_room_title {
+        font-size: 16px !important;
+    }
+
+    .A_user_profile_booking_room_price {
+        font-size: 18px !important;
+    }
+
+    .A_user_profile_booking_room_booking_id {
+        font-size: 12px !important;
+    }
+
+    .A_cards_layout {
+        width: 360px;
+    }
+
+    .A_user_profile_booking_room {
+        flex-direction: column !important;
+    }
+
+    .room-image-container {
+        flex: 0 0 200px !important;
+        width: 100% !important;
+    }
+
+    .room-details-container {
+        padding: 15px !important;
+    }
+
+    .A_user_profile_booking_room_img {
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .A_user_detail_form_btn {
+        width: 310px;
+    }
+
+    .A_user_profile_booking_room {
+        width: 350px;
+    }
+
+    .booking-details {
+        width: 322px;
+    }
+}
+
+@media (max-width: 320px) {
+    .A_user_detail_form_btn {
+        width: 250px;
+    }
+
+    .A_user_profile_booking_room {
+        width: 300px;
+    }
+
+    .booking-details {
+        width: 270px;
+    }
+}
+
+.k-midea {
+    gap: 5px;
+    display: flex;
+}
+
+.k-midea a {
+    background-color: white !important;
+    color: #034177 !important;
+    padding: 10px !important;
+    border-radius: 5px;
+}
+
+@media (max-width:768px) {
+    .k-midea {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width:425px) {
+
+    .k-fdata1 {
+        padding-left: 40px !important;
+    }
+
+    .k-fdata-change1 {
+        padding-left: 70px !important;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .k-fdata {
+        padding-left: 30px !important;
+    }
+
+    .k-fdata-change {
+        padding-left: 57px !important;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .k-fdata {
+        padding-left: 19px !important;
+    }
+
+    .k-fdata-change {
+        padding-left: 40px !important;
+    }
+}

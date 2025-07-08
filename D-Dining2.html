@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinning</title>
+
+    <link rel="stylesheet" href="./CSS/D-about.css">
+    <link rel="stylesheet" href="./CSS/D-media.css">
+    <link rel="stylesheet" href="./CSS/D-dinning.css">
+    <link rel="stylesheet" href="./CSS/Header.css">
+    <link rel="stylesheet" href="./CSS/filter.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+
+    <!-- ******************** bootstrap ******************************* -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- ******************** web fonts ******************************* -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- --------------------Header------------ -->
+
+    <header class="rp-header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between k-head">
+
+                <div class="col-6 col-md-2 k-logo" onclick="window.location.href='Rooms.html'">
+                    <h1>LOGO</h1>
+                </div>
+
+                <div class="col-6 d-lg-none text-end">
+                    <button class="navbar-toggler" type="button" id="navbarToggle">
+                        <span class="navbar-toggler-icon">☰</span>
+                    </button>
+                </div>
+
+                <div class="col-12 col-md-7 d-none d-lg-block" id="navbarNav">
+                    <div class="k-diming w-100">
+                        <ul class="navbar-nav d-flex flex-md-row justify-content-md-end align-items-center gap-3">
+                            <li class="nav-item"><a class="nav-link" href="./Home.html">Overview</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./Rooms.html">Rooms</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="./D-Dining2.html">Dinning</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./D-Gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 d-none justify-content-end d-lg-flex">
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <div class="k-sing">
+                            <a data-bs-toggle="modal" data-bs-target="#signinModal" class="LoggedIn"
+                                style="cursor: pointer;">Sign in</a>
+                        </div>
+                        <div class="k-book">
+                            <a href="./BookNow.html">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Collapsible Mobile Nav -->
+
+            <div class="d-lg-none k-collap k-diming" id="mobileNav" style="display: none;">
+                <ul class="navbar-nav flex-column align-items-start mt-3">
+                    <li class="nav-item"><a class="nav-link" href="./Home.html">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Rooms.html">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./D-Dining2.html">Dinning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./D-Gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact us</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center justify-content-start gap-3" style="padding: 15px 0 !important;">
+                    <div class="k-sing">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#signinModal" class="LoggedIn">Sign in</a>
+                    </div>
+                    <div class="k-book">
+                        <a href="./BookNow.html">Book Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- -------------------------- -->
+
+    <section class="D-gallery-section">
+        <div class="D-overlay">
+            <div class="D-content">
+                <h1>Dinning</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam <br /> maxime praesentium.
+                    Why did the scarecrow win an award? Because he <br /> was outstanding in his field. Lorem ipsum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="D-welcome-section D-hotl_exe">
+        <div class="container D-hotl_container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0" style="padding: 0px;">
+                    <div class="image-grid">
+                        <div class="dining-images">
+                            <div class="row image-grid">
+
+                                <div class="side-images ">
+                                    <img src="./IMAGE/image 38 (2).png" alt="Food" class="img-fluid">
+                                    <img src="./IMAGE/image 40 (1).png" alt="Drinks" class="img-fluid">
+                                </div>
+                                <div class="main-image ">
+                                    <img src="./IMAGE/image 39 (1).png" alt="Main Dining" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 ps-lg-5">
+                    <div class="experience-content">
+                        <span class="experience-tag">Hotel Experience</span>
+                        <h2 class="experience-title">From Farm to Fork: Enjoy Fresh, Seasonal Dishes at Bokinn</h2>
+                        <p class="experience-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco.</p>
+
+                        <div class="info-boxes row mt-4">
+                            <div class="col-sm-6 mb-3 mb-sm-0 D-info-pad" style="padding-left: 0px;">
+                                <div class="info-box">
+                                    <h6>Reservation Phone</h6>
+                                    <p>+1 12345 67890</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 D-info-pad" style="padding-right: 0px;">
+                                <div class="info-box">
+                                    <h6>Opening Hours</h6>
+                                    <p>10am - 12pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="dining-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-5 D-photo_data d-dif_data D-our-story">
+                            <p class="D-intro D-intros">Dinning</p>
+                            <h1 class="D-headline D-headlines D-story-data">
+                                Dine. Delight. Discover.
+                            </h1>
+                            <p class="D-description D-descriptions D-story-descri">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            </p>
+                            <p class="D-description D-descriptions D-story-descri">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et .
+                            </p>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                            <div class="dining-gallery">
+
+                                <div class="background-text">DINING</div>
+
+                                <div class="gallery-grid1">
+
+                                    <div class="main-image1">
+                                        <img class="D-image1"
+                                            src="./IMAGE/crilled-chicken-bread-piece-greens-pepper-sauce-spices-side-view 1.png"
+                                            alt="Main Dining">
+                                        <img class="D-image2" src="./IMAGE/beyti-kebab-served-with-ayran-pickles 1.png"
+                                            alt="Food">
+                                    </div>
+
+                                    <div class="side-images1">
+                                        <img src="./IMAGE/side-view-table-with-cheese-plate-pate-it 1.png" alt="Drinks">
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="D-Crafted">
+        <div class="container">
+
+            <div class="D-crafted-Cuisine">
+                <h2>Crafted Cuisine</h2>
+
+                <div class="image-section">
+                    <img src="./IMAGE/closeup-shot-gourmet-vegetable-meat-dish-country-club-new-jersey 1.png"
+                        alt="Delicious Food" />
+
+                    <div class="D-card D-card-1">
+                        <h4>Bestseller</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. <br> Ut enim ad minim veniam.</p>
+                    </div>
+
+                    <div class="D-card D-card-2">
+                        <h4>Taste the Perfection</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. <br> Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="gallery-header">
+            <h2>Our Restaurant Gallery</h2>
+            <div class="D-gallery-p">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <div class="row gallery-grid2">
+            <div class="gallery-item col-6 col-md-4"><img src="./IMAGE/gallery-one.png" alt="Food 1"></div>
+            <div class="gallery-item col-6 col-md-3"><img src="./IMAGE/gallery-two.png" alt="Food 2"></div>
+            <div class="gallery-item col-6 col-md-3"><img src="./IMAGE/gallery-three.png" alt="Food 3"></div>
+            <div class="gallery-item col-6 col-md-2"><img src="./IMAGE/gallery-four.png" alt="Food 4"></div>
+            <div class="gallery-item col-6 col-md-2"><img src="./IMAGE/gallery-five.png" alt="Food 5"></div>
+            <div class="gallery-item col-6 col-md-3"><img src="./IMAGE/gallery-six.png" alt="Food 6"></div>
+            <div class="gallery-item col-6 col-md-3"><img src="./IMAGE/gallery-seven.png" alt="Food 7"></div>
+            <div class="gallery-item col-6 col-md-4"><img src="./IMAGE/gallery-eight.png" alt="Food 8"></div>
+        </div>
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./IMAGE/gallery-one.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./IMAGE/gallery-two.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./IMAGE/gallery-three.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./IMAGE/gallery-four.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./IMAGE/gallery-five.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./IMAGE/gallery-six.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./IMAGE/gallery-seven.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./IMAGE/gallery-eight.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="Restaurant-Menu">
+        <div class="container py-55">
+            <div class="x_menu_header text-center mb-5">
+                <h1>Restaurant Menu</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br class="hide-on-425">
+                    tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+
+            <div class="x_category_buttons mb-44 d-flex  gap-2 D-menu-item">
+                <button class="x_category_btn active">Small Plates</button>
+                <button class="x_category_btn">Cold Appetizers</button>
+                <button class="x_category_btn">Vegetarian & Vegan</button>
+                <button class="x_category_btn">Burgers & Sandwiches</button>
+                <button class="x_category_btn">Dips & Spreads</button>
+                <button class="x_category_btn">Seafood Specialties</button>
+                <button class="x_category_btn">Chinese Food</button>
+                <button class="x_category_btn">Beverages</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="menu-container">
+
+                <div class="menu-item">
+                    <img src="./IMAGE/menu-1.png" alt="Dish 1">
+                    <div class="menu-details">
+                        <div class="menu-title">Tuscan Herb-Crusted Chicken</div>
+                        <div class="menu-description">Salted caramel, Puff pastry, salad</div>
+                    </div>
+                    <div class="menu-price">$123</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./IMAGE/menu-2.png" alt="Dish 2">
+                    <div class="menu-details">
+                        <div class="menu-title">Crispy Garlic Parmesan Wings</div>
+                        <div class="menu-description">Salted caramel, Puff pastry, salad</div>
+                    </div>
+                    <div class="menu-price">$123</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./IMAGE/menu-3.png" alt="Dish 3">
+                    <div class="menu-details">
+                        <div class="menu-title">Spicy Jalapeño Poppers</div>
+                        <div class="menu-description">Salted caramel, Puff pastry, salad</div>
+                    </div>
+                    <div class="menu-price">$123</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./IMAGE/menu-4.png" alt="Dish 3">
+                    <div class="menu-details">
+                        <div class="menu-title">Shrimp Cocktail Deluxe</div>
+                        <div class="menu-description">Salted caramel, Puff pastry, salad</div>
+                    </div>
+                    <div class="menu-price">$123</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./IMAGE/menu-5.png" alt="Dish 3">
+                    <div class="menu-details">
+                        <div class="menu-title">Mozzarella Cheese Sticks</div>
+                        <div class="menu-description">Salted caramel, Puff pastry, salad</div>
+                    </div>
+                    <div class="menu-price">$123</div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./IMAGE/menu-6.png" alt="Dish 3">
+                    <div class="menu-details">
+                        <div class="menu-title">Grilled Lemon Herb Chicken</div>
+                        <div class="menu-description">Salted caramel, Puff pastry, salad</div>
+                    </div>
+                    <div class="menu-price">$123</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------Footer Section ---------- -->
+
+    <footer>
+        <div class="container">
+
+            <div class="row kf-foot">
+
+                <div class="col-12 col-xl-4">
+                    <div class="k-printing">
+                        <div class="kf-logo">
+                            <h1>LOGO</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-xl-8">
+
+                    <div class="row k-Cancellation">
+
+                        <div class="col-5 col-md-4 col-lg-2 col-xl-2">
+                            <div class="k-Quick-data">
+                                <h2>Quick Links</h2>
+
+                                <div class="k-fdata k-fdata1">
+                                    <ul>
+                                        <li><a href="./Home.html">Overview</a></li>
+                                        <li><a href="./Rooms.html">Rooms</a></li>
+                                        <li><a href="./D-Dining2.html">Dinning</a></li>
+                                        <li><a href="./D-Gallery.html">Gallery</a></li>
+                                        <li><a href="./D-about.html">About</a></li>
+                                        <li><a href="./contact-us.html">Contact</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-7 col-md-4 col-lg-2 col-xl-3">
+                            <div class="k-Quick-data">
+                                <h2 class="k-change">More</h2>
+
+                                <div class="k-fdata k-fdata-change k-fdata-change1">
+                                    <ul>
+                                        <li><a href="./Freandquestion.html">FAQs</a></li>
+                                        <li><a href="./PrivacyPolicy.html">Privacy Policy</a></li>
+                                        <li><a href="./CancellationPolicy.html">Cancellation Policy</a></li>
+                                        <li><a href="./Temsandcondition.html">Terms & conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-3 col-xl-4">
+                            <div class="k-Quick-data">
+                                <h2>Get in Touch</h2>
+
+
+                                <div class="row k-Touch">
+
+                                    <div class="k-examp">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>+1 12345 67890</span>
+                                    </div>
+
+                                    <div class="k-examp">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span>example123@gmail.com</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-3 col-xl-3">
+                            <div class="k-Quick-data k-Mobile">
+                                <h2>Experience App On Mobile</h2>
+
+                                <div class="row k-gpay">
+
+                                    <div class="col-2" style="padding: 0 !important;">
+                                        <div class="k-glog">
+                                            <img src="./Image/gpay.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-10" style="padding: 0 !important;">
+                                        <div class="k-play">
+                                            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user&hl=en_IN"
+                                                target="_blank">
+                                                <p>GET IT ON</p>
+                                                <h3>Google Play</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="k-Follow">
+
+                                    <div>
+                                        <h2>Follow us for updates</h2>
+
+                                        <div class="k-midea">
+                                            <a href="https://www.facebook.com/" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-brands fa-x-twitter"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="k-reserved">
+            <p>©2025 All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- *****************************  MODAL **************************-->
+
+    <!-- Sign in Modal -->
+    <div class="modal" id="signinModal">
+        <div class="modal-dialog mb-dialog-sign modal-dialog-centered">
+            <div class="modal-content mb-content-sign">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-sign">
+                    <div class="row">
+
+                        <!-- Left Image -->
+                        <div class="col-md-6 px-0">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn-close mb-close-sign position-absolute top-0 end-0"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="mb-image-sign mb-change-sign">
+                                <img src="./IMAGE/Sign_In.png" alt="Resort" class="mb-img-sign">
+                            </div>
+                        </div>
+
+                        <!-- Right Content -->
+                        <div class="col-md-6 mt-3 mb-right-sign">
+
+                            <div class="mb-text-sign text-center mt-1">
+                                <h5 class="mt-2">Sign in</h5>
+                                <p>Welcome back! Please sign in.</p>
+                            </div>
+
+                            <div class="mb-form-sign">
+
+                                <!-- Updated form tag with onsubmit -->
+                                <form action="" onsubmit="signIn()">
+
+                                    <!-- Matched ID -->
+                                    <div class="mb-email-sign mb-2">
+                                        <label for="signInEmail" class="form-label mb-2">Email</label>
+                                        <input type="email" class="form-control border-0" placeholder="Email"
+                                            id="signInEmail" required>
+                                    </div>
+
+                                    <div class="mb-pass-sign mb-1 position-relative">
+                                        <label for="signInPassword" class="form-label mb-2">Password</label>
+                                        <div class="input-group">
+                                            <input type="password" id="signInPassword"
+                                                class="form-control mb-pass-input border-0" placeholder="Password"
+                                                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{8,}$" required>
+                                            <span class="toggle-password input-group-text"
+                                                onclick="togglePassword(this)"><i
+                                                    class="fa-solid fa-eye-slash mb-eye-icon"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-remember d-flex justify-content-between">
+                                        <div class="mb-remember-sign d-flex align-items-center gap-2">
+                                            <input type="checkbox" id="check" name="check">
+                                            <label for="check">Remember me</label>
+                                        </div>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#forgotpasswordModal">Forgot
+                                            Password?</a>
+                                    </div>
+
+                                    <button type="submit" class="btn mb-subscribe-btn-sign">Sign in</button>
+
+                                </form>
+
+                                <div class="mb-or-sign text-center p-2">
+                                    <div class="divider">OR</div>
+                                </div>
+
+                                <div class="mb-btn-sign d-flex gap-3 mb-3">
+                                    <button type="button" class="btn mb-btn-social-sign w-100">
+                                        <img src="./IMAGE/mb-sign-google.svg" />
+                                        <span class="ms-1">Google</span>
+                                    </button>
+                                    <button type="button" class="btn mb-btn-social-sign w-100">
+                                        <img src="./IMAGE/mb-sign-facebook.svg" />
+                                        <span class="ms-1">Facebook</span>
+                                    </button>
+                                </div>
+
+                                <div class="mb-text-account-sign text-center">
+                                    <small>Didn't have an account?
+                                        <a class="mb-create-sign" href="#" data-bs-dismiss="modal"
+                                            data-bs-toggle="modal" data-bs-target="#createAccountModal">
+                                            Create Account
+                                        </a>
+                                    </small>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Account Modal -->
+    <div class="modal" id="createAccountModal">
+        <div class="modal-dialog mb-dialog-creaco modal-dialog-centered">
+            <div class="modal-content mb-content-creaco">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-creaco px-0">
+                    <div class="row">
+
+                        <!-- Left Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn-close mb-close-creaco position-absolute top-0 end-0"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="mb-image-creaco mb-change-creaco">
+                                <img src="./IMAGE/Sign_In.png" alt="Resort" class="mb-img-creaco">
+                            </div>
+                        </div>
+
+                        <!-- Right Content -->
+                        <div class="col-md-6 mt-3 mb-right-creaco">
+
+                            <div class="mb-text-creaco text-center mt-1">
+                                <h5 class="mt-2">Create Account</h5>
+                                <p>Register your account easily enter your email below</p>
+                            </div>
+
+                            <form action="" onsubmit="createAccount(event)">
+                                <div class="mb-form-creaco">
+
+                                    <!-- Full Name -->
+                                    <div class="mb-fname-creaco mb-2">
+                                        <label for="createAcFullName" class="form-label mb-2">Full Name</label>
+                                        <input type="text" class="form-control border-0" placeholder="Full Name"
+                                            id="createAcFullName" required>
+                                    </div>
+
+                                    <!-- Mobile No. -->
+                                    <div class="mb-mno-creaco mb-2">
+                                        <label for="createAcMobileNum" class="form-label mb-2">Mobile No.</label>
+                                        <div class="input-group">
+                                            <select class="form-select" style="max-width: 70px;" id="countryCode">
+                                                <option value="+91" selected>+91</option>
+                                                <option value="+1">+1</option>
+                                                <option value="+44">+44</option>
+                                            </select>
+                                            <input type="text" class="form-control" id="createAcMobileNum"
+                                                placeholder="Mobile No." pattern="\d{10}" maxlength="10"
+                                                inputmode="numeric" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="mb-email-creaco mb-2">
+                                        <label for="createAcEmail" class="form-label mb-2">Email</label>
+                                        <input type="email" id="createAcEmail" class="form-control border-0"
+                                            placeholder="Email" required>
+                                    </div>
+
+                                    <!-- Password -->
+                                    <div class="mb-pass-creaco mb-3 position-relative">
+                                        <label for="createAcPassword" class="form-label mb-2">Password</label>
+                                        <div class="input-group">
+                                            <input type="password" id="createAcPassword"
+                                                class="form-control mb-pass-input border-0" placeholder="Password"
+                                                required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{8,}$">
+                                            <span class="toggle-password input-group-text"
+                                                onclick="togglePassword(this)">
+                                                <i class="fa-solid fa-eye-slash mb-eye-icon"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <button type="submit" class="btn mb-subscribe-btn-creaco mb-3">Create
+                                        Account</button>
+
+                                    <!-- Link to Sign In -->
+                                    <div class="mb-text-account-creaco text-center">
+                                        <p>Already have an account?
+                                            <a class="mb-cr-creaco" href="#" data-bs-dismiss="modal"
+                                                data-bs-toggle="modal" data-bs-target="#signinModal">
+                                                Sign in
+                                            </a>
+
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Forgot Password Modal -->
+    <div class="modal" id="forgotpasswordModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content mb-content-forpas">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-forpas">
+
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-forpas position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="mb-right-forpas mt-3 p-2">
+
+                        <div class="mb-text-forpas text-center">
+                            <h5 class="mt-2">Forgot Password?</h5>
+                            <p>To recover your account, please enter your email or phone below.</p>
+                        </div>
+
+                        <form action="" id="forget-password" class="p-4">
+
+                            <div class="mb-form-forpas">
+
+                                <div class="mb-email-forpas mb-2">
+                                    <label for="mailForgetPassword" class="form-label mb-2">Email</label>
+                                    <input type="email" class="form-control border-0 p-2" placeholder="Email"
+                                        id="mailForgetPassword" required>
+                                    <p id="wrongMail" class="d-none"> Enter Correct mail Id </p>
+                                </div>
+
+                                <div class="mb-or-forpas text-center p-1">
+                                    <div class="divider-forpas">OR</div>
+                                </div>
+
+                                <div class="mb-mno-forpas mb-4">
+                                    <label for="mobileNumber" class="form-label mb-2">Mobile No.</label>
+                                    <div class="input-group">
+                                        <select class="form-select" style="max-width: 70px; font-size: 14px;">
+                                            <option value="+91" selected>+91</option>
+                                            <option value="+1">+1</option>
+                                            <option value="+44">+44</option>
+                                        </select>
+                                        <input type="number" class="form-control p-2" id="mobileNumber"
+                                            placeholder="Mobile No.">
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn mb-subscribe-btn-forpas">
+                                    Send code
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Verify OTP Mobile Number Modal -->
+    <div class="modal" id="verifyotpModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content mb-content-otp-mobile">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-otp-mobile">
+
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-otp-mobile position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+
+                    <form action="" id="verify-otp-form">
+
+                        <div class="mb-right-otp-mobile mt-3 p-2">
+
+                            <div class="mb-text-otp-mobile text-center">
+                                <h5 class="mt-2">Verify OTP</h5>
+                                <p class="m-0">We've sent a code to <a href="#" class="mb-otp-mobile-number"
+                                        id="sendedMailId"> email </a></p>
+                                <p>Please enter it to verify your Email.</p>
+                            </div>
+
+                            <!-- OTP -->
+                            <div class="mb-otp-mobile-inputs-wrapper d-flex justify-content-center">
+                                <div class="mb-otp-mobile-inputs d-flex justify-content-center gap-3">
+                                    <input type="text" maxlength="1" class="mb-otp-mobile-box" pattern="[0-9]"
+                                        required />
+                                    <input type="text" maxlength="1" class="mb-otp-mobile-box" pattern="[0-9]"
+                                        required />
+                                    <input type="text" maxlength="1" class="mb-otp-mobile-box" pattern="[0-9]"
+                                        required />
+                                    <input type="text" maxlength="1" class="mb-otp-mobile-box" pattern="[0-9]"
+                                        required />
+                                </div>
+                            </div>
+
+                            <div class="mb-form-otp-mobile">
+
+                                <button type="submit" class="btn mb-subscribe-btn-otp-mobile">Verify OTP</button>
+
+                                <div class="mb-text-account-otp-mobile text-center my-3">
+                                    <p>Didn't received code? <a class="mb-cr-otp-mobile"
+                                            onclick="resendOtp()">Resend</a></p>
+                                </div>
+
+                            </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Reset Password Modal -->
+    <div class="modal" id="resetpasswordModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content mb-content-resetpas">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-resetpas">
+
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-resetpas position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="mb-right-resetpas mt-3 p-2">
+
+                        <div class="mb-text-resetpas text-center">
+                            <h5 class="mt-2">Reset Password</h5>
+                            <p>Create a unique password different from your<br>previous ones.</p>
+                        </div>
+
+                        <form action="" class="mb-form-resetpas" onsubmit="resetPwd(event)">
+                            <div class="">
+
+                                <div class="mb-pass-resetpas mb-4 position-relative">
+                                    <label for="newPassword" class="form-label mb-2">New password</label>
+                                    <div class="input-group">
+                                        <input type="password" id="newPassword"
+                                            class="form-control mb-pass-input border-0" placeholder="New password"
+                                            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{6,}$" required>
+                                        <span class="toggle-password input-group-text" onclick="togglePassword(this)"><i
+                                                class="fa-solid fa-eye-slash mb-eye-icon"></i></span>
+                                    </div>
+                                </div>
+
+                                <div class="mb-pass-resetpas mb-4 position-relative">
+                                    <label for="confirmPassword" class="form-label mb-2">Confirm password</label>
+                                    <div class="input-group">
+                                        <input type="password" id="confirmPassword"
+                                            class="form-control mb-pass-input border-0" placeholder="Confirm password"
+                                            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{6,}$" required>
+                                        <span class="toggle-password input-group-text" onclick="togglePassword(this)"><i
+                                                class="fa-solid fa-eye-slash mb-eye-icon"></i></span>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn mb-subscribe-btn-resetpas">Reset Password</button>
+
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ********************************************************* -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ******************** bootstrap ******************************* -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- ******************** web fonts ******************************* -->
+    <script src="./JS/all.min.js"></script>
+    <script src="JS/Header.js"></script>
+    <script src="JS/filter.js"></script>
+    <script src="JS/Dinning.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>

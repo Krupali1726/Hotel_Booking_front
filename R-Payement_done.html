@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booked</title>
+
+
+    <!-- ******************** bootstrap ******************************* -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- *** Font Awesome *** -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- ************ -->
+
+    <link rel="stylesheet" href="/CSS/Header.css">
+    <link rel="stylesheet" href="/CSS/R-Payments_done.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+
+    <!-- Load jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <!-- Header -->
+    <header class="rp-header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between k-head">
+                <div class="col-6 col-md-2 k-logo ps-4" onclick="window.location.href='Rooms.html'"
+                    style="cursor: pointer;">
+                    <h1>LOGO</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Reservation Details  -->
+    <div class="container">
+        <div class="rp-hotel-res-info">
+            <img src="./IMAGE/R-Res-Success.gif" alt="Reservation Success">
+            <h6 id="thankYouName"></h6>
+            <p>Your booking at Hotel has been confirmed. Below are your reservation details.</p>
+        </div>
+    </div>
+
+    <div class="container mt-4 g-4">
+
+        <div class="row">
+
+            <!-- Rerervation Derails -->
+            <div class="col-lg-5">
+
+                <div class="row mx-0 rp-res-details">
+                    <div class="col-lg-12 px-0">
+                        <div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <h4>Reservation Details</h4>
+                                <button id="downloadBtn">Download Invoice</button>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6>Booking ID</h6>
+                                <P id="bookingID"></P>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6>Name</h6>
+                                <P id="bookedUserName"></P>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6>Contact No</h6>
+                                <P id="bookedContact"></P>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6>Email</h6>
+                                <P id="bookedEmail"></P>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6>Guests</h6>
+                                <P id="bookedAdults"></P>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6>Date</h6>
+                                <P id="bookedDate"></P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mx-0 mt-4 rp-payment px-0  ">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="rp-payment-summary">Payment Summary</h4>
+                        <button class="rp-cancel-booking" onclick="cancelBooking()">Cancel Booking</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="rp-details-sum1">Total Amount Paid</h5>
+                        <p class="rp-details-sum2" id="totalAmount"></p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="rp-details-sum1">Payment Method</h5>
+                        <p class="rp-details-sum2" id="PaymentMethod"></p>
+                    </div>
+                    <p class="rp-taxes-fees">Taxes & Fees Included</p>
+                </div>
+
+                <div class=" rp-mail">We've sent a confirmation email to <span
+                        id="confirmMail">example123@gmail.com</span> </div>
+
+            </div>
+
+
+            <!-- Right Part - Map -->
+            <div class="col-lg-7">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.095925423885!2d-122.43868931970474!3d37.7643488968102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e1b3606d49d%3A0xc9a66606d5327c89!2sThe%20Castro%2C%20San%20Francisco%2C%20CA%2094114%2C%20USA!5e0!3m2!1sen!2sin!4v1748251390391!5m2!1sen!2sin"
+                    class="rp-map-iframe" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="row mx-0 rp-banner-b-main">
+            <div class="col-lg-6 px-0">
+                <div class="rp-banner-building">
+                    <img src="./IMAGE/Payments_Building.png" alt="Banner">
+                </div>
+            </div>
+
+            <div class="col-lg-6 px-0">
+                <div class="rp-banner-content">
+
+                    <h5>Manage your bookings, check-in online, and more.</h5>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. </p>
+
+
+                    <a href="https://play.google.com/store" target="_blank" class="rp-banner-playstore">
+                        <img src="./IMAGE/Rooms_Playstore.svg" alt="Playstore">
+                        <div>
+                            <p>GET IT ON</p>
+                            <p>Google Play</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container">
+
+            <div class="row kf-foot">
+
+                <div class="col-12 col-xl-4">
+                    <div class="k-printing">
+                        <div class="kf-logo">
+                            <h1>LOGO</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-xl-8">
+
+                    <div class="row k-Cancellation">
+
+                        <div class="col-5 col-md-4 col-lg-2 col-xl-2">
+                            <div class="k-Quick-data">
+                                <h2>Quick Links</h2>
+
+                                <div class="k-fdata k-fdata1">
+                                    <ul>
+                                        <li><a href="./Home.html">Overview</a></li>
+                                        <li><a href="./Rooms.html">Rooms</a></li>
+                                        <li><a href="./D-Dining2.html">Dinning</a></li>
+                                        <li><a href="./D-Gallery.html">Gallery</a></li>
+                                        <li><a href="./D-about.html">About</a></li>
+                                        <li><a href="./contact-us.html">Contact</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-7 col-md-4 col-lg-2 col-xl-3">
+                            <div class="k-Quick-data">
+                                <h2 class="k-change">More</h2>
+
+                                <div class="k-fdata k-fdata-change k-fdata-change1">
+                                    <ul>
+                                        <li><a href="./Freandquestion.html">FAQs</a></li>
+                                        <li><a href="./PrivacyPolicy.html">Privacy Policy</a></li>
+                                        <li><a href="./CancellationPolicy.html">Cancellation Policy</a></li>
+                                        <li><a href="./Temsandcondition.html">Terms & conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-3 col-xl-4">
+                            <div class="k-Quick-data">
+                                <h2>Get in Touch</h2>
+
+
+                                <div class="row k-Touch">
+
+                                    <div class="k-examp">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>+1 12345 67890</span>
+                                    </div>
+
+                                    <div class="k-examp">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span>example123@gmail.com</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-3 col-xl-3">
+                            <div class="k-Quick-data k-Mobile">
+                                <h2>Experience App On Mobile</h2>
+
+                                <div class="row k-gpay">
+
+                                    <div class="col-2" style="padding: 0 !important;">
+                                        <div class="k-glog">
+                                            <img src="./Image/gpay.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-10" style="padding: 0 !important;">
+                                        <div class="k-play">
+                                            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user&hl=en_IN"
+                                                target="_blank">
+                                                <p>GET IT ON</p>
+                                                <h3>Google Play</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="k-Follow">
+
+                                    <div>
+                                        <h2>Follow us for updates</h2>
+
+                                        <div class="k-midea">
+                                            <a href="https://www.facebook.com/" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-brands fa-x-twitter"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="k-reserved">
+            <p>©2025 All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <!-- ******************** bootstrap ******************************* -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./JS/bookingDone.js"></script>
+
+
+</body>
+
+</html>

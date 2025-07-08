@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.row{
+        --bs-gutter-x: 0rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+/* ///////////////////////////// cancellation policy css ///////////////////////////// */
+
+.D-gallery-section {
+    background-image: url(../Image/background_about.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+  }
+  .D-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+  }
+  .D-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .D-content p {
+    font-size: 1.2rem;
+    color: #FFFFFF99;
+    max-width: 700px;
+    line-height: 1.5;
+  }
+/* ///////////////////////////// cancellation policy css ///////////////////////////// */
+/* ******************** all media query ******************************* */
+@media screen and (max-width:768px) {
+    .D-content p {
+        font-size: 18px !important;
+    }
+}
+@media screen and (max-width:425px) {
+    .D-content h1 {
+        font-size: 35px !important;
+    }
+    .D-content p {
+        font-size: 14px !important;
+    }
+    .D-gallery-section {
+        height: 400px !important;
+    }
+}
+@media screen and (max-width:320px) {
+    .D-content h1 {
+        font-size: 32px !important;
+    }
+}
+
+
+/* ------------------------------------------ */
+
+/* Header */
+
+header {
+    background: rgba(255, 255, 255, 0.5) !important;
+    position: fixed;
+    width: 100%;
+}
+
+
+.rp-header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    box-shadow: 5px 5px 20px #00000014;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.k-midea svg {
+    background-color: white !important;
+    color: #034177 !important;
+    padding: 10px !important;
+    border-radius: 5px;
+}
+
+.k-midea svg:hover {
+    background-color: #034177 !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+.k-midea svg {
+    transition: all 0.9s ease;
+}
+
+
+@media (max-width:425px) {
+
+    .k-fdata1 {
+        padding-left: 40px !important;
+    }
+
+    .k-fdata-change1 {
+        padding-left: 70px !important;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .k-fdata {
+        padding-left: 30px !important;
+    }
+
+    .k-fdata-change {
+        padding-left: 55px !important;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .k-fdata {
+        padding-left: 20px !important;
+    }
+
+    .k-fdata-change {
+        padding-left: 40px !important;
+    }
+}

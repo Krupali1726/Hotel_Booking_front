@@ -1,0 +1,1095 @@
+/* 0 - 575 col */
+
+@media screen and (max-width:575px) {
+
+    .D-content p {
+        font-size: 14px;
+        max-width: 700px;
+        line-height: 25px;
+    }
+
+    .D-content h1 {
+        font-size: 33px;
+        padding-top: 60px;
+    }
+
+    /* .D-headline {
+        font-size: 26px;
+        line-height: 34px;
+    } */
+
+    .D-gallery-section {
+        height: 324px;
+    }
+
+    .D-description {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* .D-headlines {
+        font-size: 16px;
+        line-height: 26px;
+    } */
+
+    /* .D-descriptions {
+        font-size: 14px;
+        line-height: 23px;
+    } */
+
+    .D-About-us {
+        margin-top: 70x !important;
+    }
+
+    .D-About-us {
+        margin: 50px 0 40px 0 !important;
+    }
+
+    .D-Story_us {
+        margin: 0px 0 70px 0 !important;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-text {
+        font-size: 51px;
+    }
+
+    .D-Story_us {
+        margin-top: 10px !important;
+    }
+
+    .d-dif_data {
+        text-align: center !important;
+        /* padding-left: 15px !important; */
+        margin-top: 20% !important;
+    }
+
+    .D-our-story {
+        margin-top: 0% !important;
+    }
+
+    .D-story-descri {
+        font-size: 14px !important;
+        line-height: 23px !important;
+    }
+
+    .D-about-photo {
+        margin-top: 20% !important;
+    }
+
+    .D-welcome-section {
+        text-align: center;
+        padding: 60px 0px 0 0;
+        margin: auto;
+    }
+
+    .why-choose-us {
+        padding: 55px 0px;
+        text-align: center;
+    }
+
+
+    /* ---------- why-choose ---------- */
+
+    .feature-box .text h4 {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .feature-box .text p {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .feature-box .icon {
+        font-size: 23px;
+        padding: 27px;
+    }
+
+    .features-grid {
+        gap: 40px 20px;
+    }
+
+    .feature-box {
+        align-items: center;
+    }
+
+    .mission-section {
+        width: 425px !important;
+    }
+
+    .mission-image img {
+        width: 100%;
+        height: 379px !important;
+        height: auto;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+
+    .mission-image {
+        padding: 0 !important;
+    }
+
+    .mission-content {
+        padding: 0 20px 0 20px !important;
+    }
+
+    .mission-content p,
+    .mission-content ul li {
+        font-size: 14px;
+    }
+
+    .mission-section {
+        /* flex-direction: column; */
+        padding: 0px;
+    }
+
+    .image-container1 img {
+        height: 123px !important;
+    }
+
+    .image-container img {
+        height: 262px !important;
+    }
+
+    .experience-title {
+        font-size: 18px !important;
+    }
+
+    .experience-desc {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+    }
+
+    .D-box-padding1 {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .image-grid {
+        margin-bottom: 0rem;
+        gap: 0px !important;
+
+    }
+
+    .image-grid {
+        flex-direction: inherit !important;
+    }
+
+    .side-images img {
+        height: 115px !important;
+    }
+
+    .main-image {
+        padding-left: 0px !important;
+    }
+
+    .D-hotl_container {
+        width: 100% !important;
+        padding: 0px !important;
+    }
+
+    .D-info-pad {
+        padding: 0px !important;
+    }
+
+    .side-images img {
+        height: 143px !important;
+    }
+
+    .main-image {
+        height: 306px !important;
+    }
+
+    .container {
+        width: 100% !important;
+    }
+
+    .carousel-item img {
+        height: 100% !important;
+        margin-top: 0px;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+
+    /* .D-headlines {
+        font-size: 17px;
+        line-height: 30px;
+    } */
+
+    /* .D-descriptions {
+        font-size: 17px;
+        line-height: 18px;
+    } */
+
+    .feature-box .text p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .D-content h1 {
+        font-size: 30px;
+    }
+
+    .D-content p {
+        font-size: 14px;
+        max-width: 700px;
+        line-height: 22px;
+    }
+
+    .D-our-story {
+        margin-top: 10% !important;
+    }
+
+    .D-description {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .D-Story_us {
+        margin-top: 10px !important;
+    }
+
+    .D-About-us {
+        margin: 0 !important;
+    }
+
+    .D-story-descri {
+        font-size: 13px !important;
+        line-height: 25px !important;
+    }
+
+    .D-welcome-section {
+        text-align: center;
+        padding: 0;
+        margin: auto;
+    }
+
+    .D-gallery-section {
+        height: 342px;
+    }
+
+    .D-intro {
+        margin-top: 40px;
+    }
+
+    .D-intros {
+        margin-top: 0px;
+    }
+
+    .d-dif_photo {
+        margin-top: 20%;
+    }
+
+    .hero-text {
+        font-size: 43px;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+    .mission-section {
+        width: 375px !important;
+    }
+
+    .mission-image {
+        width: 100% !important;
+    }
+
+    .mission-image img {
+        width: 100%;
+        height: 338px !important;
+        height: auto;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+
+    .d-hotl_exe {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .image-grid {
+        margin-bottom: 0rem !important;
+    }
+
+    .D-hotl_exe {
+        padding: 40px 0 0 0 !important;
+    }
+
+    .D-hotl_container {
+        width: 100% !important;
+        padding: 0px !important;
+    }
+
+    .D-info-pad {
+        padding: 0px !important;
+    }
+
+    .why-choose-us {
+        padding: 35px 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    /* .D-headlines {
+        font-size: 14px;
+        line-height: 22px;
+    } */
+
+    /* .D-descriptions {
+        font-size: 11px;
+        line-height: 18px;
+    } */
+
+    .feature-box .text p {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    .D-content h1 {
+        font-size: 30px;
+    }
+
+    .D-content p {
+        font-size: 14px;
+        max-width: 700px;
+        line-height: 22px;
+    }
+
+    /* .D-headline {
+        font-size: 22px;
+        line-height: 34px;
+    } */
+
+    .D-description {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .hero-text {
+        font-size: 43px;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+    .mission-image img {
+        width: 100%;
+        height: 280p0x !important;
+        height: auto;
+        border-radius: 4px;
+        object-fit: cover;
+
+    }
+
+    .mission-section {
+        width: 320px !important;
+    }
+
+    .mission-content h2 {
+        font-size: 19px;
+    }
+
+    .D-crafted-Cuisine h2 {
+        font-size: 23px !important;
+    }
+
+    /* .col-6 {
+        padding: 0px !important;
+    } */
+    .d-hotl_exe {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .mb-4 {
+        padding: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .image-grid {
+        margin-bottom: 0rem !important;
+    }
+
+    .ps-lg-5 {
+        padding-left: 0px !important;
+    }
+
+    .experience-content {
+        padding: 0px !important;
+    }
+
+    .main-image {
+        padding-left: 0px !important;
+    }
+
+    .D-our-story {
+        margin-top: 10% !important;
+    }
+
+}
+
+
+/* 576 - 767 sm */
+@media screen and (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .D-content p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .carousel-item img {
+        height: 100% !important;
+        margin-top: 50px;
+    }
+
+    #kd-vid {
+        padding: 2rem 0 0 0 !important;
+    }
+
+    .D-content h1 {
+        font-size: 42px;
+        margin-bottom: 1.7rem;
+    }
+
+    /* .D-headline {
+        font-size: 26px;
+        line-height: 35px;
+    } */
+
+    .D-description {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    /* .D-headlines {
+        font-size: 21px;
+        line-height: 30px;
+    } */
+
+    /* .D-descriptions {
+        font-size: 16px;
+        line-height: 29px;
+    } */
+
+    .D-About-us {
+        margin-top: 60px !important;
+    }
+
+    .d-dif_data {
+        text-align: center !important;
+        /* padding-left: 15px !important; */
+        margin-top: 12% !important;
+    }
+
+    .D-our-story {
+        margin-top: 0px !important;
+    }
+
+    .D-about-photo {
+        margin-top: 10% !important;
+    }
+
+    .mission-content ul li {
+        font-size: 16px;
+    }
+
+    .mission-content p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .D-welcome-section {
+        text-align: center;
+        padding: 60px 00px;
+        margin: auto;
+    }
+
+    /* ---------- why-choose ---------- */
+
+    .feature-box .text h4 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .feature-box .text p {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    .feature-box .icon {
+        font-size: 23px;
+        padding: 27px;
+    }
+
+    .features-grid {
+        gap: 40px 20px;
+    }
+
+    .feature-box {
+        align-items: center;
+        width: 100% !important;
+    }
+
+    .image-grid {
+        flex-direction: row;
+    }
+
+}
+
+
+/* 768 - 991 md */
+@media screen and (min-width:768px) {
+
+    .container {
+        max-width: 720px;
+    }
+
+    .mission-content ul li {
+        font-size: 11px;
+    }
+
+    .side-images1 img {
+        height: 438px !important;
+        width: 237px !important;
+    }
+
+    .background-text {
+        font-size: 68px !important;
+        top: 5px !important;
+        left: 40% !important;
+    }
+
+    .mission-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .D-content p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    .D-content h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    /* .D-headline {
+        font-size: 26px;
+        line-height: 35px;
+    } */
+
+    .menu-title {
+        font-size: 14px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .D-description {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    /* .D-headlines {
+        font-size: 16px;
+        line-height: 21px;
+    } */
+/* 
+    .D-descriptions {
+        font-size: 12px;
+        line-height: 20px;
+    } */
+
+    .D-About-us {
+        margin: 30px 0 30px 0 !important;
+    }
+
+    .d-dif_data {
+        text-align: start !important;
+        /* padding-left: 15px !important; */
+    }
+
+
+    .D-intro {
+        margin-bottom: 3px;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .D-story-data {
+        font-size: 17px !important;
+    }
+
+    .D-story-descri {
+        font-size: 15px !important;
+        line-height: 23px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .D-welcome-section {
+        text-align: center;
+        padding: 60px 0px;
+        margin: auto;
+    }
+
+    .d-dif_data {
+        /* padding-left: 15px !important; */
+        margin-top: 6% !important;
+    }
+
+    .D-our-story {
+        margin-top: 0px !important;
+    }
+
+    .D-about-photo {
+        margin-top: 10% !important;
+    }
+
+
+    /* ---------- why-choose ---------- */
+
+    .feature-box .text h4 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .feature-box .text p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .feature-box .icon {
+        font-size: 23px;
+        padding: 27px;
+    }
+
+    .features-grid {
+        gap: 40px 20px;
+    }
+
+    .feature-box {
+        align-items: flex-start;
+    }
+
+    .mission-image img {
+        width: 100%;
+        height: 306px !important;
+        height: auto;
+    }
+
+    .mission-section {
+        gap: 0px;
+    }
+
+    .feature-box {
+        align-items: center;
+        width: 100% !important;
+    }
+
+    /* --------- Dining --------- */
+
+    .image-grid {
+        margin-bottom: 1.5rem;
+        gap: 0px !important;
+    }
+
+    .side-images img {
+        height: 216px !important;
+    }
+
+    .main-image {
+        height: 452px !important;
+    }
+
+    .gallery-header p {
+        width: 65% !important;
+    }
+
+    .menu-item {
+        width: 323px !important;
+    }
+
+    .menu-title {
+        font-size: 14px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .menu-description {
+        line-height: 19px !important;
+    }
+
+    .x_category_btn {
+        padding: 8px 12px !important;
+        font-size: 13px !important;
+    }
+}
+
+/* 992 - 1199 lg */
+@media screen and (min-width:992px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+    .D-about-photo {
+        margin-top: 0% !important;
+    }
+
+    .side-images1 img {
+        height: 438px !important;
+        width: 299px !important;
+    }
+
+    .D-intro {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .background-text {
+        font-size: 72px !important;
+        top: 5px !important;
+        left: 37% !important;
+    }
+
+    .d-dif_data {
+        /* padding-left: 15px !important; */
+        margin-top: 0% !important;
+    }
+
+    .menu-title {
+        font-size: 16px !important;
+        margin-bottom: 0px !important;
+        line-height: 26px !important;
+    }
+
+    .D-headline {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    .D-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .D-headlines {
+        font-size: 21px;
+        line-height: 29px;
+    }
+
+    /* .D-descriptions {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    } */
+
+    .d-dif_data {
+        /* padding-left: 30px !important; */
+    }
+
+    .menu-item {
+        width: 438px !important;
+    }
+
+    .D-intro {
+        margin-bottom: 9px;
+    }
+
+    .D-story-descri {
+        font-size: 17px !important;
+        line-height: 25px !important;
+    }
+
+    .D-story-data {
+        font-size: 23px !important;
+        line-height: 36px;
+    }
+
+
+    /* -------------------- */
+
+    .feature-box .text h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .feature-box .text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .feature-box .icon {
+        font-size: 32px;
+        padding: 38px;
+    }
+
+    .features-grid {
+        gap: 60px 30px;
+    }
+
+    .feature-box {
+        align-items: center;
+        width: 48% !important;
+    }
+
+    /* ------- mission-section -------- */
+
+    .mission-section {
+        padding: 0px 30px 100px 30px;
+    }
+
+    .mission-section {
+        gap: 20px;
+    }
+
+    .mission-image {
+        width: 47% !important;
+    }
+
+    .mission-image img {
+        width: 100%;
+        height: 405px !important;
+        height: auto;
+    }
+
+    .mission-content p {
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .mission-content ul li {
+        margin-bottom: 12px;
+        font-size: 13px;
+    }
+
+
+    /* ----------------------- */
+
+    .experience-title {
+        font-size: 25px !important;
+    }
+
+    .experience-desc {
+        font-size: 13px !important;
+    }
+
+    .info-box h6 {
+        font-size: 17px !important;
+        line-height: 22px !important;
+    }
+
+    .info-box p {
+        font-size: 14px !important;
+    }
+
+    .main-image {
+        height: 454px !important;
+    }
+
+    .side-images img {
+        height: 217px !important;
+    }
+
+    .why-choose-us {
+        padding: 20px 0px 70px;
+        text-align: center;
+    }
+
+
+    /* -------------------- */
+
+}
+
+
+/* 1200 - 1399 xl */
+@media screen and (min-width:1200px) {
+
+    .container {
+        max-width: 1140px;
+    }
+
+    .D-headline {
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    .side-images1 img {
+        height: 485px !important;
+        width: 339px !important;
+    }
+
+    .background-text {
+        font-size: 79px !important;
+        top: 70px !important;
+        left: 37% !important;
+    }
+
+    .D-description {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .D-headlines {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    /* .D-descriptions {
+        font-size: 17px;
+        line-height: 30px;
+    } */
+
+    .D-About-us {
+        margin-top: 50px !important;
+    }
+
+    .D-story-data {
+        font-size: 24px !important;
+    }
+
+    .D-story-descri {
+        font-size: 17px !important;
+        line-height: 30px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .menu-item {
+        width: 615px !important;
+    }
+
+    .x_category_btn {
+        padding: 8px 12px !important;
+        font-size: 16px !important;
+    }
+
+    .mission-image img {
+        width: 100%;
+        height: 562px !important;
+    }
+
+    .mission-image {
+        width: 50% !important;
+    }
+
+    .mission-section {
+        gap: 0px;
+    }
+
+    .mission-content p {
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .mission-content ul li {
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+
+    /* ---------- Dining ---------- */
+
+
+    .experience-title {
+        font-size: 30px !important;
+    }
+
+    .experience-desc {
+        font-size: 16px !important;
+    }
+
+    .info-box h6 {
+        font-size: 18px !important;
+        line-height: 26px !important;
+    }
+
+    .info-box p {
+        font-size: 16px !important;
+    }
+
+    .image-container1 img {
+        height: 259px !important;
+    }
+
+    .image-container img {
+        height: 547px !important;
+    }
+
+    .image-container.large {
+        min-height: 547px !important;
+    }
+
+
+    -------------------------/ .x_category_btn {
+        padding: 8px 16px !important;
+        font-size: 14px !important;
+    }
+}
+
+/* 1400 xxl */
+@media screen and (min-width:1400px) {
+
+    .container {
+        max-width: 1320px;
+    }
+
+    .D-headlines {
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    /* .D-descriptions {
+        font-size: 18px;
+        line-height: 26px;
+    } */
+
+    .D-story-data {
+        font-size: 29px !important;
+    }
+
+    .D-story-descri {
+        font-size: 18px !important;
+        line-height: 26px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .mission-image img {
+        width: 645px !important;
+        height: 562px !important;
+    }
+
+    .image-container1.small {
+        height: 272px !important;
+        margin-bottom: 20px;
+    }
+
+    .dining-section {
+        padding: 70px 0 00px 0 !important;
+    }
+
+    .menu-item {
+        max-width: 615px !important;
+    }
+
+    #carouselExampleControls {
+        display: none !important;
+    }
+
+    .background-text {
+        font-size: 100px !important;
+        top: 70px !important;
+        left: 44% !important;
+    }
+
+}

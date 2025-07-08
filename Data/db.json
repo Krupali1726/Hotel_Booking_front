@@ -1,0 +1,1176 @@
+{
+  "subscribers": [
+    {
+      "id": "f15d",
+      "Id": 968,
+      "Email": "milan1@gmail.com"
+    },
+    {
+      "id": "5d91",
+      "Email": "ravi@gmail.com"
+    },
+    {
+      "id": "5e41",
+      "Email": "milan@gmail.com"
+    },
+    {
+      "id": "e835",
+      "Email": "ravi123@gmail.com"
+    },
+    {
+      "id": "819d"
+    },
+    {
+      "id": "6d6b",
+      "Email": "ABC@gmail.com"
+    },
+    {
+      "id": "fbe5",
+      "Email": "ABC123@gmail.com"
+    }
+  ],
+  "createAccount": [
+    {
+      "id": "d779",
+      "AccountId": 5304,
+      "FullName": "Ravi Prajapati",
+      "Country_code": "+91",
+      "MobileNumber": "1234567899",
+      "Email_id": "ravi@gmail.com",
+      "Password": "Ravi@1234",
+      "DOB": "",
+      "Gender": "",
+      "saved_cards": [
+        {
+          "Card_Id": 518,
+          "Card_No": "4242 4242 4242 4242",
+          "Expiry_date": "12/79",
+          "CVV": "1234",
+          "Holder_Name": "ravi prajapati"
+        }
+      ],
+      "User_Image": "./IMAGE/user.png",
+      "MyBooking": [
+        {
+          "Details": {
+            "Id": 1701,
+            "BookedDate": " Wed 24 Sept - Thu 02 Oct ( 8 nights )",
+            "BookingId": "BKG412",
+            "firstName": "Ravi",
+            "lastName": "Prajapati",
+            "Email": "ravi@gmail.com",
+            "Country": "India",
+            "Gender": "Mr",
+            "MobileNumber": "",
+            "CountryCode": "",
+            "TripPurpose": "",
+            "TotalGuest": "1",
+            "TotalChild": "0",
+            "TotalPaid": "$989",
+            "PaymentMethod": "Online Pay",
+            "RoomsChoised": "Room Only",
+            "Location": "Liverpool",
+            "TotalDays": "8",
+            "cancelreason": {
+              "reason": "Health or medical reasons"
+            },
+            "Status": "cancelled"
+          },
+          "RoomData": {
+            "Room1": {
+              "HotelId": 7837,
+              "Bed": {
+                "Bed_Title": "1 queen Bed",
+                "Bed_Details": "Non-Smoking",
+                "Bed_icon": "./IMAGE/2twin_beds.svg"
+              },
+              "SpecialRequest": "Room 1 Special request",
+              "Guests": [
+                {
+                  "firstName": "Ravi ",
+                  "lastName": "Prajapati"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Details": {
+            "Id": 1063,
+            "BookedDate": " Fri 19 Sept - Sat 27 Sept ( 8 nights )",
+            "BookingId": "BKG342",
+            "firstName": "Milan",
+            "lastName": "bhai",
+            "Email": "milan@gmail.com",
+            "Country": "India",
+            "Gender": "Mr",
+            "MobileNumber": "",
+            "CountryCode": "",
+            "TripPurpose": "",
+            "TotalGuest": "4",
+            "TotalChild": "3",
+            "TotalPaid": "$5521",
+            "PaymentMethod": "On Arrival",
+            "RoomsChoised": "Room Only",
+            "Location": "London",
+            "TotalDays": "8",
+            "cancelreason": {
+              "reason": "Change in travel plans"
+            },
+            "Status": "cancelled"
+          },
+          "RoomData": {
+            "Room1": {
+              "HotelId": 1234,
+              "Bed": {
+                "Bed_Title": "1 queen Bed",
+                "Bed_Details": "Non-Smoking",
+                "Bed_icon": "./IMAGE/2twin_beds.svg"
+              },
+              "SpecialRequest": "room  1....",
+              "Guests": [
+                {
+                  "firstName": "milan",
+                  "lastName": "bhai"
+                }
+              ]
+            },
+            "Room2": {
+              "HotelId": 6977,
+              "Bed": {
+                "Bed_icon": "./IMAGE/2twin_beds.svg",
+                "Bed_Title": "2 tween Bed",
+                "Bed_Details": "Non-Smoking"
+              },
+              "SpecialRequest": "room 2....",
+              "Guests": [
+                {
+                  "firstName": "Ravi ",
+                  "lastName": "Prajapati"
+                },
+                {
+                  "firstName": "Prajapati",
+                  "lastName": "Ravi"
+                }
+              ]
+            },
+            "Room3": {
+              "HotelId": 1234,
+              "Bed": {
+                "Bed_Title": "2 queen Bed",
+                "Bed_Details": "Non-Smoking",
+                "Bed_icon": "./IMAGE/2twin_beds.svg"
+              },
+              "SpecialRequest": "Room 3...",
+              "Guests": [
+                {
+                  "firstName": "Savani",
+                  "lastName": "Dhruvin"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Details": {
+            "Id": 831,
+            "BookedDate": " Thu 26 Jun - Fri 27 Jun ( 1 nights )",
+            "BookingId": "BKG590",
+            "firstName": "Ravi",
+            "lastName": "Prajapati",
+            "Email": "ravi@gmail.com",
+            "Country": "India",
+            "Gender": "Mr",
+            "MobileNumber": "",
+            "CountryCode": "",
+            "TripPurpose": "",
+            "TotalGuest": "1",
+            "TotalChild": "0",
+            "TotalPaid": "$128",
+            "PaymentMethod": "Online Pay",
+            "RoomsChoised": "Room Only",
+            "Location": "London",
+            "TotalDays": "1"
+          },
+          "RoomData": {
+            "Room1": {
+              "HotelId": 1234,
+              "Bed": {
+                "Bed_icon": "./IMAGE/2twin_beds.svg",
+                "Bed_Title": "1 king Bed",
+                "Bed_Details": "Non-Smoking"
+              },
+              "SpecialRequest": "",
+              "Guests": []
+            }
+          }
+        },
+        {
+          "Details": {
+            "Id": 1657,
+            "BookedDate": " Fri 27 Jun - Sat 28 Jun ( 1 nights )",
+            "BookingId": "BKG331",
+            "firstName": "Raaavi",
+            "lastName": "Prajapati",
+            "Email": "ravi@gmail.com",
+            "Country": "India",
+            "Gender": "Mr",
+            "MobileNumber": "",
+            "CountryCode": "",
+            "TripPurpose": "",
+            "TotalGuest": "1",
+            "TotalChild": "0",
+            "TotalPaid": "$128",
+            "PaymentMethod": "Online Pay",
+            "RoomsChoised": "Room Only",
+            "Location": "London",
+            "TotalDays": "1"
+          },
+          "RoomData": {
+            "Room1": {
+              "HotelId": 1234,
+              "Bed": {
+                "Bed_icon": "./IMAGE/2twin_beds.svg",
+                "Bed_Title": "1 king Bed",
+                "Bed_Details": "Non-Smoking"
+              },
+              "SpecialRequest": "",
+              "Guests": []
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "OTP": [
+    {
+      "id": "f91a",
+      "OTP_ID": 21014,
+      "Mail": "savani@gmail.com",
+      "OTP_NO": 8150
+    },
+    {
+      "id": "906b",
+      "OTP_ID": 14734,
+      "Mail": "milan@gmail.com",
+      "OTP_NO": 4946
+    },
+    {
+      "id": "4f9d",
+      "OTP_ID": 47737,
+      "Mail": "ravi@gmail.com",
+      "OTP_NO": 2662
+    },
+    {
+      "id": "f7e1",
+      "OTP_ID": 62826,
+      "Mail": "milan123@gmail.com",
+      "OTP_NO": 7584
+    }
+  ],
+  "Hotels": [
+    {
+      "Id": 1234,
+      "City": "London",
+      "Rooms": "1",
+      "Rooms_Image": "./IMAGE/Rooms_Hotel1.png",
+      "Badges_icon": "./IMAGE/Rooms_popular.svg",
+      "Badges": "POPULAR",
+      "Hotel_Name": "Deluxe King Room",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "Room_Only_Price": "$123",
+      "Room_With_Breakfast": "$12",
+      "Wifi_icon": "./IMAGE/Rooms_wifi.svg",
+      "Wifi_text": "Free WiFi",
+      "Person_icon": "./IMAGE/Rooms_guest.svg",
+      "Person_Total": "1 Guests",
+      "Ac_icon": "./IMAGE/Rooms_Ac.svg",
+      "Ac_text": "Non-AC",
+      "Bed_choise": [
+        {
+          "Bed_icon": "./IMAGE/2twin_beds.svg",
+          "Bed_Title": "1 king Bed",
+          "Bed_Details": "Non-Smoking"
+        },
+        {
+          "Bed_icon": "./IMAGE/2twin_beds.svg",
+          "Bed_Title": "1 queen Bed",
+          "Bed_Details": "Non-Smoking"
+        },
+        {
+          "Bed_icon": "./IMAGE/2twin_beds.svg",
+          "Bed_Title": "2 queen Bed",
+          "Bed_Details": "Non-Smoking"
+        }
+      ],
+      "Booked_Date": [
+        {
+          "checkIn": "9 Jun 2025",
+          "checkOut": "10 Jun 2025"
+        },
+        {
+          "checkIn": "23 Jun 2025",
+          "checkOut": "24 Jun 2025"
+        },
+        {
+          "checkIn": "24 Jun 2025",
+          "checkOut": "25 Jun 2025"
+        },
+        {
+          "checkIn": "28 Jun 2025",
+          "checkOut": "29 Jun 2025"
+        },
+        {
+          "checkIn": "2 Jul 2025",
+          "checkOut": "10 Jul 2025"
+        },
+        {
+          "checkIn": "19 Sept 2025",
+          "checkOut": "27 Sept 2025"
+        },
+        {
+          "checkIn": "26 Jun 2025",
+          "checkOut": "27 Jun 2025"
+        },
+        {
+          "checkIn": "27 Jun 2025",
+          "checkOut": "28 Jun 2025"
+        }
+      ],
+      "View_Details": [
+        {
+          "V_Title": "Deluxe King Room",
+          "V_Guest": "1",
+          "V_imag1": "./IMAGE/roomviewddetails.png",
+          "V_imag2": "./IMAGE/roomviewddetails.png",
+          "V_imag3": "./IMAGE/roomviewddetails.png",
+          "V_Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+          "Bed": "Double Bed",
+          "Bathroom": "1",
+          "Bathrom": true,
+          "Ac_icon": "./IMAGE/ac.svg",
+          "Ac_text": "Air Conditioning",
+          "NonAC": true,
+          "CableTv_icon": "./IMAGE/cable_tv.svg",
+          "cableTv_text": "Cable TV",
+          "CableTv": true,
+          "Wifi_icon": "./IMAGE/wifi.svg",
+          "Wifi_text": " Wi-Fi Internet",
+          "Wifi": true,
+          "slipper_icon": "./IMAGE/slipper.svg",
+          "slipper_text": "Slippers",
+          "slipper": true,
+          "towel_icon": "./IMAGE/towels.svg",
+          "towel_text": "Towels",
+          "towel": true,
+          "hairDryer_icon": "./IMAGE/hair_dryer.svg",
+          "hairDryer_text": "Hair Dryer",
+          "hairDryer": false,
+          "shampoo_icon": "./IMAGE/shampoo.svg",
+          "shampoo_text": "Shampoo",
+          "shampoo": true,
+          "safeBox_icon": "./IMAGE/safe_box.svg",
+          "safeBox_text": "Safe Box",
+          "safeBox": false,
+          "welcome_icon": "./IMAGE/welcome_drinks.svg",
+          "welcome_text": "Welcome Drinks",
+          "welcome": true,
+          "pet_icon": "./IMAGE/pet_friendly.svg",
+          "pet_text": "Pet Friendly",
+          "pet": false,
+          "machine_icon": "./IMAGE/espresso_machine.svg",
+          "machine_text": "Espresso Machine",
+          "machine": false,
+          "ref_icon": "./IMAGE/inroom_refrigerator.svg",
+          "ref_text": "In-room Refrigerator",
+          "ref": true,
+          "teamachine": false
+        }
+      ],
+      "Room_Types": [
+        {
+          "Single_Room": "Single Room",
+          "singleroom": true,
+          "Double_Room": "Double Room",
+          "doubleroom": false,
+          "Twin_Room": "Twin Room",
+          "twinroom": false,
+          "Triple_Room": "Triple Room",
+          "tripleroom": false,
+          "Deluxe_Room": "Deluxe Room",
+          "deluxeroom": false,
+          "Executive_Room": "Executive Room",
+          "executiveroom": true,
+          "Family_Room": "Family Room",
+          "familyroom": true,
+          "Connecting_Rooms": "Connecting Rooms",
+          "connectingrooms": true
+        }
+      ],
+      "Room_View": [
+        {
+          "City_View": "City View",
+          "cityview": true,
+          "Sea_View_Ocean_View": "Sea View / Ocean View",
+          "seaviewcceanview": false,
+          "Pool_View": "Pool View",
+          "poolview": true,
+          "Garden_View": "Garden View",
+          "gardenview": true,
+          "Mountain_View": "Mountain View",
+          "mountainview": false,
+          "Lake_View_River_View": "Lake View / River View",
+          "lakeviewriverview": true,
+          "Beachfront_Beach_View": "Beachfront / Beach View",
+          "beachfrontbeachview": true,
+          "Park_View": "Park View",
+          "parkview": true,
+          "Courtyard_View": "Courtyard View",
+          "courtyardview": false,
+          "Landmark_View": "Landmark View",
+          "landmarkview": true,
+          "Street_View": "Street View",
+          "streetview": true,
+          "Bay_View": "Bay View",
+          "bayview": true,
+          "Interior_View": "Interior View",
+          "interiorview": true
+        }
+      ],
+      "Reviews": [
+        {
+          "rating": 5,
+          "description": "!123213",
+          "BookingId": "BKG753",
+          "fullName": "Milan !!!"
+        },
+        {
+          "rating": 5,
+          "description": "F",
+          "BookingId": "BKG200",
+          "fullName": "Milan Bhakhar"
+        }
+      ],
+      "id": "1234"
+    },
+    {
+      "Id": 6977,
+      "City": "London",
+      "Rooms": "1",
+      "Rooms_Image": "./IMAGE/Rooms_Hotel2.png",
+      "Badges_icon": "./IMAGE/Rooms_popular.svg",
+      "Badges": "POPULAR",
+      "Hotel_Name": "Deluxe King Room 2",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "Room_Only_Price": "$456",
+      "Room_With_Breakfast": "$12",
+      "Wifi_icon": "./IMAGE/Rooms_wifi.svg",
+      "Wifi_text": "Free WiFi",
+      "Person_icon": "./IMAGE/Rooms_guest.svg",
+      "Person_Total": "3 Guests",
+      "Ac_icon": "./IMAGE/Rooms_Ac.svg",
+      "Ac_text": "AC",
+      "Bed_choise": [
+        {
+          "Bed_icon": "./IMAGE/2twin_beds.svg",
+          "Bed_Title": "2 tween Bed",
+          "Bed_Details": "Non-Smoking"
+        }
+      ],
+      "Booked_Date": [
+        {
+          "checkIn": "9 Jun 2025",
+          "checkOut": "10 Jun 2025"
+        },
+        {
+          "checkIn": "26 Jun 2025",
+          "checkOut": "27 Jun 2025"
+        },
+        {
+          "checkIn": "29 Jun 2025",
+          "checkOut": "30 Jun 2025"
+        },
+        {
+          "checkIn": "23 Jun 2025",
+          "checkOut": "24 Jun 2025"
+        },
+        {
+          "checkIn": "19 Sept 2025",
+          "checkOut": "27 Sept 2025"
+        },
+        {
+          "checkIn": "25 Jun 2025",
+          "checkOut": "26 Jun 2025"
+        }
+      ],
+      "View_Details": [
+        {
+          "V_Title": "Deluxe King Room 2",
+          "V_Guest": "3",
+          "V_imag1": "./IMAGE/Rooms_Hotel2.png",
+          "V_imag2": "./IMAGE/Rooms_Hotel2.png",
+          "V_imag3": "./IMAGE/Rooms_Hotel2.png",
+          "V_Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+          "Bed": "Double Bed",
+          "Bathroom": "1",
+          "Bathrom": true,
+          "Ac_icon": "./IMAGE/ac.svg",
+          "Ac_text": "Air Conditioning",
+          "Ac": true,
+          "CableTv_icon": "./IMAGE/cable_tv.svg",
+          "cableTv_text": "Cable TV",
+          "CableTv": true,
+          "Wifi_icon": "./IMAGE/wifi.svg",
+          "Wifi_text": " Wi-Fi Internet",
+          "Wifi": true,
+          "slipper_icon": "./IMAGE/slipper.svg",
+          "slipper_text": "Slippers",
+          "slipper": true,
+          "towel_icon": "./IMAGE/towels.svg",
+          "towel_text": "Towels",
+          "towel": true,
+          "hairDryer_icon": "./IMAGE/hair_dryer.svg",
+          "hairDryer_text": "Hair Dryer",
+          "hairDryer": false,
+          "shampoo_icon": "./IMAGE/shampoo.svg",
+          "shampoo_text": "Shampoo",
+          "shampoo": true,
+          "safeBox_icon": "./IMAGE/safe_box.svg",
+          "safeBox_text": "Safe Box",
+          "safeBox": false,
+          "welcome_icon": "./IMAGE/welcome_drinks.svg",
+          "welcome_text": "Welcome Drinks",
+          "welcome": true,
+          "pet_icon": "./IMAGE/pet_friendly.svg",
+          "pet_text": "Pet Friendly",
+          "petFriendly": false,
+          "machine_icon": "./IMAGE/espresso_machine.svg",
+          "machine_text": "Espresso Machine",
+          "machine": true,
+          "ref_icon": "./IMAGE/inroom_refrigerator.svg",
+          "ref_text": "In-room Refrigerator",
+          "ref": true,
+          "teamachine": true
+        }
+      ],
+      "Room_Types": [
+        {
+          "Single_Room": "Single Room",
+          "singleroom": true,
+          "Double_Room": "Double Room",
+          "doubleroom": true,
+          "Twin_Room": "Twin Room",
+          "twinroom": true,
+          "Triple_Room": "Triple Room",
+          "tripleroom": true,
+          "Deluxe_Room": "Deluxe Room",
+          "deluxeroom": true,
+          "Executive_Room": "Executive Room",
+          "executiveroom": false,
+          "Family_Room": "Family Room",
+          "familyroom": true,
+          "Connecting_Rooms": "Connecting Rooms",
+          "connectingrooms": true
+        }
+      ],
+      "Room_View": [
+        {
+          "City_View": "City View",
+          "cityview": true,
+          "Sea_View_Ocean_View": "Sea View / Ocean View",
+          "seaviewcceanview": true,
+          "Pool_View": "Pool View",
+          "poolview": false,
+          "Garden_View": "Garden View",
+          "gardenview": true,
+          "Mountain_View": "Mountain View",
+          "mountainview": false,
+          "Lake_View_River_View": "Lake View / River View",
+          "lakeviewriverview": false,
+          "Beachfront_Beach_View": "Beachfront / Beach View",
+          "beachfrontbeachview": true,
+          "Park_View": "Park View",
+          "parkview": true,
+          "Courtyard_View": "Courtyard View",
+          "courtyardview": false,
+          "Landmark_View": "Landmark View",
+          "landmarkview": true,
+          "Street_View": "Street View",
+          "streetview": true,
+          "Bay_View": "Bay View",
+          "bayview": true,
+          "Interior_View": "Interior View",
+          "interiorview": true
+        }
+      ],
+      "Reviews": [
+        {
+          "rating": 5,
+          "description": "SSSS",
+          "BookingId": "BKG753",
+          "fullName": "Milan !!!"
+        },
+        {
+          "rating": 5,
+          "description": "F",
+          "BookingId": "BKG550",
+          "fullName": "ABC XYZ"
+        },
+        {
+          "rating": 5,
+          "description": "FF",
+          "BookingId": "BKG200",
+          "fullName": "Milan Bhakhar"
+        }
+      ],
+      "id": "6977"
+    },
+    {
+      "Id": 7837,
+      "City": "Liverpool",
+      "Rooms": "1",
+      "Rooms_Image": "./IMAGE/Rooms_Hotel2.png",
+      "Badges_icon": "./IMAGE/Rooms_popular.svg",
+      "Badges": "POPULAR",
+      "Hotel_Name": "Liverpool King Room 2",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "Room_Only_Price": "$123",
+      "Room_With_Breakfast": "$12",
+      "Wifi_icon": "./IMAGE/Rooms_wifi.svg",
+      "Wifi_text": "Free WiFi",
+      "Person_icon": "./IMAGE/Rooms_guest.svg",
+      "Person_Total": "1 Guests",
+      "Ac_icon": "./IMAGE/Rooms_Ac.svg",
+      "Ac_text": "Non-AC",
+      "Bed_choise": [
+        {
+          "Bed_icon": "./IMAGE/2twin_beds.svg",
+          "Bed_Title": "1 king Bed",
+          "Bed_Details": "Non-Smoking"
+        },
+        {
+          "Bed_icon": "./IMAGE/2twin_beds.svg",
+          "Bed_Title": "1 queen Bed",
+          "Bed_Details": "Non-Smoking"
+        },
+        {
+          "Bed_icon": "./IMAGE/2twin_beds.svg",
+          "Bed_Title": "2 queen Bed",
+          "Bed_Details": "Non-Smoking"
+        }
+      ],
+      "Booked_Date": [
+        {
+          "checkIn": "9 Jun 2025",
+          "checkOut": "10 Jun 2025"
+        },
+        {
+          "checkIn": "28 Jun 2025",
+          "checkOut": "29 Jun 2025"
+        },
+        {
+          "checkIn": "26 Jun 2025",
+          "checkOut": "27 Jun 2025"
+        },
+        {
+          "checkIn": "24 Sept 2025",
+          "checkOut": "2 Oct 2025"
+        }
+      ],
+      "View_Details": [
+        {
+          "V_Title": "Liverpool  King Room 2",
+          "V_Guest": "1",
+          "V_imag1": "./IMAGE/Rooms_Hotel2.png",
+          "V_imag2": "./IMAGE/Rooms_Hotel2.png",
+          "V_imag3": "./IMAGE/Rooms_Hotel2.png",
+          "V_Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+          "Bed": "Double Bed",
+          "Bathroom": "1",
+          "Bathrom": true,
+          "Ac_icon": "./IMAGE/ac.svg",
+          "Ac_text": "Air Conditioning",
+          "NonAC": true,
+          "CableTv_icon": "./IMAGE/cable_tv.svg",
+          "cableTv_text": "Cable TV",
+          "CableTv": true,
+          "Wifi_icon": "./IMAGE/wifi.svg",
+          "Wifi_text": " Wi-Fi Internet",
+          "Wifi": true,
+          "slipper_icon": "./IMAGE/slipper.svg",
+          "slipper_text": "Slippers",
+          "slipper": true,
+          "towel_icon": "./IMAGE/towels.svg",
+          "towel_text": "Towels",
+          "towel": true,
+          "hairDryer_icon": "./IMAGE/hair_dryer.svg",
+          "hairDryer_text": "Hair Dryer",
+          "hairDryer": false,
+          "shampoo_icon": "./IMAGE/shampoo.svg",
+          "shampoo_text": "Shampoo",
+          "shampoo": true,
+          "safeBox_icon": "./IMAGE/safe_box.svg",
+          "safeBox_text": "Safe Box",
+          "safeBox": false,
+          "welcome_icon": "./IMAGE/welcome_drinks.svg",
+          "welcome_text": "Welcome Drinks",
+          "welcome": true,
+          "pet_icon": "./IMAGE/pet_friendly.svg",
+          "pet_text": "Pet Friendly",
+          "pet": false,
+          "machine_icon": "./IMAGE/espresso_machine.svg",
+          "machine_text": "Espresso Machine",
+          "machine": false,
+          "ref_icon": "./IMAGE/inroom_refrigerator.svg",
+          "ref_text": "In-room Refrigerator",
+          "ref": true,
+          "teamachine": false
+        }
+      ],
+      "Room_Types": [
+        {
+          "Single_Room": "Single Room",
+          "singleroom": true,
+          "Double_Room": "Double Room",
+          "doubleroom": false,
+          "Twin_Room": "Twin Room",
+          "twinroom": false,
+          "Triple_Room": "Triple Room",
+          "tripleroom": false,
+          "Deluxe_Room": "Deluxe Room",
+          "deluxeroom": false,
+          "Executive_Room": "Executive Room",
+          "executiveroom": true,
+          "Family_Room": "Family Room",
+          "familyroom": true,
+          "Connecting_Rooms": "Connecting Rooms",
+          "connectingrooms": true
+        }
+      ],
+      "Room_View": [
+        {
+          "City_View": "City View",
+          "cityview": true,
+          "Sea_View_Ocean_View": "Sea View / Ocean View",
+          "seaviewcceanview": false,
+          "Pool_View": "Pool View",
+          "poolview": true,
+          "Garden_View": "Garden View",
+          "gardenview": true,
+          "Mountain_View": "Mountain View",
+          "mountainview": false,
+          "Lake_View_River_View": "Lake View / River View",
+          "lakeviewriverview": true,
+          "Beachfront_Beach_View": "Beachfront / Beach View",
+          "beachfrontbeachview": true,
+          "Park_View": "Park View",
+          "parkview": true,
+          "Courtyard_View": "Courtyard View",
+          "courtyardview": false,
+          "Landmark_View": "Landmark View",
+          "landmarkview": true,
+          "Street_View": "Street View",
+          "streetview": true,
+          "Bay_View": "Bay View",
+          "bayview": true,
+          "Interior_View": "Interior View",
+          "interiorview": true
+        }
+      ],
+      "Reviews": [
+        {
+          "rating": 4,
+          "description": "Read!",
+          "BookingId": "BKG879",
+          "fullName": "QQQ !!!"
+        }
+      ],
+      "id": "7837"
+    },
+    {
+      "Id": 4234,
+      "City": "Bristol",
+      "Rooms": "1",
+      "Rooms_Image": "./IMAGE/Rooms_Hotel4.png",
+      "Badges_icon": "./IMAGE/Rooms_popular.svg",
+      "Badges": "POPULAR",
+      "Hotel_Name": "Bristol Room ",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "Room_Only_Price": "$123",
+      "Room_With_Breakfast": "$12",
+      "Wifi_icon": "./IMAGE/Rooms_wifi.svg",
+      "Wifi_text": "Free WiFi",
+      "Person_icon": "./IMAGE/Rooms_guest.svg",
+      "Person_Total": "3 Guests",
+      "Ac_icon": "./IMAGE/Rooms_Ac.svg",
+      "Ac_text": "AC",
+      "Bed_choise": [
+        {
+          "Bed_icon": "./IMAGE/2twin_beds.svg",
+          "Bed_Title": "1 king Bed",
+          "Bed_Details": "Non-Smoking"
+        },
+        {
+          "Bed_icon": "./IMAGE/2twin_beds.svg",
+          "Bed_Title": "1 queen Bed",
+          "Bed_Details": "Non-Smoking"
+        },
+        {
+          "Bed_icon": "./IMAGE/2twin_beds.svg",
+          "Bed_Title": "2 queen Bed",
+          "Bed_Details": "Non-Smoking"
+        }
+      ],
+      "Booked_Date": [
+        {
+          "checkIn": "9 Jun 2025",
+          "checkOut": "10 Jun 2025"
+        },
+        {
+          "checkIn": "25 Jun 2025",
+          "checkOut": "26 Jun 2025"
+        }
+      ],
+      "View_Details": [
+        {
+          "V_Title": "Bristol Room",
+          "V_Guest": "3",
+          "V_imag1": "./IMAGE/Rooms_Hotel4.png",
+          "V_imag2": "./IMAGE/Rooms_Hotel4.png",
+          "V_imag3": "./IMAGE/Rooms_Hotel4.png",
+          "V_Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+          "Bed": "Double Bed",
+          "Bathroom": "1",
+          "Bathrom": true,
+          "Ac_icon": "./IMAGE/ac.svg",
+          "Ac_text": "Air Conditioning",
+          "Ac": true,
+          "CableTv_icon": "./IMAGE/cable_tv.svg",
+          "cableTv_text": "Cable TV",
+          "CableTv": true,
+          "Wifi_icon": "./IMAGE/wifi.svg",
+          "Wifi_text": " Wi-Fi Internet",
+          "Wifi": true,
+          "slipper_icon": "./IMAGE/slipper.svg",
+          "slipper_text": "Slippers",
+          "slipper": true,
+          "towel_icon": "./IMAGE/towels.svg",
+          "towel_text": "Towels",
+          "towel": true,
+          "hairDryer_icon": "./IMAGE/hair_dryer.svg",
+          "hairDryer_text": "Hair Dryer",
+          "hairDryer": false,
+          "shampoo_icon": "./IMAGE/shampoo.svg",
+          "shampoo_text": "Shampoo",
+          "shampoo": true,
+          "safeBox_icon": "./IMAGE/safe_box.svg",
+          "safeBox_text": "Safe Box",
+          "safeBox": false,
+          "welcome_icon": "./IMAGE/welcome_drinks.svg",
+          "welcome_text": "Welcome Drinks",
+          "welcome": true,
+          "pet_icon": "./IMAGE/pet_friendly.svg",
+          "pet_text": "Pet Friendly",
+          "petFriendly": false,
+          "machine_icon": "./IMAGE/espresso_machine.svg",
+          "machine_text": "Espresso Machine",
+          "machine": true,
+          "ref_icon": "./IMAGE/inroom_refrigerator.svg",
+          "ref_text": "In-room Refrigerator",
+          "ref": true,
+          "teamachine": true
+        }
+      ],
+      "Room_Types": [
+        {
+          "Single_Room": "Single Room",
+          "singleroom": true,
+          "Double_Room": "Double Room",
+          "doubleroom": true,
+          "Twin_Room": "Twin Room",
+          "twinroom": true,
+          "Triple_Room": "Triple Room",
+          "tripleroom": true,
+          "Deluxe_Room": "Deluxe Room",
+          "deluxeroom": false,
+          "Executive_Room": "Executive Room",
+          "executiveroom": false,
+          "Family_Room": "Family Room",
+          "familyroom": true,
+          "Connecting_Rooms": "Connecting Rooms",
+          "connectingrooms": true
+        }
+      ],
+      "Room_View": [
+        {
+          "City_View": "City View",
+          "cityview": true,
+          "Sea_View_Ocean_View": "Sea View / Ocean View",
+          "seaviewcceanview": true,
+          "Pool_View": "Pool View",
+          "poolview": false,
+          "Garden_View": "Garden View",
+          "gardenview": true,
+          "Mountain_View": "Mountain View",
+          "mountainview": false,
+          "Lake_View_River_View": "Lake View / River View",
+          "lakeviewriverview": false,
+          "Beachfront_Beach_View": "Beachfront / Beach View",
+          "beachfrontbeachview": true,
+          "Park_View": "Park View",
+          "parkview": true,
+          "Courtyard_View": "Courtyard View",
+          "courtyardview": false,
+          "Landmark_View": "Landmark View",
+          "landmarkview": true,
+          "Street_View": "Street View",
+          "streetview": true,
+          "Bay_View": "Bay View",
+          "bayview": true,
+          "Interior_View": "Interior View",
+          "interiorview": true
+        }
+      ],
+      "Reviews": [
+        {
+          "rating": 5,
+          "description": "Happy!",
+          "BookingId": "BKG993",
+          "fullName": "Raj Kumar"
+        }
+      ],
+      "id": "4234"
+    },
+    {
+      "Id": 4573,
+      "City": "Cardiff",
+      "Rooms": "1",
+      "Rooms_Image": "./IMAGE/Rooms_Hotel5.png",
+      "Badges_icon": "./IMAGE/Rooms_popular.svg",
+      "Badges": "POPULAR",
+      "Hotel_Name": "Cardiff King Room ",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "Room_Only_Price": "$123",
+      "Room_With_Breakfast": "$12",
+      "Wifi_icon": "./IMAGE/Rooms_wifi.svg",
+      "Wifi_text": "Free WiFi",
+      "Person_icon": "./IMAGE/Rooms_guest.svg",
+      "Person_Total": "3 Guests",
+      "Ac_icon": "./IMAGE/Rooms_Ac.svg",
+      "Ac_text": "AC",
+      "Bed_choise": [
+        {
+          "Bed_icon": "./IMAGE/2twin_beds.svg",
+          "Bed_Title": "1 king Bed",
+          "Bed_Details": "Non-Smoking"
+        },
+        {
+          "Bed_icon": "./IMAGE/2twin_beds.svg",
+          "Bed_Title": "1 queen Bed",
+          "Bed_Details": "Non-Smoking"
+        },
+        {
+          "Bed_icon": "./IMAGE/2twin_beds.svg",
+          "Bed_Title": "2 queen Bed",
+          "Bed_Details": "Non-Smoking"
+        }
+      ],
+      "Booked_Date": [
+        {
+          "checkIn": "9 Jun 2025",
+          "checkOut": "10 Jun 2025"
+        },
+        {
+          "checkIn": "25 Jun 2025",
+          "checkOut": "26 Jun 2025"
+        }
+      ],
+      "View_Details": [
+        {
+          "V_Title": "Cardiff King Room ",
+          "V_Guest": "3",
+          "V_imag1": "./IMAGE/Rooms_Hotel5.png",
+          "V_imag2": "./IMAGE/Rooms_Hotel5.png",
+          "V_imag3": "./IMAGE/Rooms_Hotel5.png",
+          "V_Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+          "Bed": "Double Bed",
+          "Bathroom": "1",
+          "Bathrom": true,
+          "Ac_icon": "./IMAGE/ac.svg",
+          "Ac_text": "Air Conditioning",
+          "Ac": true,
+          "CableTv_icon": "./IMAGE/cable_tv.svg",
+          "cableTv_text": "Cable TV",
+          "CableTv": true,
+          "Wifi_icon": "./IMAGE/wifi.svg",
+          "Wifi_text": " Wi-Fi Internet",
+          "Wifi": true,
+          "slipper_icon": "./IMAGE/slipper.svg",
+          "slipper_text": "Slippers",
+          "slipper": true,
+          "towel_icon": "./IMAGE/towels.svg",
+          "towel_text": "Towels",
+          "towel": true,
+          "hairDryer_icon": "./IMAGE/hair_dryer.svg",
+          "hairDryer_text": "Hair Dryer",
+          "hairDryer": false,
+          "shampoo_icon": "./IMAGE/shampoo.svg",
+          "shampoo_text": "Shampoo",
+          "shampoo": true,
+          "safeBox_icon": "./IMAGE/safe_box.svg",
+          "safeBox_text": "Safe Box",
+          "safeBox": false,
+          "welcome_icon": "./IMAGE/welcome_drinks.svg",
+          "welcome_text": "Welcome Drinks",
+          "welcome": true,
+          "pet_icon": "./IMAGE/pet_friendly.svg",
+          "pet_text": "Pet Friendly",
+          "petFriendly": false,
+          "machine_icon": "./IMAGE/espresso_machine.svg",
+          "machine_text": "Espresso Machine",
+          "machine": true,
+          "ref_icon": "./IMAGE/inroom_refrigerator.svg",
+          "ref_text": "In-room Refrigerator",
+          "ref": true,
+          "teamachine": true
+        }
+      ],
+      "Room_Types": [
+        {
+          "Single_Room": "Single Room",
+          "singleroom": true,
+          "Double_Room": "Double Room",
+          "doubleroom": true,
+          "Twin_Room": "Twin Room",
+          "twinroom": true,
+          "Triple_Room": "Triple Room",
+          "tripleroom": true,
+          "Deluxe_Room": "Deluxe Room",
+          "deluxeroom": false,
+          "Executive_Room": "Executive Room",
+          "executiveroom": false,
+          "Family_Room": "Family Room",
+          "familyroom": true,
+          "Connecting_Rooms": "Connecting Rooms",
+          "connectingrooms": true
+        }
+      ],
+      "Room_View": [
+        {
+          "City_View": "City View",
+          "cityview": true,
+          "Sea_View_Ocean_View": "Sea View / Ocean View",
+          "seaviewcceanview": true,
+          "Pool_View": "Pool View",
+          "poolview": false,
+          "Garden_View": "Garden View",
+          "gardenview": true,
+          "Mountain_View": "Mountain View",
+          "mountainview": false,
+          "Lake_View_River_View": "Lake View / River View",
+          "lakeviewriverview": false,
+          "Beachfront_Beach_View": "Beachfront / Beach View",
+          "beachfrontbeachview": true,
+          "Park_View": "Park View",
+          "parkview": true,
+          "Courtyard_View": "Courtyard View",
+          "courtyardview": false,
+          "Landmark_View": "Landmark View",
+          "landmarkview": true,
+          "Street_View": "Street View",
+          "streetview": true,
+          "Bay_View": "Bay View",
+          "bayview": true,
+          "Interior_View": "Interior View",
+          "interiorview": true
+        }
+      ],
+      "Reviews": [
+        {
+          "rating": "",
+          "description": ""
+        }
+      ],
+      "id": "4573"
+    }
+  ],
+  "Coupens": [
+    {
+      "id": "1875",
+      "Heading": "NEW10",
+      "Description": "Get Flat $10 Off for every Customers",
+      "saved": "Save $10",
+      "Discount": "$10"
+    },
+    {
+      "id": "5655",
+      "Heading": "WELCOME100",
+      "Description": "Get Flat $100 Off for new accounts",
+      "saved": "Save $10",
+      "Discount": "$100"
+    },
+    {
+      "id": "9784",
+      "Heading": "HOLIDAY20",
+      "Description": "Get0 Flat $20 Off on holiday",
+      "saved": "Save $20",
+      "Discount": "$20"
+    }
+  ],
+  "ContactUS": [
+    {
+      "id": "1855",
+      "name": "ravi",
+      "email": "ravi@gmail.com",
+      "mobile": "54545454865",
+      "subject": "Need Support",
+      "message": "qawsd",
+      "countryCode": "+1"
+    },
+    {
+      "id": "4c66",
+      "name": "ravi",
+      "email": "ravi@gmail.com",
+      "mobile": "y",
+      "subject": "Need Support",
+      "message": "aq",
+      "countryCode": "+91"
+    },
+    {
+      "id": "88d0",
+      "name": "ravi",
+      "email": "ravi@123",
+      "mobile": "s",
+      "subject": "s",
+      "message": "s",
+      "countryCode": "+1"
+    },
+    {
+      "id": "e8cf",
+      "name": "ravi",
+      "email": "ravi@gmail.com",
+      "mobile": "145",
+      "subject": "Need Support",
+      "message": "55",
+      "countryCode": "+1"
+    },
+    {
+      "id": "9d36",
+      "name": "ravi",
+      "email": "ravi@gmail.com",
+      "mobile": "3213333333",
+      "subject": "Need Support",
+      "message": "qaswdefrj",
+      "countryCode": "+1"
+    },
+    {
+      "id": "c9dd",
+      "name": "ravi",
+      "email": "ravi.kalathiyainfotech@gmail.com",
+      "mobile": "5454545486",
+      "subject": "Need Support",
+      "message": "df",
+      "countryCode": "+1"
+    }
+  ]
+}

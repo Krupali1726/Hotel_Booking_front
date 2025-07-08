@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- *** Font Awesome *** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ************ -->
+    <link rel="stylesheet" href="/CSS/BookNow.css">
+    <link rel="stylesheet" href="/CSS/Header.css">
+    <link rel="stylesheet" href="/CSS/Filter.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    
+</head>
+
+<body>
+
+
+   <!-- Header -->
+    <header class="rp-header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between k-head">
+
+                <div class="col-6 col-md-2 k-logo" onclick="window.location.href='Rooms.html'">
+                    <h1>LOGO</h1>
+                </div>
+
+                <div class="col-6 d-lg-none text-end">
+                    <button class="navbar-toggler" type="button" id="navbarToggle">
+                        <span class="navbar-toggler-icon">☰</span>
+                    </button>
+                </div>
+
+                <div class="col-12 col-md-7 d-none d-lg-block" id="navbarNav">
+                    <div class="k-diming w-100">
+                        <ul class="navbar-nav d-flex flex-md-row justify-content-md-end align-items-center gap-3">
+                            <li class="nav-item"><a class="nav-link" href="./Home.html">Overview</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./Rooms.html">Rooms</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./D-Dining2.html">Dinning</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./D-Gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 d-none justify-content-end d-lg-flex">
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <div class="k-sing">
+                            <a data-bs-toggle="modal" data-bs-target="#signinModal" class="LoggedIn"
+                                style="cursor: pointer;">Sign in</a>
+                        </div>
+                        <div class="k-book">
+                            <a href="./BookNow.html">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Collapsible Mobile Nav -->
+
+            <div class="d-lg-none k-collap k-diming" id="mobileNav" style="display: none;">
+                <ul class="navbar-nav flex-column align-items-start mt-3">
+                    <li class="nav-item"><a class="nav-link" href="./Home.html">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Rooms.html">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./D-Dining2.html">Dinning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./D-Gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact us</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center justify-content-start gap-3" style="padding: 15px 0 !important;">
+                    <div class="k-sing">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#signinModal" class="LoggedIn">Sign in</a>
+                    </div>
+                    <div class="k-book">
+                        <a href="./BookNow.html">Book Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+  
+    <!-- Search Bar -->
+    <div class="container rp-search-overlap">
+        <div class="rp-search-container">
+
+            <!-- Locations -->
+            <div class="rp-search-widget" onclick="toggleCityPopup(event)">
+                <div class="rp-search-content">
+                    <img src="./IMAGE/rooms_location.svg" alt="Location Icon" />
+                    <div class="rp-texts">
+                        <p class="rp-label">City</p>
+                        <p class="rp-value" id="cityPrint"></p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+
+                <!-- Locations Popup -->
+                <div class="rp-city-popup-main">
+                    <div id="city-container">
+                        <h5>London</h5>
+                        <h5>Liverpool</h5>
+                        <h5>Bristol</h5>
+                        <h5>Cardiff</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Check-in -->
+            <div class="rp-search-widget" id="rp-checkin-widget">
+                <div class="rp-search-content">
+                    <img src="./IMAGE/rooms_calendar.svg" alt="Check-in Icon" />
+                    <div class="rp-texts">
+                        <p class="rp-label">Check in</p>
+                        <p class="rp-value" id="rp-checkin-value"></p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+                <!-- Check In Popup -->
+                <input type="date" id="rp-native-date-input" />
+            </div>
+
+            <!-- Check-out -->
+            <div class="rp-search-widget" id="rp-checkout-widget">
+                <div class="rp-search-content">
+                    <img src="./IMAGE/rooms_calendar.svg" alt="Check-out Icon" />
+                    <div class="rp-texts">
+                        <p class="rp-label">Check out</p>
+                        <p class="rp-value" id="rp-checkout-value"></p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+                <!-- Check out Popup -->
+                <input type="date" id="rp-native-out-date-input" />
+            </div>
+
+            <!-- Person -->
+            <div class="rp-search-widget " onclick="toggleRoomsGuestPopup(event)">
+                <div class="rp-search-content rp-person-og-popup">
+                    <img src="./IMAGE/rooms_person.svg" alt="Person Icon" />
+                    <div class="rp-texts">
+                        <p class="rp-label">Rooms & Guests</p>
+                        <p class="rp-value"> <span id="roomSelected"></span> Room, <span id="adultsSelected"></span>
+                            adults</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+
+                <!-- Person :- Popup -->
+                <div class="rp-person-popup-main">
+                    <!-- Rooms -->
+                    <div class="rp-person-popup-sub">
+                        <div>
+                            <h6>Rooms</h6>
+                            <p>(Maximum 3 rooms)</p>
+                        </div>
+                        <div>
+                            <button id="roomsMinusBtn"><i class="fa-solid fa-minus"></i></button>
+                            <h5 id="valueRooms">1</h5>
+                            <button id="roomsPlusBtn"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <!-- Adults -->
+                    <div class="rp-person-popup-sub">
+                        <div>
+                            <h6>Adults</h6>
+                            <p>3 persons per Room</p>
+                        </div>
+                        <div>
+                            <button id="minusAdults"><i class="fa-solid fa-minus"></i></button>
+                            <h5 id="valueAdults">2</h5>
+                            <button id="plusAdults"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <!-- Child -->
+                    <div class="rp-person-popup-sub border-0">
+                        <div>
+                            <h6>Child</h6>
+                        </div>
+                        <div>
+                            <button id="minusChild"><i class="fa-solid fa-minus"></i></button>
+                            <h5 id="valueChild">0</h5>
+                            <button id="plusChild"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="rp-search-btn" id="searchButton" onclick="fetchRooms()">Check Availability</button>
+
+        </div>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="container">
+        <div class="rp-filter-container">
+            <div class="rp-filter-left">
+                <button class="rp-filter-button" data-bs-toggle="offcanvas" data-bs-target="#Filters">
+                    <img src="./IMAGE/Rooms_filter.svg" alt="Filter_Icon">
+                    Filter <span id="filteredItemResults"></span>
+                </button>
+                <span class="rp-results-text">Showing Results</span>
+            </div>
+            <div class="rp-filter-right">
+                Sort By :
+                <select id="sortSelect">
+                    <option value="default">Default</option>
+                    <option value="low">Low Price</option>
+                    <option value="high">High Price</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Selection -->
+    <div class="container">
+        <div class="rp-room-selection">
+            <button data-room="1" class="rp-active"> Room 1 </button>
+            <button data-room="2"> Room 2 </button>
+            <button data-room="3"> Room 3 </button>
+        </div>
+    </div>
+
+    <!-- Hotel Book Cards -->
+    <div class="container" style="min-height:170px">
+
+        <div id="hotelContainer"></div>
+
+        <!-- ***** 1 *****-->
+        <!-- <div class="row rp-card-main mx-0 mt-3">
+
+            <div class="col-lg-4 rp-card-left">
+                <img src="./IMAGE/Rooms_Hotel1.png" alt="Hotel">
+
+
+                <div class="rp-card-badge">
+                    <div class="rp-card-badge-content"><img src="./IMAGE/Rooms_popular.svg" alt="Popular">
+                        <span>POPULAR</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 rp-card-right">
+
+                <div class="rp-card-heading d-flex justify-content-between align-items-center">
+                    <h5>Deluxe King Room</h5>
+                    <p>$123 <span>/night</span></p>
+                </div>
+
+                <div class="rp-card-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </div>
+
+                <div class="rp-room-facilities">
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_wifi.svg" alt="wifi_icon"> <span>Free WiFi</span>
+                    </div>
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_guest.svg" alt="Guest_icon"> <span>2 Guests</span>
+                    </div>
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_Ac.svg" alt="Ac_iocn"> <span> AC </span>
+                    </div>
+                </div>
+
+                <div class="rp-card-view-details">
+                    <span data-bs-toggle="modal" data-bs-target="#viewdetailsModal">View Details</span>
+                </div>
+
+                <div class="rp-card-all-btn my-3">
+
+                    <div class="rp-card-offer-btn">
+
+                        <button class="rp-card-option-button">
+                            <input type="radio" class="rp-rooms-radio">
+                            <div class="rp-card-option-content">
+                                <div class="rp-card-option-title">Room Only</div>
+                                <div class="rp-card-option-price">$123<span>/Night</span></div>
+                            </div>
+                        </button>
+
+                        <button class="rp-card-option-button">
+                            <input type="radio" class="rp-rooms-radio">
+                            <div class="rp-card-option-content">
+                                <div class="rp-card-option-title">Room with Breakfast</div>
+                                <div class="rp-card-option-price">$12</div>
+                            </div>
+                        </button>
+
+                    </div>
+
+                    <button class="rp-card-book-button" onclick="window.location.href='R-Payments.html'"> Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div> -->
+
+        <!-- ***** 2 *****-->
+        <!-- <div class="row rp-card-main mx-0 mt-3">
+
+            <div class="col-lg-4 rp-card-left">
+                <img src="./IMAGE/Rooms_Hotel2.png" alt="Hotel">
+            </div>
+
+            <div class="col-lg-8 rp-card-right">
+
+                <div class="rp-card-heading d-flex justify-content-between align-items-center">
+                    <h5>Deluxe King Room</h5>
+                    <p>$123 <span>/night</span></p>
+                </div>
+
+                <div class="rp-card-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </div>
+
+                <div class="rp-room-facilities">
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_wifi.svg" alt="wifi_icon"> <span>Free WiFi</span>
+                    </div>
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_guest.svg" alt="Guest_icon"> <span>2 Guests</span>
+                    </div>
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_Ac.svg" alt="Ac_iocn"> <span> AC </span>
+                    </div>
+                </div>
+
+                <div class="rp-card-view-details">
+                    <span data-bs-toggle="modal" data-bs-target="#viewdetailsModal">View Details</span>
+                </div>
+
+                <div class="rp-card-all-btn my-3">
+
+                    <div class="rp-card-offer-btn">
+
+                        <button class="rp-card-option-button">
+                            <input type="radio" class="rp-rooms-radio">
+                            <div class="rp-card-option-content">
+                                <div class="rp-card-option-title">Room Only</div>
+                                <div class="rp-card-option-price">$123<span>/Night</span></div>
+                            </div>
+                        </button>
+
+                        <button class="rp-card-option-button">
+                            <input type="radio" class="rp-rooms-radio">
+                            <div class="rp-card-option-content">
+                                <div class="rp-card-option-title">Room with Breakfast</div>
+                                <div class="rp-card-option-price">$12</div>
+                            </div>
+                        </button>
+
+                    </div>
+
+                    <button class="rp-card-book-button" onclick="window.location.href='R-Payments.html'"> Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div> -->
+
+        <!-- ***** 3 *****-->
+        <!-- <div class="row rp-card-main mx-0 mt-3">
+
+            <div class="col-lg-4 rp-card-left">
+                <img src="./IMAGE/Rooms_Hotel3.png" alt="Hotel">
+             
+                <div class="rp-card-badge">
+                    <div class="rp-card-badge-content"><img src="./IMAGE/Rooms_popular.svg" alt="Popular">
+                        <span>POPULAR</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 rp-card-right">
+
+                <div class="rp-card-heading d-flex justify-content-between align-items-center">
+                    <h5>Deluxe King Room</h5>
+                    <p>$123 <span>/night</span></p>
+                </div>
+
+                <div class="rp-card-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </div>
+
+                <div class="rp-room-facilities">
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_wifi.svg" alt="wifi_icon"> <span>Free WiFi</span>
+                    </div>
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_guest.svg" alt="Guest_icon"> <span>2 Guests</span>
+                    </div>
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_Ac.svg" alt="Ac_iocn"> <span> AC </span>
+                    </div>
+                </div>
+
+                <div class="rp-card-view-details">
+                    <span data-bs-toggle="modal" data-bs-target="#viewdetailsModal">View Details</span>
+                </div>
+
+                <div class="rp-card-all-btn my-3">
+
+                    <div class="rp-card-offer-btn">
+
+                        <button class="rp-card-option-button">
+                            <input type="radio" class="rp-rooms-radio">
+                            <div class="rp-card-option-content">
+                                <div class="rp-card-option-title">Room Only</div>
+                                <div class="rp-card-option-price">$123<span>/Night</span></div>
+                            </div>
+                        </button>
+
+                        <button class="rp-card-option-button">
+                            <input type="radio" class="rp-rooms-radio">
+                            <div class="rp-card-option-content">
+                                <div class="rp-card-option-title">Room with Breakfast</div>
+                                <div class="rp-card-option-price">$12</div>
+                            </div>
+                        </button>
+
+                    </div>
+
+                    <button class="rp-card-book-button" onclick="window.location.href='R-Payments.html'"> Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div> -->
+
+        <!-- ***** 4 *****-->
+        <!-- <div class="row rp-card-main mx-0 mt-3">
+
+            <div class="col-lg-4 rp-card-left">
+                <img src="./IMAGE/Rooms_Hotel4.png" alt="Hotel">
+            </div>
+
+            <div class="col-lg-8 rp-card-right">
+
+                <div class="rp-card-heading d-flex justify-content-between align-items-center">
+                    <h5>Deluxe King Room</h5>
+                    <p>$123 <span>/night</span></p>
+                </div>
+
+                <div class="rp-card-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </div>
+
+                <div class="rp-room-facilities">
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_wifi.svg" alt="wifi_icon"> <span>Free WiFi</span>
+                    </div>
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_guest.svg" alt="Guest_icon"> <span>2 Guests</span>
+                    </div>
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_Ac.svg" alt="Ac_iocn"> <span> AC </span>
+                    </div>
+                </div>
+
+                <div class="rp-card-view-details">
+                    <span data-bs-toggle="modal" data-bs-target="#viewdetailsModal">View Details</span>
+                </div>
+
+                <div class="rp-card-all-btn my-3">
+
+                    <div class="rp-card-offer-btn">
+
+                        <button class="rp-card-option-button">
+                            <input type="radio" class="rp-rooms-radio">
+                            <div class="rp-card-option-content">
+                                <div class="rp-card-option-title">Room Only</div>
+                                <div class="rp-card-option-price">$123<span>/Night</span></div>
+                            </div>
+                        </button>
+
+                        <button class="rp-card-option-button">
+                            <input type="radio" class="rp-rooms-radio">
+                            <div class="rp-card-option-content">
+                                <div class="rp-card-option-title">Room with Breakfast</div>
+                                <div class="rp-card-option-price">$12</div>
+                            </div>
+                        </button>
+
+                    </div>
+
+                    <button class="rp-card-book-button" onclick="window.location.href='R-Payments.html'"> Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div> -->
+
+        <!-- ***** 5 *****-->
+        <!-- <div class="row rp-card-main mx-0 mt-3">
+
+            <div class="col-lg-4 rp-card-left">
+                <img src="./IMAGE/Rooms_Hotel5.png" alt="Hotel">
+         
+                <div class="rp-card-badge">
+                    <div class="rp-card-badge-content"><img src="./IMAGE/Rooms_popular.svg" alt="Popular">
+                        <span>POPULAR</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 rp-card-right">
+
+                <div class="rp-card-heading d-flex justify-content-between align-items-center">
+                    <h5>Deluxe King Room</h5>
+                    <p>$123 <span>/night</span></p>
+                </div>
+
+                <div class="rp-card-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </div>
+
+                <div class="rp-room-facilities">
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_wifi.svg" alt="wifi_icon"> <span>Free WiFi</span>
+                    </div>
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_guest.svg" alt="Guest_icon"> <span>2 Guests</span>
+                    </div>
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_Ac.svg" alt="Ac_iocn"> <span> AC </span>
+                    </div>
+                </div>
+
+                <div class="rp-card-view-details">
+                    <span data-bs-toggle="modal" data-bs-target="#viewdetailsModal">View Details</span>
+                </div>
+
+                <div class="rp-card-all-btn my-3">
+
+                    <div class="rp-card-offer-btn">
+
+                        <button class="rp-card-option-button">
+                            <input type="radio" class="rp-rooms-radio">
+                            <div class="rp-card-option-content">
+                                <div class="rp-card-option-title">Room Only</div>
+                                <div class="rp-card-option-price">$123<span>/Night</span></div>
+                            </div>
+                        </button>
+
+                        <button class="rp-card-option-button">
+                            <input type="radio" class="rp-rooms-radio">
+                            <div class="rp-card-option-content">
+                                <div class="rp-card-option-title">Room with Breakfast</div>
+                                <div class="rp-card-option-price">$12</div>
+                            </div>
+                        </button>
+
+                    </div>
+
+                    <button class="rp-card-book-button" onclick="window.location.href='R-Payments.html'"> Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div> -->
+
+        <!-- ***** 6 *****-->
+        <!-- <div class="row rp-card-main mx-0 mt-3">
+
+            <div class="col-lg-4 rp-card-left">
+                <img src="./IMAGE/Rooms_Hotel6.png" alt="Hotel">
+            </div>
+
+            <div class="col-lg-8 rp-card-right">
+
+                <div class="rp-card-heading d-flex justify-content-between align-items-center">
+                    <h5>Deluxe King Room</h5>
+                    <p>$123 <span>/night</span></p>
+                </div>
+
+                <div class="rp-card-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </div>
+
+                <div class="rp-room-facilities">
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_wifi.svg" alt="wifi_icon"> <span>Free WiFi</span>
+                    </div>
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_guest.svg" alt="Guest_icon"> <span>2 Guests</span>
+                    </div>
+                    <div class="rp-card-services">
+                        <img src="./IMAGE/Rooms_Ac.svg" alt="Ac_iocn"> <span> AC </span>
+                    </div>
+                </div>
+
+                <div class="rp-card-view-details">
+                    <span data-bs-toggle="modal" data-bs-target="#viewdetailsModal">View Details</span>
+                </div>
+
+                <div class="rp-card-all-btn my-3">
+
+                    <div class="rp-card-offer-btn">
+
+                        <button class="rp-card-option-button">
+                            <input type="radio" class="rp-rooms-radio">
+                            <div class="rp-card-option-content">
+                                <div class="rp-card-option-title">Room Only</div>
+                                <div class="rp-card-option-price">$123<span>/Night</span></div>
+                            </div>
+                        </button>
+
+                        <button class="rp-card-option-button">
+                            <input type="radio" class="rp-rooms-radio">
+                            <div class="rp-card-option-content">
+                                <div class="rp-card-option-title">Room with Breakfast</div>
+                                <div class="rp-card-option-price">$12</div>
+                            </div>
+                        </button>
+
+                    </div>
+
+                    <button class="rp-card-book-button" onclick="window.location.href='R-Payments.html'"> Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div> -->
+
+
+    </div>
+
+
+
+       <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container">
+    
+            <div class="row kf-foot">
+    
+                <div class="col-12 col-xl-4">
+                    <div class="k-printing">
+                        <div class="kf-logo">
+                            <h1>LOGO</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the</p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col-12 col-xl-8">
+    
+                    <div class="row k-Cancellation">
+    
+                        <div class="col-5 col-md-4 col-lg-2 col-xl-2">
+                            <div class="k-Quick-data">
+                                <h2>Quick Links</h2>
+    
+                                <div class="k-fdata k-fdata1 ">
+                                    <ul>
+                                        <li><a href="./Home.html">Overview</a></li>
+                                        <li><a href="./Rooms.html">Rooms</a></li>
+                                        <li><a href="./D-Dining2.html">Dinning</a></li>
+                                        <li><a href="./D-Gallery.html">Gallery</a></li>
+                                        <li><a href="./D-about.html">About</a></li>
+                                        <li><a href="./contact-us.html">Contact</a></li>
+                                    </ul>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="col-7 col-md-4 col-lg-2 col-xl-3">
+                            <div class="k-Quick-data">
+                                <h2 class="k-change">More</h2>
+
+                                <div class="k-fdata k-fdata-change k-fdata-change1">
+                                    <ul>
+                                        <li><a href="./Freandquestion.html">FAQs</a></li>
+                                        <li><a href="./PrivacyPolicy.html">Privacy Policy</a></li>
+                                        <li><a href="./CancellationPolicy.html">Cancellation Policy</a></li>
+                                        <li><a href="./Temsandcondition.html">Terms & conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-4 col-lg-3 col-xl-4">
+                            <div class="k-Quick-data">
+                                <h2>Get in Touch</h2>
+    
+    
+                                <div class="row k-Touch">
+    
+                                    <div class="k-examp">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>+1 12345 67890</span>
+                                    </div>
+    
+                                    <div class="k-examp">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span>example123@gmail.com</span>
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="col-md-12 col-lg-3 col-xl-3">
+                            <div class="k-Quick-data k-Mobile">
+                                <h2>Experience App On Mobile</h2>
+    
+                                <div class="row k-gpay">
+    
+                                    <div class="col-2" style="padding: 0 !important;">
+                                        <div class="k-glog">
+                                            <img src="./Image/gpay.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-10" style="padding: 0 !important;">
+                                        <div class="k-play">
+                                            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user&hl=en_IN"
+                                                target="_blank">
+                                                <p>GET IT ON</p>
+                                                <h3>Google Play</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="k-Follow">
+    
+                                    <div>
+                                        <h2>Follow us for updates</h2>
+    
+                                        <div class="k-midea">
+                                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-brands fa-x-twitter"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </div>
+    
+    
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+        <div class="k-reserved">
+            <p>©2025 All rights reserved.</p>
+        </div>
+    
+    </footer>
+
+
+
+
+    <!-- *********  Off canvas --- Filter  **********  -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="Filters" aria-labelledby="offcanvasExampleLabel">
+
+        <div class="offcanvas-header mb-header-sidebar">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h5>
+            <button type="button" class="btn-close mb-close-sidebar text-reset" style="box-shadow: none;"
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="mb-border-line-filter"></div>
+
+        <div class="offcanvas-body mb-offcanvas-body">
+            <div class="accordion mb-accordion" id="accordionExample">
+
+                <!-- 1 -->
+                <div class="accordion-item mb-accordion-item mb-border-line">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button mb-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Room Types
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse mb-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body mb-accordion-body">
+                            <div class="mb-filter-options">
+                                <label><input type="checkbox" name="room1" value="single"> Single Room</label>
+                                <label><input type="checkbox" name="room1" value="double"> Double Room</label>
+                                <label><input type="checkbox" name="room1" value="twin"> Twin Room</label>
+                                <label><input type="checkbox" name="room1" value="triple"> Triple Room</label>
+                                <label><input type="checkbox" name="room1" value="deluxe"> Deluxe Room</label>
+                                <label><input type="checkbox" name="room1" value="executive"> Executive Room</label>
+                                <label><input type="checkbox" name="room1" value="family"> Family Room</label>
+                                <label><input type="checkbox" name="room1" value="connecting"> Connecting Rooms</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="accordion-item mb-accordion-item mb-border-line">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button mb-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                            aria-controls="collapseTwo">
+                            Guests
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse mb-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body mb-accordion-body">
+                            <div class="mb-filter-options">
+                                <label><input type="checkbox" name="room2" value="1"> 1 Guest</label>
+                                <label><input type="checkbox" name="room2" value="2"> 2 Guests</label>
+                                <label><input type="checkbox" name="room2" value="3"> 3 Guests</label>
+                                <label><input type="checkbox" name="room2" value="4"> 4 Guests</label>
+                                <label><input type="checkbox" name="room2" value="5"> 5+ Guests</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="accordion-item mb-accordion-item mb-border-line">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button mb-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
+                            aria-controls="collapseThree">
+                            Room Amenities
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse mb-collapse collapse"
+                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body mb-accordion-body">
+                            <div class="mb-filter-options my-2">
+
+                                <label><input type="checkbox" name="room3" value="1"> Wi-Fi</label>
+                                <label><input type="checkbox" name="room3" value="2"> AC</label>
+                                <label><input type="checkbox" name="room3" value="3"> Non-AC</label>
+                                <label><input type="checkbox" name="room3" value="4"> Flat-screen TV</label>
+                                <label><input type="checkbox" name="room3" value="5"> Private Bathroom</label>
+                                <label><input type="checkbox" name="room3" value="6"> Inroom Refrigerator</label>
+                                <label><input type="checkbox" name="room3" value="7"> Safe (Locker)</label>
+                                <label><input type="checkbox" name="room3" value="8"> Tea Maker</label>
+
+                                <!-- Hidden initially -->
+                                <div class="more-amenities" style="display: none;">
+                                    <label><input type="checkbox" name="room3" value="9"> Slippers</label>
+                                    <label><input type="checkbox" name="room3" value="10"> Towels</label>
+                                    <label><input type="checkbox" name="room3" value="11"> Hair Dryer</label>
+                                    <label><input type="checkbox" name="room3" value="12"> Shampoo</label>
+                                    <label><input type="checkbox" name="room3" value="13"> Espresso Machine</label>
+                                    <label><input type="checkbox" name="room3" value="14"> Welcome Drinks</label>
+                                </div>
+
+                                <!-- Show more/less toggle -->
+                                <a href="#" id="toggleMoreAmenities" class="d-block mt-2">Show More (+6)</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    // Room Amenities
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const toggleLink = document.getElementById("toggleMoreAmenities");
+                        toggleLink.innerText = "Show More (+6)";
+
+                        toggleLink.addEventListener("click", function (e) {
+                            e.preventDefault();
+
+                            const moreAmenities = document.querySelector(".more-amenities");
+                            const isVisible = moreAmenities.style.display === "block";
+
+                            moreAmenities.style.display = isVisible ? "none" : "block";
+                            this.innerText = isVisible ? "Show More (+6)" : "Show Less";
+                        });
+                    });
+
+                </script>
+
+                <!-- 4 -->
+                <div class="accordion-item mb-accordion-item mb-border-line">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button mb-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+                            aria-controls="collapseFour">
+                            Room View
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse mb-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body mb-accordion-body">
+                            <div class="mb-filter-options my-2">
+                                <label><input type="checkbox" name="room4" value="cityview"> City View</label>
+                                <label><input type="checkbox" name="room4" value="seaviewcceanview"> Sea View / Ocean
+                                    View</label>
+                                <label><input type="checkbox" name="room4" value="poolview"> Pool View</label>
+                                <label><input type="checkbox" name="room4" value="gardenview"> Garden View</label>
+                                <label><input type="checkbox" name="room4" value="mountainview"> Mountain View</label>
+                                <label><input type="checkbox" name="room4" value="lakeviewriverview"> Lake View / River
+                                    View</label>
+                                <label><input type="checkbox" name="room4" value="beachfrontbeachview"> Beachfront /
+                                    Beach View</label>
+                                <label><input type="checkbox" name="room4" value="parkview"> Park View</label>
+
+                                <!-- Hidden initially -->
+                                <div class="more-room-view" style="display: none;">
+                                    <label><input type="checkbox" name="room4" value="courtyardview"> Courtyard
+                                        View</label>
+                                    <label><input type="checkbox" name="room4" value="landmarkview"> Landmark
+                                        View</label>
+                                    <label><input type="checkbox" name="room4" value="streetview"> Street View</label>
+                                    <label><input type="checkbox" name="room4" value="bayview"> Bay View</label>
+                                    <label><input type="checkbox" name="room4" value="interiorview"> Interior
+                                        View</label>
+                                </div>
+
+                                <a href="#" id="toggleMoreRoomView" class="d-block mt-2">Show More (+5)</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <script>
+                    // Room View
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const toggleLink = document.getElementById("toggleMoreRoomView");
+                        const moreOptions = document.querySelector(".more-room-view");
+
+                        toggleLink.addEventListener("click", function (e) {
+                            e.preventDefault();
+                            const isVisible = moreOptions.style.display === "block";
+
+                            moreOptions.style.display = isVisible ? "none" : "block";
+                            toggleLink.innerText = isVisible ? "Show More (+5)" : "Show Less";
+                        });
+                    });
+
+                </script>
+
+                <!-- 5 -->
+                <div class="accordion-item mb-accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button mb-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true"
+                            aria-controls="collapseFive">
+                            Price Range
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse mb-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body mb-accordion-body">
+                            <div id="roomOptions5">
+                                <div class="mb-range-values">
+                                    <span id="minPrice">$50</span>
+                                    <span id="maxPrice">$5,000</span>
+                                </div>
+                                <div class="mb-slider">
+                                    <div class="mb-slider-track" id="track"></div>
+                                    <input type="range" id="minSlider" min="0" max="1500" value="50">
+                                    <input type="range" id="maxSlider" min="0" max="1500" value="1000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mb-tbtn">
+            <button class="mb-cleall" data-bs-dismiss="offcanvas">Clear all</button>
+            <button class="mb-apply" data-bs-dismiss="offcanvas">Apply</button>
+        </div>
+
+    </div>
+
+
+    <!-- ******************  MODAL ***********************-->
+
+    <!-- Sign in Modal -->
+    <div class="modal" id="signinModal">
+        <div class="modal-dialog mb-dialog-sign modal-dialog-centered">
+            <div class="modal-content mb-content-sign">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-sign">
+                    <div class="row">
+
+                        <!-- Left Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn-close mb-close-sign position-absolute top-0 end-0"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="mb-image-sign mb-change-sign">
+                                <img src="./IMAGE/Sign_In.png" alt="Resort" class="mb-img-sign">
+                            </div>
+                        </div>
+
+                        <!-- Right Content -->
+                        <div class="col-md-6 mt-3 mb-right-sign">
+
+                            <div class="mb-text-sign text-center mt-1">
+                                <h5 class="mt-2">Sign in</h5>
+                                <p>Welcome back! Please sign in.</p>
+                            </div>
+
+                            <div class="mb-form-sign">
+
+                                <!-- Updated form tag with onsubmit -->
+                                <form action="" onsubmit="signIn()">
+
+                                    <!-- Matched ID -->
+                                    <div class="mb-email-sign mb-2">
+                                        <label for="signInEmail" class="form-label mb-2">Email</label>
+                                        <input type="email" class="form-control border-0" placeholder="Email"
+                                            id="signInEmail" required>
+                                    </div>
+
+                                    <div class="mb-pass-sign mb-1 position-relative">
+                                        <label for="signInPassword" class="form-label mb-2">Password</label>
+                                        <div class="input-group">
+                                            <input type="password" id="signInPassword"
+                                                class="form-control mb-pass-input border-0" placeholder="Password"
+                                                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{8,}$" required>
+                                            <span class="toggle-password input-group-text"
+                                                onclick="togglePassword(this)"><i
+                                                    class="fa-solid fa-eye-slash mb-eye-icon"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-remember d-flex justify-content-between">
+                                        <div class="mb-remember-sign d-flex align-items-center gap-2">
+                                            <input type="checkbox" id="check" name="check">
+                                            <label for="check">Remember me</label>
+                                        </div>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#forgotpasswordModal">Forgot
+                                            Password?</a>
+                                    </div>
+
+                                    <button type="submit" class="btn mb-subscribe-btn-sign">Sign in</button>
+
+                                </form>
+
+                                <div class="mb-or-sign text-center p-2">
+                                    <div class="divider">OR</div>
+                                </div>
+
+                                <div class="mb-btn-sign d-flex gap-3 mb-3">
+                                    <button type="button" class="btn mb-btn-social-sign w-100">
+                                        <img src="./IMAGE/mb-sign-google.svg" />
+                                        <span class="ms-1">Google</span>
+                                    </button>
+                                    <button type="button" class="btn mb-btn-social-sign w-100">
+                                        <img src="./IMAGE/mb-sign-facebook.svg" />
+                                        <span class="ms-1">Facebook</span>
+                                    </button>
+                                </div>
+
+                                <div class="mb-text-account-sign text-center">
+                                    <small>Didn't have an account? <a class="mb-create-sign" href="#"
+                                            data-bs-toggle="modal" data-bs-target="#createAccountModal">Create
+                                            Account</a></small>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Account Modal -->
+    <div class="modal" id="createAccountModal">
+        <div class="modal-dialog mb-dialog-creaco modal-dialog-centered">
+            <div class="modal-content mb-content-creaco">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-creaco">
+                    <div class="row">
+
+                        <!-- Left Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn-close mb-close-creaco position-absolute top-0 end-0"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="mb-image-creaco mb-change-creaco">
+                                <img src="./IMAGE/Sign_In.png" alt="Resort" class="mb-img-creaco">
+                            </div>
+                        </div>
+
+                        <!-- Right Content -->
+                        <div class="col-md-6 mt-3 mb-right-creaco">
+
+                            <div class="mb-text-creaco text-center mt-1">
+                                <h5 class="mt-2">Create Account</h5>
+                                <p>Register your account easily enter your email below</p>
+                            </div>
+
+                            <form action="" onsubmit="createAccount(event)">
+                                <div class="mb-form-creaco">
+
+                                    <!-- Full Name -->
+                                    <div class="mb-fname-creaco mb-2">
+                                        <label for="createAcFullName" class="form-label mb-2">Full Name</label>
+                                        <input type="text" class="form-control border-0" placeholder="Full Name"
+                                            id="createAcFullName" required>
+                                    </div>
+
+                                    <!-- Mobile No. -->
+                                    <div class="mb-mno-creaco mb-2">
+                                        <label for="createAcMobileNum" class="form-label mb-2">Mobile No.</label>
+                                        <div class="input-group">
+                                            <select class="form-select" style="max-width: 70px;" id="countryCode">
+                                                <option value="+91" selected>+91</option>
+                                                <option value="+1">+1</option>
+                                                <option value="+44">+44</option>
+                                            </select>
+                                            <input type="text" class="form-control" id="createAcMobileNum"
+                                                placeholder="Mobile No." pattern="\d{10}" maxlength="10"
+                                                inputmode="numeric" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="mb-email-creaco mb-2">
+                                        <label for="createAcEmail" class="form-label mb-2">Email</label>
+                                        <input type="email" id="createAcEmail" class="form-control border-0"
+                                            placeholder="Email" required>
+                                    </div>
+
+                                    <!-- Password -->
+                                    <div class="mb-pass-creaco mb-3 position-relative">
+                                        <label for="createAcPassword" class="form-label mb-2">Password</label>
+                                        <div class="input-group">
+                                            <input type="password" id="createAcPassword"
+                                                class="form-control mb-pass-input border-0" placeholder="Password"
+                                                required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{8,}$">
+                                            <span class="toggle-password input-group-text"
+                                                onclick="togglePassword(this)">
+                                                <i class="fa-solid fa-eye-slash mb-eye-icon"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <button type="submit" class="btn mb-subscribe-btn-creaco mb-3">Create
+                                        Account</button>
+
+                                    <!-- Link to Sign In -->
+                                    <div class="mb-text-account-creaco text-center">
+                                        <p>Already have an account?
+                                            <a class="mb-cr-creaco" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#signinModal">Sign in</a>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Forgot Password Modal -->
+    <div class="modal" id="forgotpasswordModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content mb-content-forpas">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-forpas">
+
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-forpas position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="mb-right-forpas mt-3 p-2">
+
+                        <div class="mb-text-forpas text-center">
+                            <h5 class="mt-2">Forgot Password?</h5>
+                            <p>To recover your account, please enter your email or phone below.</p>
+                        </div>
+
+                        <form action="" id="forget-password" class="p-4">
+
+                            <div class="mb-form-forpas">
+
+                                <div class="mb-email-forpas mb-2">
+                                    <label for="mailForgetPassword" class="form-label mb-2">Email</label>
+                                    <input type="email" class="form-control border-0 p-2" placeholder="Email"
+                                        id="mailForgetPassword" required>
+                                    <p id="wrongMail" class="d-none"> Enter Correct mail Id </p>
+                                </div>
+
+                                <div class="mb-or-forpas text-center p-1">
+                                    <div class="divider-forpas">OR</div>
+                                </div>
+
+                                <div class="mb-mno-forpas mb-4">
+                                    <label for="mobileNumber" class="form-label mb-2">Mobile No.</label>
+                                    <div class="input-group">
+                                        <select class="form-select" style="max-width: 70px; font-size: 14px;">
+                                            <option value="+91" selected>+91</option>
+                                            <option value="+1">+1</option>
+                                            <option value="+44">+44</option>
+                                        </select>
+                                        <input type="number" class="form-control p-2" id="mobileNumber"
+                                            placeholder="Mobile No.">
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn mb-subscribe-btn-forpas">
+                                    Send code
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Verify OTP Mobile Number Modal -->
+    <div class="modal" id="verifyotpModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content mb-content-otp-mobile">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-otp-mobile">
+
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-otp-mobile position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+
+                    <form action="" id="verify-otp-form">
+
+                        <div class="mb-right-otp-mobile mt-3 p-2">
+
+                            <div class="mb-text-otp-mobile text-center">
+                                <h5 class="mt-2">Verify OTP</h5>
+                                <p class="m-0">We've sent a code to <a href="#" class="mb-otp-mobile-number"
+                                        id="sendedMailId"> email </a></p>
+                                <p>Please enter it to verify your Email.</p>
+                            </div>
+
+                            <!-- OTP -->
+                            <div class="mb-otp-mobile-inputs-wrapper d-flex justify-content-center">
+                                <div class="mb-otp-mobile-inputs d-flex justify-content-center gap-3">
+                                    <input type="text" maxlength="1" class="mb-otp-mobile-box" pattern="[0-9]"
+                                        required />
+                                    <input type="text" maxlength="1" class="mb-otp-mobile-box" pattern="[0-9]"
+                                        required />
+                                    <input type="text" maxlength="1" class="mb-otp-mobile-box" pattern="[0-9]"
+                                        required />
+                                    <input type="text" maxlength="1" class="mb-otp-mobile-box" pattern="[0-9]"
+                                        required />
+                                </div>
+                            </div>
+
+                            <div class="mb-form-otp-mobile">
+
+                                <button type="submit" class="btn mb-subscribe-btn-otp-mobile">Verify OTP</button>
+
+                                <div class="mb-text-account-otp-mobile text-center my-3">
+                                    <p>Didn't received code? <a class="mb-cr-otp-mobile"
+                                            onclick="resendOtp()">Resend</a></p>
+                                </div>
+
+                            </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Reset Password Modal -->
+    <div class="modal" id="resetpasswordModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content mb-content-resetpas">
+
+                <!-- Modal body -->
+                <div class="modal-body mb-body-resetpas">
+
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close mb-close-resetpas position-absolute top-0 end-0"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="mb-right-resetpas mt-3 p-2">
+
+                        <div class="mb-text-resetpas text-center">
+                            <h5 class="mt-2">Reset Password</h5>
+                            <p>Create a unique password different from your<br>previous ones.</p>
+                        </div>
+
+                        <form action="" class="mb-form-resetpas" onsubmit="resetPwd(event)">
+                            <div class="">
+
+                                <div class="mb-pass-resetpas mb-4 position-relative">
+                                    <label for="newPassword" class="form-label mb-2">New password</label>
+                                    <div class="input-group">
+                                        <input type="password" id="newPassword"
+                                            class="form-control mb-pass-input border-0" placeholder="New password"
+                                            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{6,}$" required>
+                                        <span class="toggle-password input-group-text" onclick="togglePassword(this)"><i
+                                                class="fa-solid fa-eye-slash mb-eye-icon"></i></span>
+                                    </div>
+                                </div>
+
+                                <div class="mb-pass-resetpas mb-4 position-relative">
+                                    <label for="confirmPassword" class="form-label mb-2">Confirm password</label>
+                                    <div class="input-group">
+                                        <input type="password" id="confirmPassword"
+                                            class="form-control mb-pass-input border-0" placeholder="Confirm password"
+                                            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{6,}$" required>
+                                        <span class="toggle-password input-group-text" onclick="togglePassword(this)"><i
+                                                class="fa-solid fa-eye-slash mb-eye-icon"></i></span>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn mb-subscribe-btn-resetpas">Reset Password</button>
+
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- View Details Modal -->
+    <div class="modal" id="viewdetailsModal">
+        <div class="modal-dialog mb-dialog-viewdetails modal-dialog-centered">
+            <div class="modal-content mb-content-viewdetails">
+
+                <div class="modal-body p-0 mb-body-viewdetails">
+                    <div class="mb-room-image">
+
+                        <!-- Carousel -->
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false"
+                            data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <!-- Dynamic images will be inserted here -->
+                            </div>
+
+                            <button class="carousel-control-prev mb-carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next mb-carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <!-- Room Details -->
+                        <div class="mb-main-viewdetails p-4">
+                            <div class="mb-viewdetails mb-border-line">
+                                <h5>Room Details</h5>
+                                <button type="button" class="btn-close me-1 btn-close-white mb-close-viewdetails"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Content Section -->
+                        <div class="mb-sub-viewdetails">
+                            <h5 class="modal-title"></h5>
+
+                            <div class="mb-room-details">
+                                <!-- Dynamic room details injected here -->
+                            </div>
+
+                            <p></p> <!-- Description line 1 -->
+                            <p></p> <!-- Description line 2 -->
+
+                            <h6 class="mt-4">Room Amenities</h6>
+
+                            <div class="row mb-room-amenities">
+                                <!-- Dynamic amenities injected here -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ********************************************************* -->
+
+
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./JS/Header.js"></script>
+    <script src="./JS/filter.js"></script>
+    <script src="./JS/Rooms.js"></script>
+
+
+</body>
+
+</html>

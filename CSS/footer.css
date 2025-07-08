@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #034177 !important;
+}
+
+.kf-foot {
+    padding: 30px 0 !important;
+    row-gap: 20px;
+}
+
+.kf-logo h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.kf-logo p {
+    color: #FFFFFF99;
+}
+
+.k-Quick-data h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+.k-fdata ul {
+    padding: 0 !important;
+}
+
+.k-fdata ul li {
+    list-style-type: none;
+    padding: 5px 0 !important;
+}
+
+.k-fdata ul li a {
+    text-decoration: none !important;
+    color: #FFFFFF99;
+    font-size: 16px;
+}
+
+.k-fdata ul li a:hover {
+    color: white !important;
+}
+
+.k-fdata ul li a.active {
+    color: #FFFFFF !important;
+}
+
+.k-Cancellation {
+    justify-content: end !important;
+}
+
+.k-Touch {
+    row-gap: 10px;
+}
+
+.k-examp span {
+    color: #FFFFFF99 !important;
+}
+
+.k-examp svg {
+    color: #fff !important;
+    padding-right: 5px;
+}
+
+/* ------------ */
+
+.k-glog img {
+    align-content: center !important;
+    height: 25px;
+}
+
+.k-gpay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff !important;
+    color: black !important;
+    border-radius: 7px;
+    padding: 7px 5px;
+    margin: 0 !important;
+    width: 75%;
+}
+
+.k-play {
+    padding-left: 10px !important;
+}
+
+.k-play a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.k-play p {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.k-play h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* ------------- */
+
+.k-Follow {
+    padding-bottom: 0 !important;
+    padding-top: 60px !important;
+}
+
+.k-midea i {
+    background-color: white !important;
+    color: #034177 !important;
+    padding: 10px !important;
+    border-radius: 5px;
+}
+
+.k-midea i:hover {
+    background-color: #034177 !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+.k-midea i {
+    transition: all 0.9s ease;
+}
+
+.k-reserved p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 !important;
+}
+
+.k-reserved {
+    color: #FFFFFF99 !important;
+    text-align: center !important;
+    padding: 10px 0;
+    border-top: 1px solid #969696 !important;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+/* --------------- */
+
+.k-examp i {
+    color: white !important;
+    padding-right: 5px !important;
+}
+
+
+/* -------------- */
+
+@media (max-width: 1024px) {
+
+    .k-printing {
+        text-align: center;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .k-gpay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff !important;
+        color: black !important;
+        border-radius: 7px;
+        padding: 7px 5px;
+        margin: 0 !important;
+        width: 65%;
+    }
+
+    .k-Follow {
+        padding-bottom: 0 !important;
+        padding-top: 30px;
+    }
+
+    .k-Cancellation {
+        justify-content: space-between !important;
+    }
+
+    .k-play h3 {
+        font-size: 14px !important;
+    }
+
+    .kf-logo p {
+        font-size: 14px !important;
+    }
+
+    .k-Touch span {
+        font-size: 14px !important;
+    }
+
+    .k-fdata li a {
+        font-size: 14px !important;
+    }
+
+    .k-reserved p {
+        font-size: 16px !important;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .k-gpay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff !important;
+        color: black !important;
+        border-radius: 7px;
+        padding: 7px 5px;
+        margin: 0 !important;
+        width: 75%;
+    }
+
+    .k-Follow {
+        padding-bottom: 0 !important;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .k-Follow {
+        padding-bottom: 0 !important;
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .k-printing {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .k-Cancellation {
+        row-gap: 20px;
+        justify-content: space-between !important;
+    }
+
+    .k-gpay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff !important;
+        color: black !important;
+        border-radius: 7px;
+        padding: 7px 5px;
+        margin: 0 auto !important;
+        width: 19% !important;
+    }
+
+    .k-Follow {
+        padding-bottom: 0 !important;
+        padding-top: 10px !important;
+    }
+
+    .k-play {
+        text-align: start !important;
+    }
+
+    .k-play h3 {
+        font-size: 14px;
+    }
+
+    .k-Mobile {
+        text-align: center !important;
+        margin: 0 auto !important;
+        justify-content: center !important;
+        padding: 1rem 0;
+    }
+
+    .kf-logo p {
+        font-size: 13px !important;
+        margin: 0 !important;
+        padding: 10px 0 !important;
+    }
+
+    .k-reserved p {
+        font-size: 14px !important;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .k-fdata {
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    .k-fdata-change {
+        padding-left: 70px;
+    }
+
+    .k-change {
+        padding-right: 50px;
+    }
+
+    .k-printing {
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .k-Cancellation {
+        row-gap: 20px;
+        text-align: center !important;
+    }
+
+    .k-gpay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff !important;
+        color: black !important;
+        border-radius: 7px;
+        padding: 7px 5px;
+        margin: 0 auto !important;
+        width: 32% !important;
+    }
+
+    .k-Follow {
+        padding-bottom: 0 !important;
+        padding-top: 30px;
+    }
+
+    .k-Mobile {
+        text-align: center !important;
+        margin: 0 auto !important;
+        justify-content: center !important;
+    }
+
+    .kf-logo p {
+        font-size: 11px !important;
+        margin: 0 !important;
+        padding: 10px 0 !important;
+    }
+
+    .k-play h3 {
+        font-size: 13px !important;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .k-fdata {
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .k-fdata-change {
+        padding-left: 55px;
+    }
+
+    .k-printing {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .k-Cancellation {
+        row-gap: 20px;
+    }
+
+    .k-gpay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff !important;
+        color: black !important;
+        border-radius: 7px;
+        padding: 7px 5px;
+        margin: 0 auto !important;
+        width: 35% !important;
+    }
+
+    .k-Follow {
+        padding-bottom: 0 !important;
+        padding-top: 30px;
+    }
+
+    .k-Mobile {
+        text-align: center !important;
+        margin: 0 auto !important;
+        justify-content: center !important;
+    }
+
+
+    .k-play p {
+        font-size: 9px !important;
+    }
+
+    .k-play h3 {
+        font-size: 12px !important;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .k-fdata {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .k-fdata-change {
+        padding-left: 40px;
+    }
+
+    .k-Cancellation {
+        row-gap: 20px;
+    }
+
+    .k-printing {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .k-gpay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff !important;
+        color: black !important;
+        border-radius: 7px;
+        padding: 7px 5px;
+        margin: 0 auto !important;
+        width: 42% !important;
+    }
+
+    .k-Follow {
+        padding-bottom: 0 !important;
+        padding-top: 30px;
+    }
+
+    .k-Mobile {
+        text-align: center !important;
+        margin: 0 auto !important;
+        justify-content: center !important;
+    }
+}

@@ -1,0 +1,1114 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/open-sans-v40-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v40-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v40-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/open-sans-v40-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v23-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v23-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v23-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v23-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/poppins-v23-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v23-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/inter-v18-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/inter-v18-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/inter-v18-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/inter-v18-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/fonts/inter-v18-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/fonts/inter-v18-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* *************************** */
+
+
+
+body {
+    font-family: 'Open Sans';
+}
+
+
+:root {
+    --font-white-color: #FFFFFF;
+    --font-white-light-color: #FFFFFF99;
+    --font-grey-color: #14141499;
+    --font-blue-color: #034177;
+    --font-dark-color: #141414;
+    --bg-white-color: #FFFFFF;
+    --btn-blue: #034177;
+    --btn-card-bg: #0341770D;
+    --btn-border-light: #1414144D;
+    --btn-card-border-bottom: #1414141A;
+    --btn-card-border: #1414144D;
+    --box-shadow: #00000014;
+    --form-input-bg: #1414140F;
+    --font-color-red: #FF0000;
+}
+
+
+/* **************** */
+
+.rp-header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    background-color: var(--bg-white-color);
+    box-shadow: 5px 5px 10px #00000014;
+    /* backdrop-filter: blur(5px); */
+}
+/* Nav and tabs */
+.Nav-tabs{
+    margin-top: 110px;
+    overflow-x: auto;
+}
+
+.nav-pills{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    flex-wrap: nowrap;
+}
+
+
+
+.nav-pills li button{
+    white-space: nowrap;
+    padding: 5px 15px;
+    color: var(--font-grey-color);
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--btn-border-light);
+}
+.nav-pills li .rp-stage-active{
+    color: var(--font-blue-color);
+    border-bottom: 2px solid var(--btn-blue);
+}
+
+@media (max-width:500px){
+    .nav-pills{
+        justify-content: center;
+        width: 450px;
+    }
+     .Nav-tabs::-webkit-scrollbar {
+        display: none;              
+    }
+}
+
+/* *** Button Of Booking / Details / Confirms *** */
+
+.rp-btn-nav {
+    margin-top: 110px;
+    display: flex;
+    justify-content: flex-end;
+    white-space: nowrap;
+    gap: 5px;
+}
+
+.rp-btn-nav button {
+    padding: 5px 15px;
+    color: var(--font-grey-color);
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--btn-border-light);
+}
+
+.rp-btn-nav .rp-stage-active {
+    color: var(--font-blue-color);
+    border-bottom: 2px solid var(--btn-blue);
+}
+
+
+@media (max-width: 768px) {
+    .rp-btn-nav {
+        justify-content: center;
+    }
+
+    .rp-btn-nav button {
+        padding: 6px 0px;
+        width: 49%;
+    }
+}
+
+@media(max-width:425px) {
+    .rp-btn-nav {
+        display: block;
+        overflow-x: scroll;
+    }
+
+    /* Hide Scrollbar */
+    .rp-btn-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .rp-btn-nav button {
+        padding: 6px 15px;
+        width: auto;
+    }
+}
+
+
+/***** My Reservation *****/
+
+
+.rp-headng-reservation {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--font-dark-color);
+}
+
+
+.rp-stay-info {
+    padding: 20px;
+    border-radius: 4px;
+    background-color: var(--bg-white-color);
+    box-shadow: -4px 4px 14px var(--box-shadow);
+}
+
+.rp-stay-info-heading {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--font-dark-color);
+    margin-bottom: 10px;
+}
+
+.rp-stay-sub-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--font-dark-color);
+}
+
+.rp-stay-sub-heading img {
+    width: 23px;
+}
+
+.rp-stay-sub-heading span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--font-grey-color);
+}
+
+.rp-add-details-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rp-add-details-head button {
+    color: var(--font-dark-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    background-color: transparent;
+    padding: 8px 15px;
+    border: 1px solid var(--font-grey-color);
+    border-radius: 4px;
+}
+
+.rp-add-detais-radio {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 0px;
+    gap: 10px;
+}
+
+.rp-add-detais-radio input {
+    margin-right: 5px;
+    accent-color: var(--font-blue-color);
+    cursor: pointer;
+}
+
+.rp-add-detais-radio label {
+    cursor: pointer;
+}
+
+.rp-add-detais-radio p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--font-grey-color);
+}
+
+.rp-add-details-radio-active {
+    color: var(--font-dark-color) !important;
+}
+
+.rp-add-details-from-main {
+    max-width: 100% !important;
+    overflow: hidden;
+}
+
+.rp-add-details-form {
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    gap: 10px;
+}
+
+.rp-add-details-form div {
+    width: 100%;
+}
+
+.rp-add-details-form p {
+    margin: 12px 0px 5px 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--font-dark-color);
+}
+
+.rp-add-details-form div input {
+    min-width: 100%;
+    padding: 5px 10px;
+    background-color: var(--form-input-bg);
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.rp-add-details-form div input:focus {
+    outline: none;
+}
+
+.rp-add-details-form div input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: var(--font-grey-color);
+}
+
+.rp-add-details-accept {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--font-grey-color);
+}
+
+.rp-add-details-accept span,
+a {
+    color: var(--font-dark-color);
+}
+
+.rp-add-details-accept input {
+    margin-right: 5px;
+    accent-color: var(--font-blue-color);
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.rp-payment-opt-radio {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.rp-payment-opt-radio input {
+    margin-right: 8px;
+    accent-color: var(--font-blue-color);
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.rp-payment-opt-radio p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--font-dark-color);
+}
+
+.rp-payment-coupen-info {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--font-grey-color);
+}
+
+.rp-apply-coupen {
+    margin-top: 15px;
+    border-top: 1px solid var(--btn-card-border-bottom);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0px;
+    font-family: Open Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.rp-apply-coupen img {
+    margin-right: 5px;
+}
+
+
+.rp-std-person-bed {
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--font-grey-color);
+}
+
+.rp-std-facilities {
+    border-bottom: 1px solid var(--btn-border-light);
+    padding: 15px 0px !important;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:1440px) {
+    .rp-std-facilities {
+        font-size: 13px;
+    }
+
+    .rp-std-facilities img {
+        width: 20px;
+        margin-right: 5px !important;
+    }
+
+    .rp-add-details-head button {
+        font-size: 14px;
+    }
+
+    .rp-apply-coupen {
+        font-size: 14px;
+    }
+
+    .rp-apply-coupen img {
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    .rp-stay-sub-heading {
+        font-size: 14px;
+    }
+
+    .rp-stay-sub-heading img {
+        width: 20px;
+    }
+
+    .rp-stay-sub-heading span {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width:991px) {
+    .rp-std-facilities {
+        font-size: 13px;
+        border: none !important;
+    }
+}
+
+
+@media (max-width:768px) {
+    .rp-stay-info-heading {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:425px) {
+
+    .rp-add-details-head {
+        display: block;
+    }
+
+    .rp-add-details-head button {
+        margin-top: 7px;
+        padding: 7px 10px;
+    }
+
+    .rp-headng-reservation {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:375px) {
+    .rp-stay-sub-heading {
+        font-size: 13px;
+        gap: 5px;
+    }
+
+    .rp-stay-sub-heading img {
+        width: 14px;
+    }
+
+    .rp-std-facilities img {
+        width: 18px;
+    }
+
+}
+
+
+
+/* Right Side Part */
+
+.rp-time-count {
+    padding: 20px;
+    border-radius: 4px;
+    background-color: var(--bg-white-color);
+    box-shadow: -4px 4px 14px var(--box-shadow);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--font-color-red);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.rp-time-count img {
+    margin-right: 10px;
+}
+
+.rp-payment-price {
+    padding: 20px;
+    border-radius: 4px;
+    background-color: var(--bg-white-color);
+    box-shadow: -4px 4px 14px var(--box-shadow);
+}
+
+.rp-online-rates {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--font-grey-color);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    gap: 10px;
+    color: var(--font-dark-color);
+}
+
+.rp-room-no-price , .rp-room-no-price2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 12px;
+    /* border-bottom: 1px solid var(--btn-card-border-bottom); */
+}
+
+.rp-room-no-price h6 , .rp-room-no-price2 h6{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--font-dark-color);
+}
+
+.rp-total-taxe-price {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: var(--font-dark-color) !important;
+}
+
+.rp-total-taxe-price div {
+    padding: 10px 12px !important;
+
+}
+
+#accordionPanelsStayOpenExample {
+    border-top: 1px solid var(--btn-card-border-bottom);
+    border-bottom: 1px solid var(--btn-card-border-bottom);
+}
+
+.rp-total-taxe-price h6 {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--font-dark-color);
+}
+
+.rp-total-tax-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rp-total-tax-info h6 {
+    margin: 7px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--font-grey-color);
+}
+
+.rp-total-tax-body {
+    /* border-bottom: 1px solid var(--btn-card-border-bottom); */
+}
+
+.rp-accodin-tax::after {
+    filter: brightness(0);
+}
+
+.rp-room-total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rp-room-total-price h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--font-dark-color);
+    margin-bottom: 0px;
+    padding: 10px 12px;
+}
+
+.rp-condition-accept {
+    padding: 12px 0px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--font-grey-color);
+}
+
+.rp-conditions {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.rp-conditions input {
+    margin-top: 5px;
+    accent-color: var(--font-blue-color);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.rp-conditions a {
+    color: var(--font-dark-color);
+}
+
+.rp-make-payment-btn {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--font-white-color);
+    background-color: var(--btn-blue);
+    border: 1px solid var(--font-blue-color);
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.rp-make-payment-btn:hover {
+    color: var(--font-blue-color);
+    background-color: transparent !important;
+    transition: 0.3s;
+}
+
+.rp-canecellation {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--font-color-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 0px;
+    cursor: pointer;
+}
+
+.rp-additional-info-tax {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--font-grey-color);
+}
+
+.rp-additional-info-tax img {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+
+@media (max-width:1440px) {
+    .rp-time-count {
+        font-size: 14px;
+    }
+
+    .rp-time-count img {
+        width: 20px;
+    }
+
+    .rp-make-payment-btn {
+        font-size: 14px;
+    }
+
+    .rp-canecellation {
+        font-size: 14px;
+    }
+
+    .rp-room-no-price h6 {
+        font-size: 14px;
+    }
+
+    .rp-total-taxe-price h6 {
+        font-size: 14px;
+    }
+
+    .rp-total-tax-info h6 {
+        font-size: 14px;
+    }
+
+    .rp-room-total-price h6 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:375px) {
+    .rp-time-count img {
+        margin-right: 7px;
+        width: 18px;
+    }
+}
+
+
+/******** Room Selection ****** */
+
+.rp-room-selection{
+    gap: 10px;
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: wrap;
+}
+.rp-room-selection button{
+    margin-bottom: 10px;
+    color: var(--font-grey-color);
+    border: 1px solid var(--font-grey-color);
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 4px 15px;
+    border-radius: 4px;
+}
+
+.rp-room-selection .rp-active{
+    background-color: var(--btn-card-bg);
+    border: 1px solid var(--font-blue-color);
+    color: var(--font-blue-color);
+    font-weight: 600;
+}
+
+
+/* ********************** */
+
+
+/* ********************** Pay and Confitm Tabs */
+
+/***** Booking Details *****/
+/***** Left Part *****/
+
+
+.rp-headng-booking{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--font-dark-color);
+}
+
+.rp-booking-details{
+    box-shadow: 0px 0px 5px var(--box-shadow);
+    border-radius: 4px;
+    padding: 10px;
+    padding-bottom: 88px;
+}
+
+.rp-booking-personal-details{
+    padding: 15px 12px;
+    border-bottom: 1px solid var(--btn-card-border-bottom);
+}
+.rp-booking-personal-details h5{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--font-dark-color);
+    margin-bottom: 7px;
+}
+.rp-booking-personal-details p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--font-grey-color);
+    margin-bottom: 5px;
+}
+
+.rp-room-d1{
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--btn-card-border-bottom);
+
+}
+
+.rp-room-d1 h5{
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--font-dark-color);
+}
+
+.rp-room-d2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rp-room-d2 h5{
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--font-grey-color);
+    margin-bottom: 0px;
+}
+
+@media (max-width:991px){
+    .rp-booking-details{
+        padding-bottom: 0px !important;
+    }
+}
+
+@media (min-width:992px) and (max-width:1400px){
+    .rp-room-d2 h5 {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:425px){
+    .rp-headng-booking{
+        font-size: 20px;
+    }
+    .rp-booking-personal-details h5{
+        font-size: 18px;
+    }
+
+    .rp-room-d1{
+        padding: 10px 15px;
+    }
+    .rp-room-d2 h5{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+  
+}
+
+
+/**** Right Part *****/
+.rp-right-your-booking{
+    padding: 20px;
+    box-shadow: 0px 0px 5px var(--box-shadow);
+    border-radius: 4px;
+}
+
+.rp-your-booking-heading{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--font-dark-color);  
+    margin-bottom: 10px;
+}
+
+.rp-cards-image{
+    width: 46px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rp-cards-image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Card Form */
+
+.rp-card-form{
+    padding: 10px 0px;
+}
+.rp-c-form-title{
+    margin-bottom: 5px;
+    color: var(--font-dark-color);
+    font-weight: 400;
+    font-size: 14px;
+}
+.rp-card-form input{
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 7px 14px;
+    border-radius: 4px;
+    background-color: var(--form-input-bg);
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.rp-cvv{
+    display: flex;
+    width: 100%;
+}
+.rp-cvv div{
+    width: 50%;
+}
+
+.rp-save-card-details{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: var(--font-grey-color);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.rp-save-card-details input{ 
+   width: 18px;
+   height: 18px;
+   accent-color: var(--font-blue-color);
+}
+
+.rp-card-pay-btn{
+    background-color: var(--font-blue-color);
+    color: var(--font-white-color);
+    border: 1px solid var(--font-blue-color);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    width: 40%;
+    padding: 7px 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+@media (max-width:991px) {
+    .rp-card-pay-btn{
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+
+@media (max-width:425px){
+    .rp-your-booking-heading{
+        font-size: 18px;
+    }
+}
+
+
+/* card validation */
+
+.is-invalid {
+  border: 1px solid red;
+}
+.error-msg {
+  color: red;
+  font-size: 0.8rem;
+}
